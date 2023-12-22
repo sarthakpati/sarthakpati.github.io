@@ -36,7 +36,7 @@ I believe open software fosters better science, and thus have been involved in m
 - [Federated Learning for Postoperative Segmentation of Treated glioblastoma (FL-PoST)](https://fets-ai.github.io/FL-PoST/)
 - [Generally Nuanced Deep Learning Framework (GaNDLF)](https://mlcommons.github.io/GaNDLF)
 - [MedPerf](https://www.medperf.org)
-- [Open Federated Learning (OpenFL)](https://github.com/securefederatedai/openfl) framework
+- [Open Federated Learning (OpenFL) framework](https://github.com/securefederatedai/openfl)
 
 
 ## Interests 🌱
