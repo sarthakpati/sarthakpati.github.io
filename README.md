@@ -44,7 +44,7 @@ I believe open software fosters better science, and thus have been involved in m
 
 - Applying concepts of AI (with a focus on privacy) to solve problems in healthcare
 - Committed to doing [reproducible](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research) and [deployable](https://en.wikipedia.org/wiki/Software_deployment) research
-  - Firm believer of the saying _a weak algorithm that is well written/integrated is better than a strong algorithm that isn't_
+  - Firm believer of the saying _a weak algorithm that is well written & integrated is better than a strong algorithm that isn't_
 - Advocating for [F.A.I.R.](https://en.wikipedia.org/wiki/FAIR_data) in research
 - Helping people choose [the correct career path](https://oitecareersblog.od.nih.gov/2010/09/28/industry-vs-academia-which-is-right-for-you/)
 
