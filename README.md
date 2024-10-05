@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 
 ## Current Role 🔭
 
-Software Architect & AI Researcher at [Indiana University's Division of Computational Pathology](https://medicine.iu.edu/pathology/research/computational-pathology), and Technical Lead at the [Medical Working Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focussed AI in Healthcare.
+Software Architect & AI Researcher at [Indiana University's Division of Computational Pathology](https://medicine.iu.edu/pathology/research/computational-pathology), and the Vice Chair of Algorithm Development at the [Medical Working Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focussed AI in Healthcare.
 
 I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies, including the [Federated Tumor Segmentation (FeTS)](https://www.fets.ai/) platform and the [Cancer Imaging Phenomics Toolkit (CaPTk)](https://www.med.upenn.edu/cbica/captk/). I am currently focusing my efforts on the following: 
 
