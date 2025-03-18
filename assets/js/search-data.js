@@ -429,16 +429,18 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-new-book-chapter-at-trustworthy-ai-in-medical-imaging",
+          title: 'New book chapter at Trustworthy AI in Medical Imaging',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
+            },},{id: "news-new-publication-at-neuroimage",
+          title: 'New publication at NeuroImage',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-the-comprehensive-federated-learning-tutorial-has-been-accepted-at-miccai-2025-see-the-schedule-here",
+          title: 'The Comprehensive Federated Learning Tutorial has been accepted at MICCAI 2025. See the...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
