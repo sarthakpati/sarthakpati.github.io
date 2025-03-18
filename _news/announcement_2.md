@@ -1,33 +1,19 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: New publication at NeuroImage
+date: 2025-02-15 16:11:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+We are excited to announce our new publication in NeuroImage. The paper is titled "Adapting to evolving MRI data: A transfer learning approach for Alzheimer’s disease prediction" and is available [here](https://doi.org/10.1016/j.neuroimage.2025.121016).
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+## Abstract
 
-#### Hipster list
+Integrating 3D magnetic resonance imaging (MRI) with machine learning has shown promising results in healthcare, especially in detecting Alzheimer’s Disease (AD). However, changes in MRI technologies and acquisition protocols often yield limited data, leading to potential overfitting. This study explores Transfer Learning (TL) approaches to enhance AD diagnosis using a Baseline model consisting of a 3D-Convolutional Neural Network trained on 80 3T MRI scans.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+Two scenarios are explored: (A) utilizing historical data to address changes in MRI acquisitions (from 1.5T to 3T MRI), and (B) adapting 2D models pre-trained on ImageNet (ResNet18, ResNet50, ResNet101) for 3D image processing when historical data is unavailable. In both scenarios, two modeling approaches are tested. The General Approach involves distinct feature extraction and classification steps, using Radiomic features and TL-based features evaluated with six classifiers. The Deep Approach integrates these steps by fine-tuning the pre-trained models for AD diagnosis.
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
-
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+In scenario (A), TL significantly boosts the Baseline’s accuracy from 63% to 99%. In scenario (B), Radiomic features better represents 3D MRI than TL-features in the General Approach. Nonetheless, fine-tuning models pre-trained on natural images can increase the Baseline’s accuracy by up to 12 percentage points, achieving an overall accuracy of 83%.
