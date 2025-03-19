@@ -19,6 +19,44 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "Technical University of Munich",
+      "area": "Biomedical Computing",
+      "studyType": "Doctor of Philosophy",
+      "startDate": "2020-03-31",
+      "endDate": "2025-02-28",
+      "score": "Summa cum Laude"
+    },
+    {
+      "institution": "Technical University of Munich",
+      "area": "Biomedical Computing",
+      "studyType": "Master of Science",
+      "startDate": "2011-12-31",
+      "endDate": "2014-12-31",
+      "score": "",
+      "courses": [
+        "ME0156 - Medical Imaging Techniques",
+        "IN2057 - 3D Computer Vision",
+        "IN2210 - Tracking and Detection in Computer Vision",
+        "IN2106 - Machine Learning in Medical Imaging"
+      ]
+    },
+    {
+      "institution": "Manipal University",
+      "area": "Biomedical Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2006-12-31",
+      "endDate": "2010-12-31",
+      "score": "",
+      "courses": [
+        "null - Signal Processing",
+        "null - Advanced Signal Processing",
+        "null - Image Processing",
+        "null - Advanced Image Processing",
+        "null - Pattern Recognition"
+      ]
+    },
   "work": [
     {
       "name": "Indiana University",
@@ -124,50 +162,6 @@
       "url": "https://www.linkedin.com/company/defence-research-and-development-organisation-drdo/"
     }
   ],
-  "education": [
-    {
-      "institution": "Technical University of Munich",
-      "area": "Biomedical Computing",
-      "studyType": "Doctor of Philosophy",
-      "startDate": "2020-03-31",
-      "endDate": "2025-02-28",
-      "score": "",
-      "courses": [
-        "ME0156 - Medical Imaging Techniques",
-        "IN2057 - 3D Computer Vision",
-        "IN2210 - Tracking and Detection in Computer Vision",
-        "IN2106 - Machine Learning in Medical Imaging"
-      ]
-    },
-    {
-      "institution": "Technical University of Munich",
-      "area": "Biomedical Computing",
-      "studyType": "Master of Science",
-      "startDate": "2011-12-31",
-      "endDate": "2014-12-31",
-      "score": "",
-      "courses": [
-        "ME0156 - Medical Imaging Techniques",
-        "IN2057 - 3D Computer Vision",
-        "IN2210 - Tracking and Detection in Computer Vision",
-        "IN2106 - Machine Learning in Medical Imaging"
-      ]
-    },
-    {
-      "institution": "Manipal University",
-      "area": "Biomedical Engineering",
-      "studyType": "Bachelor of Engineering",
-      "startDate": "2006-12-31",
-      "endDate": "2010-12-31",
-      "score": "",
-      "courses": [
-        "null - Signal Processing",
-        "null - Advanced Signal Processing",
-        "null - Image Processing",
-        "null - Advanced Image Processing",
-        "null - Pattern Recognition"
-      ]
-    },
     {
       "institution": "Kendriya Vidyalaya",
       "area": "Mathematics, Physics, Chemistry, Biology",
