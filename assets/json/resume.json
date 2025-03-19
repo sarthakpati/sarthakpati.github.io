@@ -36,10 +36,10 @@
       "endDate": "2014-06-3",
       "score": "",
       "courses": [
-        "ME0156 - Medical Imaging Techniques",
-        "IN2057 - 3D Computer Vision",
-        "IN2210 - Tracking and Detection in Computer Vision",
-        "IN2106 - Machine Learning in Medical Imaging"
+        "Medical Imaging Techniques",
+        "3D Computer Vision",
+        "Tracking and Detection in Computer Vision",
+        "Machine Learning in Medical Imaging"
       ]
     },
     {
@@ -50,11 +50,11 @@
       "endDate": "2010-06-30",
       "score": "",
       "courses": [
-        "null - Signal Processing",
-        "null - Advanced Signal Processing",
-        "null - Image Processing",
-        "null - Advanced Image Processing",
-        "null - Pattern Recognition"
+        "Signal Processing",
+        "Advanced Signal Processing",
+        "Image Processing",
+        "Advanced Image Processing",
+        "Pattern Recognition"
       ]
     }
   ],
