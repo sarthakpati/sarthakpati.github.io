@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher and enthusiast of all things AI and ML.
+subtitle: ""
 
 profile:
   align: right
@@ -19,11 +19,11 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  # limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include all the news in the `_news` folder
 
 ---
 
-Software Architect & AI Researcher at [Indiana University's Division of Computational Pathology](https://medicine.iu.edu/pathology/research/computational-pathology), and Technical Lead at the [Medical Working Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
+Software Architect & AI Researcher at [Indiana University's Division of Computational Pathology](https://medicine.iu.edu/pathology/research/computational-pathology), and Vice Chair for Algorithm Development and Benchmarking at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
 
 I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies, including the [Federated Tumor Segmentation (FeTS)](https://www.fets.ai/) platform and the [Cancer Imaging Phenomics Toolkit (CaPTk)](https://www.med.upenn.edu/cbica/captk/). I am currently focusing my efforts on the following: 
 
