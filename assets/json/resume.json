@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Sarthak Pati",
-    "label": "Software Architect specializing in Healthcare AI solutions",
+    "label": "",
     "image": "",
     "email": "",
     "phone": "",
-    "summary": "Software Architect specializing in designing robust and deployable solutions that leverage machine learning and artificial intelligence in healthcare.",
+    "summary": "Researcher and Software Architect specializing in designing robust and deployable solutions that leverage machine learning and artificial intelligence.",
     "location": {
       "countryCode": "US",
       "address": "United States"
