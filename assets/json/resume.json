@@ -1,200 +1,645 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Sarthak Pati",
+    "label": "Software Architect specializing in Healthcare AI solutions",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "",
+    "phone": "",
+    "url": "https://scholar.google.com/citations?hl=en&user=lL5jPysAAAAJ&view_op=list_works&sortby=pubdate",
+    "summary": "Software Architect specializing in designing robust and deployable solutions that leverage machine learning and artificial intelligence in healthcare.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
       "countryCode": "US",
-      "region": "California"
+      "address": "United States"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "sarthakpati",
+        "url": "https://www.linkedin.com/in/sarthakpati/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Indiana University",
+      "position": "Software Architect",
+      "startDate": "2023-09-30",
+      "endDate": "",
+      "highlights": [],
+      "summary": "- Design and develop software infrastructure to further Federated Learning R&D activities, while providing technical direction to lead contributors from individual labs at the Department of Pathology & Laboratory Medicine, IU School of Medicine\n- Ensure compliance with data integrity, privacy, & security standards in coordination with internal initiatives and with public-facing community-driven projects\n- Define software development standards for internal and external software projects (e.g., provide guidance regarding APIs, CI/CD, and other best practices for partner labs) \n- Coordinate and establish academic collaborations and industrial partnerships (e.g., MLCommons, Intel, NVidia, FlyWheel, SECTRA)\n- Contribute material to relevant grant proposal applications\n- Plan, prepare, and organize knowledge dissemination (e.g., technical/educational seminars and courses, presentation and tutorials in conferences)",
+      "url": "https://www.linkedin.com/company/indiana-university/"
+    },
+    {
+      "name": "University of Pennsylvania",
+      "position": "Software Architect",
+      "startDate": "2023-02-28",
+      "endDate": "2023-08-31",
+      "highlights": [],
+      "summary": "- Leading the development and architecture of the Federated Tumor Segmentation (FeTS) Initiative [www.fets.ai], which aims to facilitate the largest international federation of healthcare institutions\n- Architecting and development of the Generalized Nuanced Deep Learning Framework (GaNDLF) [https://github.com/CBICA/GaNDLF/] to leverage deep learning for segmentation, regression, and classification\n- Enabling transfer of cutting-edge medical imaging research to the open-source scientific community.\n- Conduct seminar series on using Python/C++ for medical image analysis and machine learning using PyTorch, ITK, OpenCV, etc. (www.med.upenn.edu/sbia/resources-tutorials.html).",
+      "url": "https://www.linkedin.com/school/university-of-pennsylvania/",
+      "location": "Philadelphia, USA"
+    },
+    {
+      "name": "University of Pennsylvania",
+      "position": "Senior Software Developer",
+      "startDate": "2014-12-31",
+      "endDate": "2023-02-28",
+      "highlights": [],
+      "summary": "- Leading the Software Development efforts at the Center for Biomedical Image Computing and Analytics (www.med.upenn.edu/cbica)\n- Lead Developer of the Federated Tumor Segmentation (FeTS) Initiative [www.fets.ai], which aims to facilitate the largest international federation of healthcare institutions\n- Development of the Generalized Nuanced Deep Learning Framework (GaNDLF) [https://github.com/CBICA/GaNDLF/] to leverage deep learning for segmentation, regression, and classification\n- Development of the Cancer Imaging Phenomics Toolkit (CaPTk), a comprehensive imaging analytics suite of algorithms aiming to derive extensive panels of quantitative imaging features and integrate them into diagnostic and predictive models [www.med.upenn.edu/cbica/captk]\n- Enabling transfer of cutting-edge medical imaging research to the open-source scientific community.\n- Conduct seminar series on using C++ for medical image analysis and machine learning using ITK, OpenCV, etc. (www.med.upenn.edu/sbia/resources-tutorials.html).",
+      "url": "https://www.linkedin.com/school/university-of-pennsylvania/",
+      "location": "Philadelphia, USA"
+    },
+    {
+      "name": "TU München",
+      "position": "Student Research Assistant",
+      "startDate": "2013-04-30",
+      "endDate": "2014-05-31",
+      "highlights": [],
+      "summary": "[MS Thesis] Tracking flexible needles in Ultrasound-assisted Robotic surgery using particle filters.\nReal-time tracking and mosaicking of surgical tools and the retina in Ophthalmoscopy datasets.",
+      "url": "https://www.linkedin.com/school/technische-universitat-munchen/"
+    },
+    {
+      "name": "microDimensions",
+      "position": "Student Developer",
+      "startDate": "2013-09-30",
+      "endDate": "2014-04-30",
+      "highlights": [],
+      "summary": "I worked on the extending the software framework by adding support for more file types and improving the segmentation and registration framework.",
+      "url": "https://www.linkedin.com/company/microdimensions/"
+    },
+    {
+      "name": "Siemens",
+      "position": "Working Student",
+      "startDate": "2012-10-31",
+      "endDate": "2013-04-30",
+      "highlights": [],
+      "summary": "Angio-IVUS Co-registration with 3D Reconstructed Vessels.",
+      "url": "https://www.linkedin.com/company/siemens/",
+      "location": "Forchheim, Germany"
+    },
+    {
+      "name": "TU München",
+      "position": "Student Research Assistant",
+      "startDate": "2012-04-30",
+      "endDate": "2012-09-30",
+      "highlights": [],
+      "summary": "Real-time camera pose estimation for a single camera single marker system.",
+      "url": "https://www.linkedin.com/school/technische-universitat-munchen/"
+    },
+    {
+      "name": "Advanced Realtime Tracking GmbH",
+      "position": "Working Student",
+      "startDate": "2012-02-28",
+      "endDate": "2012-04-30",
+      "highlights": [],
+      "summary": "Detection of non-spherical markers for industrial tracking.",
+      "url": "https://www.linkedin.com/company/advanced-realtime-tracking-gmbh-cokg/",
+      "location": "Weilheim, Bavaria"
+    },
+    {
+      "name": "Indian Institute of Technology, Delhi",
+      "position": "Research Associate",
+      "startDate": "2010-09-30",
+      "endDate": "2011-07-31",
+      "highlights": [],
+      "summary": "Finite element analysis of simulated human cell clusters under electric field.\nDevelop a GUI for easier visualization",
+      "url": "https://www.linkedin.com/school/iitdelhi/"
+    },
+    {
+      "name": "Indian Institute of Technology, Delhi",
+      "position": "Project Trainee",
+      "startDate": "2010-01-31",
+      "endDate": "2010-06-30",
+      "highlights": [],
+      "summary": "[BE Thesis] Real Time Locomotion Classification based on surface EMG signals from thigh muscles for use in an above-knee prosthetic device.",
+      "url": "https://www.linkedin.com/school/iitdelhi/"
+    },
+    {
+      "name": "Defence Research and Development Organisation (DRDO)",
+      "position": "Project Trainee",
+      "startDate": "2009-06-30",
+      "endDate": "2009-07-31",
+      "highlights": [],
+      "summary": "Quality assessment in modern MRI systems and analyze methods to improve image acquisition and processing for a new neck coil design",
+      "url": "https://www.linkedin.com/company/defence-research-and-development-organisation-drdo/"
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "MLCommons",
+      "position": "Vice Chair for Algorithm Development",
+      "startDate": "2024-10-31",
+      "endDate": "",
+      "summary": "https://mlcommons.org/working-groups/data/medical/#:~:text=.-,Vice%20Chairs",
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "CppCon",
+      "position": "Lead Volunteer",
+      "startDate": "2017-09-30",
+      "endDate": "2019-10-31",
+      "summary": null,
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "Healthy Aging India",
+      "position": "Volunteer",
+      "startDate": "2007-07-31",
+      "endDate": "2008-07-31",
+      "summary": null,
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "HelpAge India",
+      "position": "Volunteer",
+      "startDate": "2006-06-30",
+      "endDate": "2007-06-30",
+      "summary": null,
+      "highlights": [],
+      "url": ""
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Technical University Munich",
+      "area": "Biomedical Computing",
+      "studyType": "Master of Science",
+      "startDate": "2011-12-31",
+      "endDate": "2014-12-31",
+      "score": "",
+      "courses": [
+        "ME0156 - Medical Imaging Techniques",
+        "IN2057 - 3D Computer Vision",
+        "IN2210 - Tracking and Detection in Computer Vision",
+        "IN2106 - Machine Learning in Medical Imaging"
+      ]
+    },
+    {
+      "institution": "Manipal University",
+      "area": "Biomedical Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2006-12-31",
+      "endDate": "2010-12-31",
+      "score": "",
+      "courses": [
+        "null - Signal Processing",
+        "null - Advanced Signal Processing",
+        "null - Image Processing",
+        "null - Advanced Image Processing",
+        "null - Pattern Recognition"
+      ]
+    },
+    {
+      "institution": "Kendriya Vidyalaya",
+      "area": "Mathematics, Physics, Chemistry, Biology",
+      "studyType": "12th",
+      "startDate": "2004-12-31",
+      "endDate": "2006-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "St. Xavier's High School, BBSR",
+      "area": "Maths, Science",
+      "studyType": "10th",
+      "startDate": "2000-12-31",
+      "endDate": "2004-12-31",
+      "score": "",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Certification in Supervisory Skills",
+      "date": "2019-06-30",
+      "awarder": "University of Pennsylvania",
+      "summary": "The Supervisory Skills Certificate program provides an introduction to the skills and information necessary to being an effective supervisor within the Perelman School of Medicine (SOM).  Instructors for the program represent a variety of offices across the SOM and University, including the Office of General Counsel, the Office of International Programs, the Office of Affirmative Action and Equal Opportunity Programs, Perelman SOM Human Resources,  and the Office of Organization Effectiveness."
+    },
+    {
+      "title": "Automatic Non-rigid Histological Image Registration Winner",
+      "date": "2019-04-30",
+      "awarder": "IEEE International Symposium on Biomedical Imaging",
+      "summary": "Automatic Non-rigid Histological Image Registration (ANHIR) challenge aims at the automatic nonlinear image registration of 2D microscopy images of histopathology tissue samples stained with different dyes. The task is difficult due to non-linear deformations affecting the tissue samples, different appearance of each stain, repetitive texture, and the large size of the whole slide images. Our team was placed 2nd overall among all competitors and were invited to present our method at the workshop."
+    },
+    {
+      "title": "Winner of the Brain Tumor Segmentation Challenge",
+      "date": "2015-10-31",
+      "awarder": "MICCAI",
+      "summary": "Lead the development of the software packages used by the team that won the BRATS (http://braintumorsegmentation.org/) challenge in 2015."
+    },
+    {
+      "title": "Category Head, Design",
+      "date": "2008-03-31",
+      "awarder": "Manipal Univeristy",
+      "summary": "Category Head at Revels 2008, the cultural festival of Manipal Institute of Technology (Manipal University)."
+    },
+    {
+      "title": "Category Head, Design",
+      "date": "2007-10-31",
+      "awarder": "Manipal University",
+      "summary": "Lead the Design Team at Techtatva 2007, the technical festival of Manipal University."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "MIC-GPU: High-Performance Computing for Medical Imaging on Programmable Graphics Hardware (GPU)",
+      "issuer": "SPIE, the international society for optics and photonics",
+      "startDate": "2017-03-31",
+      "url": "https://credential.spie.org/28e73a74-22ed-4d82-9ef7-e9ebbcd21ff3"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "Social/Behavioral Researchers",
+      "issuer": "CITI Program",
+      "endDate": "2028-08-31",
+      "startDate": "2023-08-31",
+      "url": "https://www.citiprogram.org/verify/?w4178a536-3b3f-4b38-86d7-f217ad188f0d-57746990"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Biomedical Researcher",
+      "issuer": "CITI Program",
+      "endDate": "2028-08-31",
+      "startDate": "2023-08-31",
+      "url": "https://www.citiprogram.org/verify/?wb0c26430-dcd2-40c1-ab02-1a44ae434f3d-57746948"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "Full Member",
+      "issuer": "Sigma Xi, The Scientific Research Honor Society",
+      "endDate": "2024-09-30",
+      "startDate": "2023-09-30"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "name": "Change Management for Projects",
+      "issuer": "LinkedIn",
+      "startDate": "2024-07-31",
+      "url": "https://www.linkedin.com/learning/certificates/eed101434707be92e1c2bf36f7ba2bff66c7dd5c5b24586facec0e9ec1932b7c"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "UW Human Subjects Protections Course",
+      "issuer": "CITI Program",
+      "endDate": "2028-02-28",
+      "startDate": "2025-02-28",
+      "url": "https://www.citiprogram.org/verify/?w73e40818-e6bf-4826-8637-06bf95b2ccf8-68284689"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Estimating Glioblastoma Biophysical Growth Parameters Using Deep Learning Regression",
+      "publisher": "Springer International Publishing",
+      "releaseDate": "2021-01-01",
+      "summary": "Glioblastoma (GBM) is arguably the most aggressive, infiltrative, and heterogeneous type of adult brain tumor. Biophysical modeling of GBM growth has contributed to more informed clinical decision-making. However, deploying a biophysical model to a clinical environment is challenging since underlying computations are quite expensive and can take several hours using existing technologies. Here we present a scheme to accelerate the computation. In particular, we present a deep learning (DL)-based logistic regression model to estimate the GBM’s biophysical growth in seconds. This growth is defined by three tumor-specific parameters: 1) a diffusion coefficient in white matter (Dw), which prescribes the rate of infiltration of tumor cells in white matter, 2) a mass-effect parameter (Mp), which defines the average tumor expansion, and 3) the estimated time (T) in number of days that the tumor has been growing. Preoperative structural multi-parametric MRI (mpMRI) scans from n=135\n subjects of the TCGA-GBM imaging collection are used to quantitatively evaluate our approach. We consider the mpMRI intensities within the region defined by the abnormal FLAIR signal envelope for training one DL model for each of the tumor-specific growth parameters. We train and validate the DL-based predictions against parameters derived from biophysical inversion models. The average Pearson correlation coefficients between our DL-based estimations and the biophysical parameters are 0.85 for Dw, 0.90 for Mp, and 0.94 for T, respectively. This study unlocks the power of tumor-specific parameters from biophysical tumor growth estimation. It paves the way towards their clinical translation and opens the door for leveraging advanced radiomic descriptors in future studies by means of a significantly faster parameter reconstruction compared to biophysical growth modeling approaches.",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-72084-1_15"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Reproducibility analysis of multi‐institutional paired expert annotations and radiomic features of the Ivy Glioblastoma Atlas Project (Ivy GAP) dataset",
+      "publisher": "Medical Physics",
+      "releaseDate": "2020-12-01",
+      "summary": "The availability of radiographic magnetic resonance imaging (MRI) scans for the Ivy Glioblastoma Atlas Project (Ivy GAP) has opened up opportunities for development of radiomic markers for prognostic/predictive applications in glioblastoma (GBM). In this work, we address two critical challenges with regard to developing robust radiomic approaches: (a) the lack of availability of reliable segmentation labels for glioblastoma tumor sub-compartments (i.e., enhancing tumor, non-enhancing tumor core, peritumoral edematous/infiltrated tissue) and (b) identifying “reproducible” radiomic features that are robust to segmentation variability across readers/sites.",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.14556"
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "GLIOBLASTOMA BIOPHYSICAL GROWTH ESTIMATION USING DEEP LEARNING-BASED REGRESSION",
+      "publisher": "Oxford University Press",
+      "releaseDate": "2020-11-02",
+      "summary": "Diffuse midline glioma is the leading cause of brain tumor death among the pediatric population. Drugs that show notable promise in preclinical models inevitably fail to demonstrate efficacy in clinical trials, likely due to the inadequacy of preclinical models. We have recently proposed glioblastoma models derived from human induced pluripotent stem cells (hiPSCs) genetically engineered with different combinations of glioblastoma-associated genetic alterations as a platform to search for therapeutic targets. These glioblastoma avatars authentically recapitulated the different pathobiology of glioblastoma subtypes, depending on what genetic alterations to be introduced. To investigate the biology and to develop novel therapeutics for diffuse midline glioma with H3K27M mutation, we have established a novel model by introducing H3.3 K27M mutation together with one of the most common concurrent genetic alterations, TP53 R248Q mutation, into hiPSCs through CRISPR/Cas9 genome engineering. Orthotopic engraftment of the neural progenitor cells derived from these edited hiPSCs formed diffusely invasive brainstem tumors with histological features of the diffuse midline glioma. These tumor avatars presented a global reduction in H3K27me3 accompanied by the expression of H3K27M. Transcriptome analyses of these models revealed that these avatars with H3K27M cluster apart from the pediatric glioma samples without this particular mutation, and that they present signatures of oligodendroglial progenitor differentiation as discovered in patient samples with this mutation. Using these models faithfully recapitulating histology and pathobiology of the patient tumors, we have performed drug screening and confirmed that their sensitivity to known drugs, including an EZH2 inhibitor and histone deacetylase inhibitors.",
+      "url": "https://academic.oup.com/neuro-oncology/article/22/Supplement_2/ii229/5961377"
+    },
+    {
+      "name": "Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training",
+      "publisher": "Academic Press",
+      "releaseDate": "2020-10-15",
+      "summary": "Brain extraction, or skull-stripping, is an essential pre-processing step in neuro-imaging that has a direct impact on the quality of all subsequent processing and analyses steps. It is also a key requirement in multi-institutional collaborations to comply with privacy-preserving regulations. Existing automated methods, including Deep Learning (DL) based methods that have obtained state-of-the-art results in recent years, have primarily targeted brain extraction without considering pathologically-affected brains. Accordingly, they perform sub-optimally when applied on magnetic resonance imaging (MRI) brain scans with apparent pathologies such as brain tumors. Furthermore, existing methods focus on using only T1-weighted MRI scans, even though multi-parametric MRI (mpMRI) scans are routinely acquired for patients with suspected brain tumors. In this study, we present a comprehensive performance evaluation of recent deep learning architectures for brain extraction, training models on mpMRI scans of pathologically-affected brains, with a particular focus on seeking a practically-applicable, low computational footprint approach, generalizable across multiple institutions, further facilitating collaborations. We identified a large retrospective multi-institutional dataset of \n mpMRI brain tumor scans, with manually-inspected and approved gold-standard segmentations, acquired during standard clinical practice under varying acquisition protocols, both from private institutional data and public (TCIA) collections. To facilitate optimal utilization of rich mpMRI data, we further introduce and evaluate a novel ‘‘modality-agnostic training’’ technique that can be applied using any available modality, without need for model retraining. Our results indicate that the modality-agnostic approach1 obtains accurate results, providing a generic and practical tool for brain extraction on scans with brain tumors.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S105381192030567X"
+    },
+    {
+      "name": "Federated learning in medicine: facilitating multi-institutional collaborations without sharing patient data",
+      "publisher": "Nature Publishing Group UK",
+      "releaseDate": "2020-07-28",
+      "summary": "Several studies underscore the potential of deep learning in identifying complex patterns, leading to diagnostic and prognostic biomarkers. Identifying sufficiently large and diverse datasets, required for training, is a significant challenge in medicine and can rarely be found in individual institutions. Multi-institutional collaborations based on centrally-shared patient data face privacy and ownership challenges. Federated learning is a novel paradigm for data-private multi-institutional collaborations, where model-learning leverages all available data without sharing data between institutions, by distributing the model-training to the data-owners and aggregating their results. We show that federated learning among 10 institutions results in models reaching 99% of the model quality achieved with centralized data, and evaluate generalizability on data from institutions outside the federation. We further investigate the effects of data distribution across collaborating institutions on model quality and learning patterns, indicating that increased access to data through data private multi-institutional collaborations can benefit model quality more than the errors introduced by the collaborative method. Finally, we compare with other collaborative-learning approaches demonstrating the superiority of federated learning, and discuss practical implementation considerations. Clinical adoption of federated learning is expected to lead to models trained on datasets of unprecedented size, hence have a catalytic impact towards precision/personalized medicine.",
+      "url": "https://www.nature.com/articles/s41598-020-69250-1"
+    },
+    {
+      "name": "The Cancer Imaging Phenomics Toolkit (CaPTk): Technical Overview",
+      "publisher": "Springer International Publishing",
+      "releaseDate": "2020-01-01",
+      "summary": "The purpose of this manuscript is to provide an overview of the technical specifications and architecture of the Cancer imaging Phenomics Toolkit (CaPTk www.cbica.upenn.edu/captk), a cross-platform, open-source, easy-to-use, and extensible software platform for analyzing 2D and 3D images, currently focusing on radiographic scans of brain, breast, and lung cancer. The primary aim of this platform is to enable swift and efficient translation of cutting-edge academic research into clinically useful tools relating to clinical quantification, analysis, predictive modeling, decision-making, and reporting workflow. CaPTk builds upon established open-source software toolkits, such as the Insight Toolkit (ITK) and OpenCV, to bring together advanced computational functionality. This functionality describes specialized, as well as general-purpose, image analysis algorithms developed during active multi-disciplinary collaborative research studies to address real clinical requirements. The target audience of CaPTk consists of both computational scientists and clinical experts. For the former it provides i) an efficient image viewer offering the ability of integrating new algorithms, and ii) a library of readily-available clinically-relevant algorithms, allowing batch-processing of multiple subjects. For the latter it facilitates the use of complex algorithms for clinically-relevant studies through a user-friendly interface, eliminating the prerequisite of a substantial computational background. CaPTk’s long-term goal is to provide widely-used technology to make use of advanced quantitative imaging analytics in cancer prediction, diagnosis and prognosis, leading toward a better understanding of the biological mechanisms of cancer development.",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-46643-5_38"
+    },
+    {
+      "name": "Cancer imaging phenomics toolkit: quantitative imaging analytics for precision diagnostics and predictive modeling of clinical outcome",
+      "publisher": "Society of Photo-Optical Instrumentation Engineers",
+      "releaseDate": "2018-01-01",
+      "summary": "The growth of multiparametric imaging protocols has paved the way for quantitative imaging phenotypes that predict treatment response and clinical outcome, reflect underlying cancer molecular characteristics and spatiotemporal heterogeneity, and can guide personalized treatment planning. This growth has underlined the need for efficient quantitative analytics to derive high-dimensional imaging signatures of diagnostic and predictive value in this emerging era of integrated precision diagnostics. This paper presents cancer imaging phenomics toolkit (CaPTk), a new and dynamically growing software platform for analysis of radiographic images of cancer, currently focusing on brain, breast, and lung cancer. CaPTk leverages the value of quantitative imaging analytics along with machine learning to derive phenotypic imaging signatures, based on two-level functionality. First, image analysis algorithms are used to extract comprehensive panels of diverse and complementary features, such as multiparametric intensity histogram distributions, texture, shape, kinetics, connectomics, and spatial patterns. At the second level, these quantitative imaging signatures are fed into multivariate machine learning models to produce diagnostic, prognostic, and predictive biomarkers. Results from clinical studies in three areas are shown: (i) computational neuro-oncology of brain gliomas for precision diagnostics, prediction of outcome, and treatment planning; (ii) prediction of treatment response for breast and lung cancer, and (iii) risk assessment for breast cancer.",
+      "url": "https://doi.org/10.1117/1.JMI.5.1.011018"
+    },
+    {
+      "name": "Accurate Pose Estimation Using Single Marker Single Camera Calibration System",
+      "publisher": "SPIE",
+      "releaseDate": "2013-02-28",
+      "summary": "Visual marker based tracking is one of the most widely used tracking techniques in Augmented Reality (AR) applications. Generally, multiple square markers are needed to perform robust and accurate tracking. Various marker based methods for calibrating relative marker poses have already been proposed. However, the calibration accuracy of these methods relies on the order of the image sequence and pre-evaluation of pose-estimation errors, making the method offline. Several studies have shown that the accuracy of pose estimation for an individual square marker depends on camera distance and viewing angle. We propose a method to accurately model the error in the estimated pose and translation of a camera using a single marker via an online method based on the Scaled Unscented Transform (SUT). Thus, the pose estimation for each marker can be estimated with highly accurate calibration results independent of the order of image sequences compared to cases when this knowledge is not used. This removes the need for having multiple markers and an offline estimation system to calculate camera pose in an AR application.",
+      "url": "http://spie.org/x648.html?product_id=2006776"
+    },
+    {
+      "name": "Locomotion classification using EMG signal",
+      "publisher": "IEEE - ICIET",
+      "releaseDate": "2010-06-30",
+      "summary": "This work gives a comparative study on the use of Linear Discriminant Analysis (LDA), Artificial Neural Network (ANN) and Naive-Bayes Classifier (NBC) for recognizing various locomotion modes using parameters derived from the transient EMG signals taken from healthy subjects and thus provide a better control mechanism for lower limb prosthesis. These classifiers have been taken into consideration owing to their extensive use in various real-time applications.",
+      "url": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5625677&contentType=Conference+Publications&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A5625666%29%26rowsPerPage%3D75"
+    },
+    {
+      "name": "Real – Time Locomotion Classification using Transient EMG",
+      "publisher": "CSIO - CEMI",
+      "releaseDate": "2010-05-31",
+      "summary": "This work gives an analysis of a real time implementation of a classification system that is used as a control mechanism for lower limb prosthesis. ",
+      "url": "http://www.csio.res.in:8085/cemi/Presentation/OP-2.9%20no%20pptplex.ppt"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Front-End Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "API Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Documentation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Containers",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Debuggers",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Biomedical Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "OpenCV",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Vision",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Debugging",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MRI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Medical Imaging",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Image Processing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Education",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Applied Machine Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Pattern Recognition",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Deep Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mathematics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machine Learning Algorithms",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Algorithms",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Azure DevOps",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Image Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Object-Oriented Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Continuous Integration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Development Tools",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LaTeX",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Versioning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Research",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Communication",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Continuous Integration and Continuous Delivery (CI/CD)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Digital Image Processing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Artificial Intelligence",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Embedded Systems",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Federated Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Matlab",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cross-functional Team Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Digital Signal Processors",
+      "level": "",
+      "keywords": []
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Elementary",
+      "language": "Bengali"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "fluency": "Professional Working",
+      "language": "English"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "fluency": "Elementary",
+      "language": "German"
+    },
+    {
+      "fluency": "Professional Working",
+      "language": "Hindi"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Oriya"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "Punjabi"
     }
   ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
-  ]
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
 }
