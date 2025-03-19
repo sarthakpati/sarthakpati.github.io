@@ -6,7 +6,6 @@
     "image": "",
     "email": "",
     "phone": "",
-    "url": "https://scholar.google.com/citations?hl=en&user=lL5jPysAAAAJ&view_op=list_works&sortby=pubdate",
     "summary": "Software Architect specializing in designing robust and deployable solutions that leverage machine learning and artificial intelligence in healthcare.",
     "location": {
       "countryCode": "US",
@@ -27,7 +26,7 @@
       "startDate": "2023-09-30",
       "endDate": "",
       "highlights": [],
-      "summary": "- Design and develop software infrastructure to further Federated Learning R&D activities, while providing technical direction to lead contributors from individual labs at the Department of Pathology & Laboratory Medicine, IU School of Medicine\n- Ensure compliance with data integrity, privacy, & security standards in coordination with internal initiatives and with public-facing community-driven projects\n- Define software development standards for internal and external software projects (e.g., provide guidance regarding APIs, CI/CD, and other best practices for partner labs) \n- Coordinate and establish academic collaborations and industrial partnerships (e.g., MLCommons, Intel, NVidia, FlyWheel, SECTRA)\n- Contribute material to relevant grant proposal applications\n- Plan, prepare, and organize knowledge dissemination (e.g., technical/educational seminars and courses, presentation and tutorials in conferences)",
+      "summary": "Designed and developed software infrastructure to advance Federated Learning R&D at the Department of Pathology & Laboratory Medicine, IU School of Medicine. Led compliance with data integrity, privacy, and security standards while defining best practices for software development. Coordinated academic collaborations and industrial partnerships, contributed to grant proposals, and facilitated knowledge sharing through seminars, courses, and conference presentations.",
       "url": "https://www.linkedin.com/company/indiana-university/"
     },
     {
@@ -36,7 +35,7 @@
       "startDate": "2023-02-28",
       "endDate": "2023-08-31",
       "highlights": [],
-      "summary": "- Leading the development and architecture of the Federated Tumor Segmentation (FeTS) Initiative [www.fets.ai], which aims to facilitate the largest international federation of healthcare institutions\n- Architecting and development of the Generalized Nuanced Deep Learning Framework (GaNDLF) [https://github.com/CBICA/GaNDLF/] to leverage deep learning for segmentation, regression, and classification\n- Enabling transfer of cutting-edge medical imaging research to the open-source scientific community.\n- Conduct seminar series on using Python/C++ for medical image analysis and machine learning using PyTorch, ITK, OpenCV, etc. (www.med.upenn.edu/sbia/resources-tutorials.html).",
+      "summary": "Spearheaded the development and architecture of the Federated Tumor Segmentation (FeTS) Initiative, facilitating the largest international federation of healthcare institutions. Designed and implemented the Generalized Nuanced Deep Learning Framework (GaNDLF) to advance segmentation, regression, and classification using deep learning. Bridged cutting-edge medical imaging research with the open-source scientific community and conducted seminar series on Python/C++ for medical image analysis and machine learning using tools like PyTorch, ITK, and OpenCV.",
       "url": "https://www.linkedin.com/school/university-of-pennsylvania/",
       "location": "Philadelphia, USA"
     },
@@ -46,7 +45,7 @@
       "startDate": "2014-12-31",
       "endDate": "2023-02-28",
       "highlights": [],
-      "summary": "- Leading the Software Development efforts at the Center for Biomedical Image Computing and Analytics (www.med.upenn.edu/cbica)\n- Lead Developer of the Federated Tumor Segmentation (FeTS) Initiative [www.fets.ai], which aims to facilitate the largest international federation of healthcare institutions\n- Development of the Generalized Nuanced Deep Learning Framework (GaNDLF) [https://github.com/CBICA/GaNDLF/] to leverage deep learning for segmentation, regression, and classification\n- Development of the Cancer Imaging Phenomics Toolkit (CaPTk), a comprehensive imaging analytics suite of algorithms aiming to derive extensive panels of quantitative imaging features and integrate them into diagnostic and predictive models [www.med.upenn.edu/cbica/captk]\n- Enabling transfer of cutting-edge medical imaging research to the open-source scientific community.\n- Conduct seminar series on using C++ for medical image analysis and machine learning using ITK, OpenCV, etc. (www.med.upenn.edu/sbia/resources-tutorials.html).",
+      "summary": "Led software development at the Center for Biomedical Image Computing and Analytics, driving initiatives like the Federated Tumor Segmentation (FeTS) to support global healthcare collaborations. Spearheaded the development of tools such as the Generalized Nuanced Deep Learning Framework (GaNDLF) for segmentation, regression, and classification, and the Cancer Imaging Phenomics Toolkit (CaPTk) for advanced imaging analytics and predictive modeling. Enabled the transition of medical imaging research into the open-source community and conducted seminars on medical image analysis and machine learning using C++ and tools like ITK and OpenCV.",
       "url": "https://www.linkedin.com/school/university-of-pennsylvania/",
       "location": "Philadelphia, USA"
     },
@@ -56,7 +55,7 @@
       "startDate": "2013-04-30",
       "endDate": "2014-05-31",
       "highlights": [],
-      "summary": "[MS Thesis] Tracking flexible needles in Ultrasound-assisted Robotic surgery using particle filters.\nReal-time tracking and mosaicking of surgical tools and the retina in Ophthalmoscopy datasets.",
+      "summary": "[MS Thesis] Tracking flexible needles in Ultrasound-assisted Robotic surgery using particle filters and real-time tracking and mosaicking of surgical tools and the retina in Ophthalmoscopy datasets.",
       "url": "https://www.linkedin.com/school/technische-universitat-munchen/"
     },
     {
@@ -65,7 +64,7 @@
       "startDate": "2013-09-30",
       "endDate": "2014-04-30",
       "highlights": [],
-      "summary": "I worked on the extending the software framework by adding support for more file types and improving the segmentation and registration framework.",
+      "summary": "Extending the software framework by adding support for more file types and improving the segmentation and registration framework.",
       "url": "https://www.linkedin.com/company/microdimensions/"
     },
     {
@@ -283,78 +282,6 @@
       "endDate": "2028-02-28",
       "startDate": "2025-02-28",
       "url": "https://www.citiprogram.org/verify/?w73e40818-e6bf-4826-8637-06bf95b2ccf8-68284689"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Estimating Glioblastoma Biophysical Growth Parameters Using Deep Learning Regression",
-      "publisher": "Springer International Publishing",
-      "releaseDate": "2021-01-01",
-      "summary": "Glioblastoma (GBM) is arguably the most aggressive, infiltrative, and heterogeneous type of adult brain tumor. Biophysical modeling of GBM growth has contributed to more informed clinical decision-making. However, deploying a biophysical model to a clinical environment is challenging since underlying computations are quite expensive and can take several hours using existing technologies. Here we present a scheme to accelerate the computation. In particular, we present a deep learning (DL)-based logistic regression model to estimate the GBM’s biophysical growth in seconds. This growth is defined by three tumor-specific parameters: 1) a diffusion coefficient in white matter (Dw), which prescribes the rate of infiltration of tumor cells in white matter, 2) a mass-effect parameter (Mp), which defines the average tumor expansion, and 3) the estimated time (T) in number of days that the tumor has been growing. Preoperative structural multi-parametric MRI (mpMRI) scans from n=135\n subjects of the TCGA-GBM imaging collection are used to quantitatively evaluate our approach. We consider the mpMRI intensities within the region defined by the abnormal FLAIR signal envelope for training one DL model for each of the tumor-specific growth parameters. We train and validate the DL-based predictions against parameters derived from biophysical inversion models. The average Pearson correlation coefficients between our DL-based estimations and the biophysical parameters are 0.85 for Dw, 0.90 for Mp, and 0.94 for T, respectively. This study unlocks the power of tumor-specific parameters from biophysical tumor growth estimation. It paves the way towards their clinical translation and opens the door for leveraging advanced radiomic descriptors in future studies by means of a significantly faster parameter reconstruction compared to biophysical growth modeling approaches.",
-      "url": "https://link.springer.com/chapter/10.1007/978-3-030-72084-1_15"
-    },
-    {
-      "name": "Reproducibility analysis of multi‐institutional paired expert annotations and radiomic features of the Ivy Glioblastoma Atlas Project (Ivy GAP) dataset",
-      "publisher": "Medical Physics",
-      "releaseDate": "2020-12-01",
-      "summary": "The availability of radiographic magnetic resonance imaging (MRI) scans for the Ivy Glioblastoma Atlas Project (Ivy GAP) has opened up opportunities for development of radiomic markers for prognostic/predictive applications in glioblastoma (GBM). In this work, we address two critical challenges with regard to developing robust radiomic approaches: (a) the lack of availability of reliable segmentation labels for glioblastoma tumor sub-compartments (i.e., enhancing tumor, non-enhancing tumor core, peritumoral edematous/infiltrated tissue) and (b) identifying “reproducible” radiomic features that are robust to segmentation variability across readers/sites.",
-      "url": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.14556"
-    },
-    {
-      "name": "GLIOBLASTOMA BIOPHYSICAL GROWTH ESTIMATION USING DEEP LEARNING-BASED REGRESSION",
-      "publisher": "Oxford University Press",
-      "releaseDate": "2020-11-02",
-      "summary": "Diffuse midline glioma is the leading cause of brain tumor death among the pediatric population. Drugs that show notable promise in preclinical models inevitably fail to demonstrate efficacy in clinical trials, likely due to the inadequacy of preclinical models. We have recently proposed glioblastoma models derived from human induced pluripotent stem cells (hiPSCs) genetically engineered with different combinations of glioblastoma-associated genetic alterations as a platform to search for therapeutic targets. These glioblastoma avatars authentically recapitulated the different pathobiology of glioblastoma subtypes, depending on what genetic alterations to be introduced. To investigate the biology and to develop novel therapeutics for diffuse midline glioma with H3K27M mutation, we have established a novel model by introducing H3.3 K27M mutation together with one of the most common concurrent genetic alterations, TP53 R248Q mutation, into hiPSCs through CRISPR/Cas9 genome engineering. Orthotopic engraftment of the neural progenitor cells derived from these edited hiPSCs formed diffusely invasive brainstem tumors with histological features of the diffuse midline glioma. These tumor avatars presented a global reduction in H3K27me3 accompanied by the expression of H3K27M. Transcriptome analyses of these models revealed that these avatars with H3K27M cluster apart from the pediatric glioma samples without this particular mutation, and that they present signatures of oligodendroglial progenitor differentiation as discovered in patient samples with this mutation. Using these models faithfully recapitulating histology and pathobiology of the patient tumors, we have performed drug screening and confirmed that their sensitivity to known drugs, including an EZH2 inhibitor and histone deacetylase inhibitors.",
-      "url": "https://academic.oup.com/neuro-oncology/article/22/Supplement_2/ii229/5961377"
-    },
-    {
-      "name": "Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training",
-      "publisher": "Academic Press",
-      "releaseDate": "2020-10-15",
-      "summary": "Brain extraction, or skull-stripping, is an essential pre-processing step in neuro-imaging that has a direct impact on the quality of all subsequent processing and analyses steps. It is also a key requirement in multi-institutional collaborations to comply with privacy-preserving regulations. Existing automated methods, including Deep Learning (DL) based methods that have obtained state-of-the-art results in recent years, have primarily targeted brain extraction without considering pathologically-affected brains. Accordingly, they perform sub-optimally when applied on magnetic resonance imaging (MRI) brain scans with apparent pathologies such as brain tumors. Furthermore, existing methods focus on using only T1-weighted MRI scans, even though multi-parametric MRI (mpMRI) scans are routinely acquired for patients with suspected brain tumors. In this study, we present a comprehensive performance evaluation of recent deep learning architectures for brain extraction, training models on mpMRI scans of pathologically-affected brains, with a particular focus on seeking a practically-applicable, low computational footprint approach, generalizable across multiple institutions, further facilitating collaborations. We identified a large retrospective multi-institutional dataset of \n mpMRI brain tumor scans, with manually-inspected and approved gold-standard segmentations, acquired during standard clinical practice under varying acquisition protocols, both from private institutional data and public (TCIA) collections. To facilitate optimal utilization of rich mpMRI data, we further introduce and evaluate a novel ‘‘modality-agnostic training’’ technique that can be applied using any available modality, without need for model retraining. Our results indicate that the modality-agnostic approach1 obtains accurate results, providing a generic and practical tool for brain extraction on scans with brain tumors.",
-      "url": "https://www.sciencedirect.com/science/article/pii/S105381192030567X"
-    },
-    {
-      "name": "Federated learning in medicine: facilitating multi-institutional collaborations without sharing patient data",
-      "publisher": "Nature Publishing Group UK",
-      "releaseDate": "2020-07-28",
-      "summary": "Several studies underscore the potential of deep learning in identifying complex patterns, leading to diagnostic and prognostic biomarkers. Identifying sufficiently large and diverse datasets, required for training, is a significant challenge in medicine and can rarely be found in individual institutions. Multi-institutional collaborations based on centrally-shared patient data face privacy and ownership challenges. Federated learning is a novel paradigm for data-private multi-institutional collaborations, where model-learning leverages all available data without sharing data between institutions, by distributing the model-training to the data-owners and aggregating their results. We show that federated learning among 10 institutions results in models reaching 99% of the model quality achieved with centralized data, and evaluate generalizability on data from institutions outside the federation. We further investigate the effects of data distribution across collaborating institutions on model quality and learning patterns, indicating that increased access to data through data private multi-institutional collaborations can benefit model quality more than the errors introduced by the collaborative method. Finally, we compare with other collaborative-learning approaches demonstrating the superiority of federated learning, and discuss practical implementation considerations. Clinical adoption of federated learning is expected to lead to models trained on datasets of unprecedented size, hence have a catalytic impact towards precision/personalized medicine.",
-      "url": "https://www.nature.com/articles/s41598-020-69250-1"
-    },
-    {
-      "name": "The Cancer Imaging Phenomics Toolkit (CaPTk): Technical Overview",
-      "publisher": "Springer International Publishing",
-      "releaseDate": "2020-01-01",
-      "summary": "The purpose of this manuscript is to provide an overview of the technical specifications and architecture of the Cancer imaging Phenomics Toolkit (CaPTk www.cbica.upenn.edu/captk), a cross-platform, open-source, easy-to-use, and extensible software platform for analyzing 2D and 3D images, currently focusing on radiographic scans of brain, breast, and lung cancer. The primary aim of this platform is to enable swift and efficient translation of cutting-edge academic research into clinically useful tools relating to clinical quantification, analysis, predictive modeling, decision-making, and reporting workflow. CaPTk builds upon established open-source software toolkits, such as the Insight Toolkit (ITK) and OpenCV, to bring together advanced computational functionality. This functionality describes specialized, as well as general-purpose, image analysis algorithms developed during active multi-disciplinary collaborative research studies to address real clinical requirements. The target audience of CaPTk consists of both computational scientists and clinical experts. For the former it provides i) an efficient image viewer offering the ability of integrating new algorithms, and ii) a library of readily-available clinically-relevant algorithms, allowing batch-processing of multiple subjects. For the latter it facilitates the use of complex algorithms for clinically-relevant studies through a user-friendly interface, eliminating the prerequisite of a substantial computational background. CaPTk’s long-term goal is to provide widely-used technology to make use of advanced quantitative imaging analytics in cancer prediction, diagnosis and prognosis, leading toward a better understanding of the biological mechanisms of cancer development.",
-      "url": "https://link.springer.com/chapter/10.1007/978-3-030-46643-5_38"
-    },
-    {
-      "name": "Cancer imaging phenomics toolkit: quantitative imaging analytics for precision diagnostics and predictive modeling of clinical outcome",
-      "publisher": "Society of Photo-Optical Instrumentation Engineers",
-      "releaseDate": "2018-01-01",
-      "summary": "The growth of multiparametric imaging protocols has paved the way for quantitative imaging phenotypes that predict treatment response and clinical outcome, reflect underlying cancer molecular characteristics and spatiotemporal heterogeneity, and can guide personalized treatment planning. This growth has underlined the need for efficient quantitative analytics to derive high-dimensional imaging signatures of diagnostic and predictive value in this emerging era of integrated precision diagnostics. This paper presents cancer imaging phenomics toolkit (CaPTk), a new and dynamically growing software platform for analysis of radiographic images of cancer, currently focusing on brain, breast, and lung cancer. CaPTk leverages the value of quantitative imaging analytics along with machine learning to derive phenotypic imaging signatures, based on two-level functionality. First, image analysis algorithms are used to extract comprehensive panels of diverse and complementary features, such as multiparametric intensity histogram distributions, texture, shape, kinetics, connectomics, and spatial patterns. At the second level, these quantitative imaging signatures are fed into multivariate machine learning models to produce diagnostic, prognostic, and predictive biomarkers. Results from clinical studies in three areas are shown: (i) computational neuro-oncology of brain gliomas for precision diagnostics, prediction of outcome, and treatment planning; (ii) prediction of treatment response for breast and lung cancer, and (iii) risk assessment for breast cancer.",
-      "url": "https://doi.org/10.1117/1.JMI.5.1.011018"
-    },
-    {
-      "name": "Accurate Pose Estimation Using Single Marker Single Camera Calibration System",
-      "publisher": "SPIE",
-      "releaseDate": "2013-02-28",
-      "summary": "Visual marker based tracking is one of the most widely used tracking techniques in Augmented Reality (AR) applications. Generally, multiple square markers are needed to perform robust and accurate tracking. Various marker based methods for calibrating relative marker poses have already been proposed. However, the calibration accuracy of these methods relies on the order of the image sequence and pre-evaluation of pose-estimation errors, making the method offline. Several studies have shown that the accuracy of pose estimation for an individual square marker depends on camera distance and viewing angle. We propose a method to accurately model the error in the estimated pose and translation of a camera using a single marker via an online method based on the Scaled Unscented Transform (SUT). Thus, the pose estimation for each marker can be estimated with highly accurate calibration results independent of the order of image sequences compared to cases when this knowledge is not used. This removes the need for having multiple markers and an offline estimation system to calculate camera pose in an AR application.",
-      "url": "http://spie.org/x648.html?product_id=2006776"
-    },
-    {
-      "name": "Locomotion classification using EMG signal",
-      "publisher": "IEEE - ICIET",
-      "releaseDate": "2010-06-30",
-      "summary": "This work gives a comparative study on the use of Linear Discriminant Analysis (LDA), Artificial Neural Network (ANN) and Naive-Bayes Classifier (NBC) for recognizing various locomotion modes using parameters derived from the transient EMG signals taken from healthy subjects and thus provide a better control mechanism for lower limb prosthesis. These classifiers have been taken into consideration owing to their extensive use in various real-time applications.",
-      "url": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5625677&contentType=Conference+Publications&sortType%3Dasc_p_Sequence%26filter%3DAND%28p_IS_Number%3A5625666%29%26rowsPerPage%3D75"
-    },
-    {
-      "name": "Real – Time Locomotion Classification using Transient EMG",
-      "publisher": "CSIO - CEMI",
-      "releaseDate": "2010-05-31",
-      "summary": "This work gives an analysis of a real time implementation of a classification system that is used as a control mechanism for lower limb prosthesis. ",
-      "url": "http://www.csio.res.in:8085/cemi/Presentation/OP-2.9%20no%20pptplex.ppt"
     }
   ],
   "skills": [
