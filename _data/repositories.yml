@@ -6,6 +6,7 @@ repo_description_lines_max: 2
 github_repos:
   - mlcommons/GaNDLF
   - mlcommons/GaNDLF-Synth
+  - mlcommons/MedPerf
   - securefederatedai/openfl
   - FETS-AI/Front-End
   - CBICA/CaPTk
