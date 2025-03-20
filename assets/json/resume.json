@@ -26,14 +26,15 @@
       "studyType": "Doctor of Philosophy",
       "startDate": "2020-03-31",
       "endDate": "2025-02-28",
-      "score": "Summa cum Laude"
+      "score": "Summa cum Laude",
+      "url": "https://nbn-resolving.org/urn:nbn:de:bvb:91-diss-20250224-1734184-0-4"
     },
     {
       "institution": "Technical University of Munich",
       "area": "Biomedical Computing",
       "studyType": "Master of Science",
       "startDate": "2011-07-01",
-      "endDate": "2014-06-3"
+      "endDate": "2014-06-30"
     },
     {
       "institution": "Manipal University",
@@ -80,7 +81,7 @@
       "position": "Senior Software Developer",
       "startDate": "2014-12-31",
       "endDate": "2023-02-28",
-      "summary": "Led software development at the Center for Biomedical Image Computing and Analytics, driving initiatives like the Federated Tumor Segmentation (FeTS) to support global healthcare collaborations. Spearheaded the development of tools such as the Generalized Nuanced Deep Learning Framework (GaNDLF) for segmentation, regression, and classification, and the Cancer Imaging Phenomics Toolkit (CaPTk) for advanced imaging analytics and predictive modeling. Enabled the transition of medical imaging research into the open-source community and conducted seminars on medical image analysis and machine learning using C++ and tools like ITK and OpenCV.",
+      "summary": "",
       "highlights": [
         "Led the development of the Federated Tumor Segmentation (FeTS) Initiative",
         "Designed and implemented the Generalized Nuanced Deep Learning Framework (GaNDLF)",
