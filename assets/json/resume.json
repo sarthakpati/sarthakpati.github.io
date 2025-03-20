@@ -33,14 +33,7 @@
       "area": "Biomedical Computing",
       "studyType": "Master of Science",
       "startDate": "2011-07-01",
-      "endDate": "2014-06-3",
-      "score": "",
-      "courses": [
-        "Medical Imaging Techniques",
-        "3D Computer Vision",
-        "Tracking and Detection in Computer Vision",
-        "Machine Learning in Medical Imaging"
-      ]
+      "endDate": "2014-06-3"
     },
     {
       "institution": "Manipal University",
@@ -48,14 +41,7 @@
       "studyType": "Bachelor of Engineering",
       "startDate": "2006-07-01",
       "endDate": "2010-06-30",
-      "score": "",
-      "courses": [
-        "Signal Processing",
-        "Advanced Signal Processing",
-        "Image Processing",
-        "Advanced Image Processing",
-        "Pattern Recognition"
-      ]
+      "score": ""
     }
   ],
   "work": [
@@ -64,8 +50,14 @@
       "position": "Software Architect",
       "startDate": "2023-09-30",
       "endDate": "",
-      "highlights": [],
-      "summary": "Designed and developed software infrastructure to advance Federated Learning R&D at the Department of Pathology & Laboratory Medicine, IU School of Medicine. Led compliance with data integrity, privacy, and security standards while defining best practices for software development. Coordinated academic collaborations and industrial partnerships, contributed to grant proposals, and facilitated knowledge sharing through seminars, courses, and conference presentations.",
+      "summary": "",
+      "highlights": [
+        "Designed and developed software infrastructure to advance Federated Learning R&D",
+        "Led compliance with data integrity, privacy, and security standards",
+        "Defined best practices for software development",
+        "Coordinated academic collaborations and industrial partnerships",
+        "Contributed to grant proposals"
+      ],
       "url": "https://www.linkedin.com/company/indiana-university/"
     },
     {
@@ -73,8 +65,13 @@
       "position": "Software Architect",
       "startDate": "2023-02-28",
       "endDate": "2023-08-31",
-      "highlights": [],
-      "summary": "Spearheaded the development and architecture of the Federated Tumor Segmentation (FeTS) Initiative, facilitating the largest international federation of healthcare institutions. Designed and implemented the Generalized Nuanced Deep Learning Framework (GaNDLF) to advance segmentation, regression, and classification using deep learning. Bridged cutting-edge medical imaging research with the open-source scientific community and conducted seminar series on Python/C++ for medical image analysis and machine learning using tools like PyTorch, ITK, and OpenCV.",
+      "summary": "",
+      "highlights": [
+        "Led the development of the Federated Tumor Segmentation (FeTS) Initiative",
+        "Designed, implemented and led the development of the Generalized Nuanced Deep Learning Framework (GaNDLF)",
+        "Conducted seminars on medical image analysis and machine learning using Python/C++",
+        "Collaborated with the open-source scientific community to enable the transition of medical imaging research into the open-source community"
+      ],
       "url": "https://www.linkedin.com/school/university-of-pennsylvania/",
       "location": "Philadelphia, USA"
     },
@@ -83,8 +80,12 @@
       "position": "Senior Software Developer",
       "startDate": "2014-12-31",
       "endDate": "2023-02-28",
-      "highlights": [],
       "summary": "Led software development at the Center for Biomedical Image Computing and Analytics, driving initiatives like the Federated Tumor Segmentation (FeTS) to support global healthcare collaborations. Spearheaded the development of tools such as the Generalized Nuanced Deep Learning Framework (GaNDLF) for segmentation, regression, and classification, and the Cancer Imaging Phenomics Toolkit (CaPTk) for advanced imaging analytics and predictive modeling. Enabled the transition of medical imaging research into the open-source community and conducted seminars on medical image analysis and machine learning using C++ and tools like ITK and OpenCV.",
+      "highlights": [
+        "Led the development of the Federated Tumor Segmentation (FeTS) Initiative",
+        "Designed and implemented the Generalized Nuanced Deep Learning Framework (GaNDLF)",
+        "Enabled the transition of medical imaging research into the open-source community"
+      ],
       "url": "https://www.linkedin.com/school/university-of-pennsylvania/",
       "location": "Philadelphia, USA"
     },
@@ -93,8 +94,11 @@
       "position": "Student Research Assistant",
       "startDate": "2013-04-30",
       "endDate": "2014-05-31",
-      "highlights": [],
-      "summary": "[MS Thesis] Tracking flexible needles in Ultrasound-assisted Robotic surgery using particle filters and real-time tracking and mosaicking of surgical tools and the retina in Ophthalmoscopy datasets.",
+      "highlights": [
+        "[MS Thesis] Tracking flexible needles in Ultrasound-assisted Robotic surgery using particle filters",
+        "Real-time tracking and mosaicking of surgical tools and the retina in Ophthalmoscopy datasets"
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/school/technische-universitat-munchen/"
     },
     {
@@ -102,8 +106,10 @@
       "position": "Student Developer",
       "startDate": "2013-09-30",
       "endDate": "2014-04-30",
-      "highlights": [],
-      "summary": "Extending the software framework by adding support for more file types and improving the segmentation and registration framework.",
+      "highlights": [
+        "Extending the software framework by adding support for more file types and improving the segmentation and registration framework."
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/company/microdimensions/"
     },
     {
@@ -111,8 +117,10 @@
       "position": "Working Student",
       "startDate": "2012-10-31",
       "endDate": "2013-04-30",
-      "highlights": [],
-      "summary": "Angio-IVUS Co-registration with 3D Reconstructed Vessels.",
+      "highlights": [
+        "Angio-IVUS Co-registration with 3D Reconstructed Vessels."
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/company/siemens/",
       "location": "Forchheim, Germany"
     },
@@ -121,8 +129,10 @@
       "position": "Student Research Assistant",
       "startDate": "2012-04-30",
       "endDate": "2012-09-30",
-      "highlights": [],
-      "summary": "Real-time camera pose estimation for a single camera single marker system.",
+      "highlights": [
+        "Real-time camera pose estimation for a single camera single marker system."
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/school/technische-universitat-munchen/"
     },
     {
@@ -130,8 +140,10 @@
       "position": "Working Student",
       "startDate": "2012-02-28",
       "endDate": "2012-04-30",
-      "highlights": [],
-      "summary": "Detection of non-spherical markers for industrial tracking.",
+      "highlights": [
+        "Detection of non-spherical markers for industrial tracking."
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/company/advanced-realtime-tracking-gmbh-cokg/",
       "location": "Weilheim, Bavaria"
     },
@@ -140,8 +152,10 @@
       "position": "Research Associate",
       "startDate": "2010-09-30",
       "endDate": "2011-07-31",
-      "highlights": [],
-      "summary": "Finite element analysis of simulated human cell clusters under electric field.\nDevelop a GUI for easier visualization",
+      "highlights": [
+        "Finite element analysis of simulated human cell clusters under electric field.\nDevelop a GUI for easier visualization"
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/school/iitdelhi/"
     },
     {
@@ -149,8 +163,10 @@
       "position": "Project Trainee",
       "startDate": "2010-01-31",
       "endDate": "2010-06-30",
-      "highlights": [],
-      "summary": "[BE Thesis] Real Time Locomotion Classification based on surface EMG signals from thigh muscles for use in an above-knee prosthetic device.",
+      "highlights": [
+        "[BE Thesis] Real Time Locomotion Classification based on surface EMG signals from thigh muscles for use in an above-knee prosthetic device."
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/school/iitdelhi/"
     },
     {
@@ -158,8 +174,10 @@
       "position": "Project Trainee",
       "startDate": "2009-06-30",
       "endDate": "2009-07-31",
-      "highlights": [],
-      "summary": "Quality assessment in modern MRI systems and analyze methods to improve image acquisition and processing for a new neck coil design",
+      "highlights": [
+        "Quality assessment in modern MRI systems and analyze methods to improve image acquisition and processing for a new neck coil design"
+      ],
+      "summary": "",
       "url": "https://www.linkedin.com/company/defence-research-and-development-organisation-drdo/"
     }
   ],
