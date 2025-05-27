@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: Workshops, tutorials, and courses
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## Upcoming
