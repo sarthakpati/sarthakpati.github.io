@@ -22,5 +22,7 @@ nav_order: 6
 ## Media Mentions
 
 - [Wall Street Journal covering my work](https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200) 
-- [Eureka Alert covering my work](https://www.eurekalert.org/pub_releases/2020-07/uops-nml072720.php)
+- [Eureka Alert covering my work](https://www.eurekalert.org/news-releases/972921)
 - [News Medical covering my work](https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx)
+- [IU News covering a grant award](https://news.iu.edu/live/news/37787-iu-led-study-uses-ai-to-predict-breast-cancer-risk)
+- [Science Daily covering a grant award](https://www.sciencedaily.com/releases/2022/12/221205104205.htm)
