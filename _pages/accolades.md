@@ -7,13 +7,6 @@ nav: true
 nav_order: 6
 ---
 
-## Media Mentions
-
-- https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200 
-- https://www.eurekalert.org/pub_releases/2020-07/uops-nml072720.php 
-- https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx 
-
-
 ## Awards
 
 - Dean's list for doctoral dissertation (**top 10%**) 2020-2024.
@@ -25,3 +18,9 @@ nav_order: 6
 - Magna cum Laude (**top 10%**) at Pendergrass Symposium 2021 (Generally Nuanced Deep Learning Framework).
 - **2nd place** in the Automatic Non-Rigid Histological Image Registration Challenge 2019.
 - **1st place** in the Brain Tumor Segmentation Challenge at MICCAI 2015.
+
+## Media Mentions
+
+- https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200 
+- https://www.eurekalert.org/pub_releases/2020-07/uops-nml072720.php 
+- https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx 
