@@ -2,15 +2,15 @@
 layout: page
 permalink: /accolades/
 title: Accolades
-description: Accolades and awards
+description: Accolades courtesy of the amazing people I have worked with.
 nav: true
 nav_order: 6
 ---
 
 ## Awards
 
-- Dean's list for doctoral dissertation (**top 10%**) 2020-2024.
-- Nature Communications Engineering Editor's choice 2023 for GaNDLF [[ref](https://www.nature.com/articles/s44172-023-00151-7#Sec4)].
+- **Dean's list** for doctoral dissertation (**top 10%**) 2020-2024.
+- Nature Communications Engineering **Editor's choice 2023** for GaNDLF [[ref](https://www.nature.com/articles/s44172-023-00151-7#Sec4)].
 - Nature Communications **Top 25** Health Sciences Articles 2022 for Federated Learning [[ref](https://www.nature.com/collections/hefjafigfj#:~:text=cancer%20boundary%20detection-,Federated%20ML%20(FL),-provides%20an%20alternative)].
 - Plenary presentation (**top 8** of all submitted abstracts) at Pendergrass Symposium 2023 for the Comprehensive Federated Ecosystem (COFE).
 - Best poster award (**top 5%**) at NIH Annual Scientific Meeting of the ITCR funding program 2020 and 2022. 
