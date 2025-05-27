@@ -25,11 +25,16 @@ nav_order: 7
 
 - Tutorial on Federated Learning at [Radiological Society of North America (RSNA)](https://github.com/CollaborativeFederatedLearningTutorials/website/blob/main/docs/archive/2023_rsna_tutorial.md)
 - Presentation at University of Edinburgh: https://talks.is.ed.ac.uk/talk/2040/show
-- Multiple presentations at Georgetown University
+- Invited talk on reproducible AI at Georgetown University
 
 ### 2022
 
 - Quantitative Imaging Reading Room and Live Demo for FeTS and CaPTk at the Radiological Society of North America (RSNA)
+- Invited talk on reproducible AI at Georgetown University
+
+### 2021
+
+- Invited talk on Federated Learning at Georgetown University
 
 ### 2018
 
