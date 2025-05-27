@@ -21,6 +21,6 @@ nav_order: 6
 
 ## Media Mentions
 
-- https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200 
-- https://www.eurekalert.org/pub_releases/2020-07/uops-nml072720.php 
-- https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx 
+- [Wall Street Journal covering my work](https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200) 
+- [Eureka Alert covering my work](https://www.eurekalert.org/pub_releases/2020-07/uops-nml072720.php)
+- [News Medical covering my work](https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx)
