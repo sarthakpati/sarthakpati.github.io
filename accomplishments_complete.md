@@ -24,8 +24,6 @@
 - **MammoFL:** Federated learning framework for mammographic breast density estimation.  
   *Reference:* [Muthukrishnan et al., 2022](https://doi.org/10.48550/arXiv.2206.05575)
 
----
-
 # Multi-Organ/General Medical Imaging
 
 ## Histopathology Analysis
@@ -42,7 +40,6 @@
 - **Review paper on privacy:** Literature review on privacy-preserving AI in medical imaging.  
   *Reference:* [Pati et al., 2024](https://doi.org/10.1016/j.patter.2024.100974)
 
----
 
 # Open-source contributions, framework development, and standardization
 
@@ -59,8 +56,6 @@
 ## Standardization & Reproducibility
 - **Image Biomarker Standardization Initiative (IBSI):** Contributed to radiomics standardization.  
   *Reference:* [Whybra et al., Radiology 2024](https://doi.org/10.1148/radiol.2020191145)
-
----
 
 # Recognition & Awards
 - **Dean's List:** Doctoral dissertation ranked in the top 10% (2020–2024).  
