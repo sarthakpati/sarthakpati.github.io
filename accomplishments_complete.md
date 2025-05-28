@@ -7,8 +7,7 @@
   *Reference:* [Villanueva-Meyer et al., Lancet Oncology 2024](https://doi.org/10.1016/S1470-2045(24)00316-4)
 
 ## Challenge Leadership & Benchmarking
-- **BraTS Challenge Series:** Led multiple Brain Tumor Segmentation challenges, including BraTS-METS 2023 for brain metastasis segmentation.  
-  *Reference:* [Moawad et al., 2024](https://doi.org/10.48550/arXiv.2306.00838)
+- **BraTS Challenge Series:** Led the organization of multiple Brain Tumor Segmentation (BraTS) challenges.
 - **1st Place:** Brain Tumor Segmentation Challenge (MICCAI 2015).
 
 ## Technical Innovations
