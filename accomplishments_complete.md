@@ -36,6 +36,8 @@
 ## Generative AI for Medical Imaging
 - **GenerateCT:** Text-conditional 3D chest CT generation, improving multi-abnormality classification by 11%.  
   *Reference:* [Hamamci et al., 2023](https://doi.org/10.1007/978-3-031-72986-7_8)
+- **GaNDLF-Synth:** Generative AI framework for synthetic medical image generation, enhancing privacy and AI performance.  
+  *Reference:* [Pati et al., 2023](https://doi.org/10.48550/arXiv.2410.00173)
 
 ## Privacy-Preserving AI
 - **Review paper on privacy:** Literature review on privacy-preserving AI in medical imaging.  
