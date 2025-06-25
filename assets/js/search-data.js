@@ -53,16 +53,21 @@ ninja.data = [{
           title: 'New book chapter at Trustworthy AI in Medical Imaging',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_3.html";
+              window.location.href = "/news/announcement_4.html";
             },},{id: "news-new-publication-at-neuroimage",
           title: 'New publication at NeuroImage',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
+              window.location.href = "/news/announcement_3.html";
             },},{id: "news-the-comprehensive-federated-learning-tutorial-has-been-accepted-at-miccai-2025-see-the-schedule-here",
           title: 'The Comprehensive Federated Learning Tutorial has been accepted at MICCAI 2025. See the...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "news-new-publication-at-journal-of-imaging-informatics-in-medicine",
+          title: 'New publication at Journal of Imaging Informatics in Medicine',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_1.html";
+            },},{
         id: 'social-bluesky',
         title: 'Bluesky',
         section: 'Socials',
