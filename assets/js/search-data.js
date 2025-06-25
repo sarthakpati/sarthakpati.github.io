@@ -49,11 +49,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-new-book-chapter-at-trustworthy-ai-in-medical-imaging",
-          title: 'New book chapter at Trustworthy AI in Medical Imaging',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_4.html";
             },},{id: "news-new-publication-at-neuroimage",
           title: 'New publication at NeuroImage',
           description: "",
@@ -67,6 +62,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1.html";
+            },},{id: "news-new-publication-at-journal-of-imaging-informatics-in-medicine",
+          title: 'New publication at Journal of Imaging Informatics in Medicine',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4.html";
             },},{
         id: 'social-bluesky',
         title: 'Bluesky',
