@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New publication at Journal of Imaging Informatics in Medicine
-date: 2025-06-25 16:11:00-0400
+date: 2025-06-25
 inline: false
 related_posts: false
 ---
