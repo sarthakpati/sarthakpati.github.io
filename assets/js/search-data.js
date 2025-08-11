@@ -49,21 +49,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-new-book-chapter-at-trustworthy-ai-in-medical-imaging",
-          title: 'New book chapter at Trustworthy AI in Medical Imaging',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_4.html";
             },},{id: "news-new-publication-at-neuroimage",
           title: 'New publication at NeuroImage',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_3.html";
+              window.location.href = "/news/announcement_4.html";
             },},{id: "news-the-comprehensive-federated-learning-tutorial-has-been-accepted-at-miccai-2025-see-the-schedule-here",
           title: 'The Comprehensive Federated Learning Tutorial has been accepted at MICCAI 2025. See the...',
           description: "",
           section: "News",},{id: "news-new-publication-at-journal-of-imaging-informatics-in-medicine",
           title: 'New publication at Journal of Imaging Informatics in Medicine',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2.html";
+            },},{id: "news-new-publication-at-computers-in-biology-and-medicine",
+          title: 'New publication at Computers in Biology and Medicine',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1.html";
