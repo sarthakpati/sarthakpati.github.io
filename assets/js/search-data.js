@@ -128,7 +128,7 @@ ninja.data = [{
         title: 'Work',
         section: 'Socials',
         handler: () => {
-          window.open("https://medicine.iu.edu/pathology/research/specialties/computational-pathology/pati", "_blank");
+          window.open("https://mlcommons.org/working-groups/data/medical/", "_blank");
         },
       },{
       id: 'light-theme',
