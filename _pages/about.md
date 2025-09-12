@@ -23,9 +23,9 @@ announcements:
 
 ---
 
-Software Architect & AI Researcher at [Indiana University's Division of Computational Pathology](https://medicine.iu.edu/pathology/research/computational-pathology), and Vice Chair for Algorithm Development and Benchmarking at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
+Solutions provider & Researcher specializing in AI and Machine Learning across multiple domains, and Vice Chair for Algorithm Development and Benchmarking at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
 
-I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies, including the [Federated Tumor Segmentation (FeTS)](https://www.fets.ai/) platform and the [Cancer Imaging Phenomics Toolkit (CaPTk)](https://www.med.upenn.edu/cbica/captk/). I am currently focusing my efforts on the following: 
+I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies. I am currently focusing my efforts on the following: 
 
 - [Federated Learning for Postoperative Segmentation of Treated glioblastoma (FL-PoST)](https://fets-ai.github.io/FL-PoST/)
 - [Generally Nuanced Deep Learning Framework (GaNDLF)](https://mlcommons.github.io/GaNDLF)
