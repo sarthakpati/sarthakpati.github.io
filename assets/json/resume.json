@@ -47,6 +47,18 @@
   ],
   "work": [
     {
+      "name": "Vaiyu Solutions",
+      "position": "Owner and CEO",
+      "startDate": "2023-10-30",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Providing specialized consulting related to AI operationalization and data monetization for 4+ clients",
+        "Managed an interdisciplinary team of 5 engineers and scientists to provide end-to-end solutions and engineering services for pharma, healthcare, finance, and energy clients of various sizes"
+      ],
+      "url": "https://www.linkedin.com/company/indiana-university/"
+    },
+    {
       "name": "Indiana University",
       "position": "Software Architect",
       "startDate": "2023-09-30",
