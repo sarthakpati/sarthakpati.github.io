@@ -9,9 +9,13 @@ nav_order: 7
 
 ## Upcoming
 
-- Tutorial on Federated Learning at [Medical Image Computing and Computer Assisted Intervention (MICCAI)](https://schedule.fl-tutorials.org/)
+- N.A.
 
 ## Previous
+
+### 2025
+
+- Tutorial on Federated Learning at [Medical Image Computing and Computer Assisted Intervention (MICCAI)](https://schedule.fl-tutorials.org/)
 
 ### 2024
 
@@ -19,7 +23,6 @@ nav_order: 7
 - Tutorial on Federated Learning at [Association for the Advancement of Artificial Intelligence (AAAI)](https://github.com/CollaborativeFederatedLearningTutorials/website/blob/main/docs/archive/2024_aaai.md)
 - Tutorial on Federated Learning at [International Symposium of Biomedical Imaging (ISBI)](https://github.com/CollaborativeFederatedLearningTutorials/website/blob/main/docs/archive/2024_isbi.md)
 - Presentation at MRI Together Conference on reproducible research in medical imaging
-
 
 ### 2023
 
