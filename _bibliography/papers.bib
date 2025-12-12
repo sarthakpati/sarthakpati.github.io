@@ -1,6 +1,41 @@
 ---
 ---
 
+@article{linardos2025federated,
+  title={The Federated Tumor Segmentation (FeTS) Challenge 2024: Efficient and Robust Aggregation Methods},
+  author={Linardos, Akis and Pati, Sarthak and Baid, Ujjwal and Edwards, Brandon and Foley, Patrick and Ta, Kevin and Chung, Verena and Sheller, Micah and Khan, Muhammad Irfan and Jafaritadi, Mojtaba and others},
+  journal={Machine Learning for Biomedical Imaging},
+  volume={3},
+  number={December 2025 issue},
+  pages={757--774},
+  year={2025},
+  abstract={We present the design and results of the MICCAI Federated Tumor Segmentation (FeTS) Challenge 2024, which focuses on federated learning (FL) for glioma sub-region segmentation in multi-parametric MRI scans. Unlike previous FeTS challenges, this iteration exclusively evaluates novel weight aggregation methods for increased robustness and efficiency. Participating methods from six teams are evaluated using a standardized FL setup and a multi-institutional dataset derived from the BraTS glioma benchmark—a dataset consisting of 1,251 training cases, 219 validation cases, and 570 hidden test cases, with segmentations of enhancing tumor (ET), tumor core (TC), and whole tumor (WT). Teams are ranked by a cumulative scoring system that accounts for segmentation performance—measured by Dice Similarity Coefficient (DSC) and 95th percentile Hausdorff Distance (HD95)—and communication efficiency assessed through the convergence score. A PID-controller-based approach emerges as the top-performing method, achieving a mean DSC of 0.733, 0.761, and 0.751 for ET, TC, and WT, respectively, with corresponding HD95 values of 33.922mm, 33.623mm, and 32.309mm, while also being the most efficient with a convergence score of 0.764. These results contribute to ongoing advances in FL, building on top-performers from previous iterations of the challenge and surpassing them, highlighting the potential of PID controllers as a powerful mechanism for stabilizing and optimizing weight aggregation in FL. The challenge code is available at https://github.com/FeTS-AI/Challenge}
+}
+
+@article{labella2025img,
+  title={IMG-69. FeTS 2.0: Federated learning sets benchmark in post-op GBM segmentation},
+  author={LaBella, Dominic and Kassem, Hasan and Edwards, Brandon and Sheller, Micah and Pati, Sarthak and Aristizabal, Alejandro and Huang, Raymond and Baid, Ujjwal and Karargyris, Alexandros and Bakas, Spyridon and others},
+  journal={Neuro-Oncology},
+  volume={27},
+  number={Supplement\_5},
+  pages={v289--v289},
+  year={2025},
+  publisher={Oxford University Press US},
+  abstract={Acquiring MRI scans from multi-institutional clinical data presents challenges, particularly in ensuring stability of radiomic features across sites with different scanners and acquisitions. Feature stability is critical for subsequent analyses, including disease classification and development of biomarkers. This work evaluates the stability of radiomic features extracted from medulloblastoma (malignant pediatric brain tumor) across 3 sites with different tesla strengths. Our goal is to evaluate features’ stability prior to incorporating them into diagnostic/prognostic frameworks.}
+}
+
+@article{thakur2025img,
+  title={IMG-121. BraTS-Pathology 2024: Insights and Future Directions Informed by the AI-RANO \& RANO-RGP Effort to Assess Glioblastoma Heterogeneity},
+  author={Thakur, Siddhesh and Malec, Sylwia and Pitarc, Carla and Linardos, Akis and Innani, Shubham and Adap, Sanyukta and Faghani, Shahriar and Moassefi, Mana and Nasrallah, MacLean and Ahrendsen, Jared and others},
+  journal={Neuro-Oncology},
+  volume={27},
+  number={Supplement\_5},
+  pages={v303--v304},
+  year={2025},
+  publisher={Oxford University Press US},
+  abstract={Standard-of-care (SOC) radiation therapy (RT) planning utilizes a uniform, isotropic 2cm-expansion of the T1-contrast-enhancing or T2-hyperintensity lesion (CEL, T2L) to generate a clinical target volume (CTV), without considering anisotropic tumor infiltration. We hypothesize that incorporating vision-transformers into our segmentation-based deep-learning approach for generating CTVs from predictions of tumor progression using either pre-surgical or pre-RT metabolic and diffusion-weighted MRI will result in personalized CTVs that are more sensitive to detecting infiltrating tumor and spare more healthy brain compared to SOC-CTVs.}
+}
+
 @article{pati2025screening,
   title={From screening to subtyping in a single glance},
   author={Pati, Sarthak},
