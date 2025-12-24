@@ -25,10 +25,8 @@ announcements:
 
 Solutions provider & Researcher specializing in AI and Machine Learning across multiple domains, and Vice Chair for Algorithm Development and Benchmarking at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
 
-I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies. I am currently focusing my efforts on the following: 
+I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies. On the open-source community, I am currently focusing my efforts on the following: 
 
-- [Federated Learning for Postoperative Segmentation of Treated glioblastoma (FL-PoST)](https://fets-ai.github.io/FL-PoST/)
-- [Generally Nuanced Deep Learning Framework (GaNDLF)](https://mlcommons.github.io/GaNDLF)
 - [MedPerf](https://www.medperf.org)
-- [Open Federated Learning (OpenFL)](https://github.com/securefederatedai/openfl) framework
+- Developing benchmarks for bespoke industry applications
 - Creating and maintaining as many [Anaconda recipes](https://github.com/orgs/conda-forge/teams?query=%40sarthakpati) as possible to maximize reproducibility and scientific impact of open-source software
