@@ -23,10 +23,13 @@ announcements:
 
 ---
 
-Solutions provider & Researcher specializing in AI and Machine Learning across multiple domains, and Vice Chair for Algorithm Development and Benchmarking at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
+**Solutions provider & Researcher** specializing in AI and Machine Learning across multiple domains, and **Vice Chair for Algorithm Development and Benchmarking** at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
 
 I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies. On the open-source community, I am currently focusing my efforts on the following: 
 
 - [MedPerf](https://www.medperf.org)
 - Developing benchmarks for bespoke industry applications
 - Creating and maintaining as many [Anaconda recipes](https://github.com/orgs/conda-forge/teams?query=%40sarthakpati) as possible to maximize reproducibility and scientific impact of open-source software
+
+### How to reach me 
+[sarthak [at] mlcommons.org](mailto:sarthak@mlcommons.org)
