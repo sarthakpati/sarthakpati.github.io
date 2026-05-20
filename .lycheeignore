@@ -1,2 +1,17 @@
+# Social sites that block automated link checkers
 linkedin.com
 reddit.com
+
+# Live pages that block non-browser user agents (verified reachable in a browser)
+wsj.com
+eurekalert.org
+docs.conda.io
+
+# Publisher DOIs that 403 automated checkers but resolve fine for readers
+https://doi.org/10.1200/JCO.2022.40.16_suppl.e13538
+https://doi.org/10.1148/radiol.2020191145
+https://doi.org/10.1088/1361-6560/ac97d9
+
+# Correct URL but server intermittently 5xx / refuses bot connections
+mlcommons.org/working-groups/data/medical
+talks.is.ed.ac.uk

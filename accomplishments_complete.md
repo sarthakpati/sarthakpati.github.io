@@ -3,7 +3,7 @@
 ## Federated Learning & Multi-Site Collaboration
 
 - **Federated Tumor Segmentation (FeTS):** Led the largest federated learning study to date (71 sites, 6 continents) for glioblastoma detection.  
-  _Reference:_ [Pati et al., Nature Communications 2022](https://doi.org/10.1038/s41467-022-30806-0)
+  _Reference:_ [Pati et al., Nature Communications 2022](https://doi.org/10.1038/s41467-022-33407-5)
 - **AI-RANO Initiative:** Co-authored standardization guidelines for AI in neuro-oncology.  
   _Reference:_ [Villanueva-Meyer et al., Lancet Oncology 2024](<https://doi.org/10.1016/S1470-2045(24)00316-4>)
 
@@ -53,9 +53,9 @@
 ## Federated Learning & Privacy-Preserving AI
 
 - **OpenFL:** Core contributor to the open federated learning library.  
-  _Reference:_ [Foley et al., 2022](https://doi.org/10.1088/1361-6560/ac4c7e)
+  _Reference:_ [Foley et al., 2022](https://doi.org/10.1088/1361-6560/ac97d9)
 - **MedPerf:** Federated benchmarking platform for medical AI.  
-  _Reference:_ [Karargyris et al., Nature Machine Intelligence 2023](https://doi.org/10.1038/s42256-023-00600-7)
+  _Reference:_ [Karargyris et al., Nature Machine Intelligence 2023](https://doi.org/10.1038/s42256-023-00652-2)
 
 ## Deep Learning Frameworks
 
