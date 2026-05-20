@@ -54,16 +54,18 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_4.html";
-            },},{id: "news-the-comprehensive-federated-learning-tutorial-has-been-accepted-at-miccai-2025-see-the-schedule-here",
-          title: 'The Comprehensive Federated Learning Tutorial has been accepted at MICCAI 2025. See the...',
-          description: "",
-          section: "News",},{id: "news-new-publication-at-journal-of-imaging-informatics-in-medicine",
+            },},{id: "news-new-publication-at-journal-of-imaging-informatics-in-medicine",
           title: 'New publication at Journal of Imaging Informatics in Medicine',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
+              window.location.href = "/news/announcement_3.html";
             },},{id: "news-new-publication-at-computers-in-biology-and-medicine",
           title: 'New publication at Computers in Biology and Medicine',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2.html";
+            },},{id: "news-new-dataset-at-nature-scientific-data",
+          title: 'New dataset at Nature Scientific Data',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1.html";
@@ -79,7 +81,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%73%61%72%74%68%61%6B@%6D%6C%63%6F%6D%6D%6F%6E%73.%6F%72%67", "_blank");
+          window.open("mailto:%73%61%72%74%68%61%6B@%76%65%72%79%73%61%66%65.%61%69", "_blank");
         },
       },{
         id: 'social-github',
