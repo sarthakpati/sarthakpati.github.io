@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: ""
+subtitle: Founder of VerySafe.ai · AI safety researcher &amp; engineer · Vice Chair, MLCommons Medical Working Group
 
 profile:
   align: right
@@ -23,13 +23,19 @@ announcements:
 
 ---
 
-**Solutions provider & Researcher** specializing in AI and Machine Learning across multiple domains, and **Vice Chair for Algorithm Development and Benchmarking** at the [Medical AI Group of MLCommons](https://mlcommons.org/en/groups/research-medical/) working on designing solutions for privacy-focused AI in Healthcare.
+**AI researcher, engineer, and founder** building trustworthy, end-to-end AI systems for regulated, high-stakes domains. I hold a Ph.D. in Computer Science from the [Technical University of Munich](https://www.tum.de/en/) (*summa cum laude*) and bring 11+ years of operationalizing AI from prototype to production.
 
-I believe open software fosters better science, and thus have been involved in multiple open-source projects and their associated research studies. On the open-source community, I am currently focusing my efforts on the following: 
+I am the founder of [**VerySafe.ai**](https://verysafe.ai), where I am building **SafeCompute** — a policy-aware compute platform that attaches cryptographic proof to every AI model run through remote attestation, supply-chain provenance, and signed audit lineage. The aim is to let organizations run frontier and open-source LLMs precisely where governance, privacy, and auditability are non-negotiable.
 
-- [MedPerf](https://www.medperf.org)
-- Developing benchmarks for bespoke industry applications
-- Creating and maintaining as many [Anaconda recipes](https://github.com/orgs/conda-forge/teams?query=%40sarthakpati) as possible to maximize reproducibility and scientific impact of open-source software
+My work sits at the intersection of frontier AI capability and the safety, attestation, and governance infrastructure required to deploy it responsibly. I have led **USD 9M+** in NIH/NCI-funded research, published in *Nature*, *Nature Communications*, and *IEEE Transactions on Medical Imaging*, and serve as **Vice Chair for Algorithmic Development** at the [Medical Working Group of MLCommons](https://mlcommons.org/working-groups/data/medical/). Through my consultancy, **Vaiyu Solutions**, I help teams operationalize AI end-to-end — from architecture and training through deployment and monitoring — across healthcare &amp; pharma, financial services, energy, and manufacturing.
 
-### How to reach me 
-[sarthak [at] mlcommons.org](mailto:sarthak@mlcommons.org)
+I believe open software fosters better science, which is why I stay deeply involved in the open-source community. My current focus:
+
+- [**GaNDLF**](https://gandlf.org/) — a low-code framework for reproducible, end-to-end AI in healthcare (*Editor's Choice*, *Communications Engineering*)
+- [**MedPerf**](https://www.medperf.org) — open, federated benchmarking for medical AI at scale
+- [**40+ conda-forge recipes**](https://github.com/orgs/conda-forge/teams?query=%40sarthakpati) — packaging scientific software to maximize reproducibility and impact
+
+Explore my [CV](/cv/), [publications](/publications/), [open-source work](/repositories/), and [accolades](/accolades/).
+
+### How to reach me
+[sarthak [at] verysafe.ai](mailto:sarthak@verysafe.ai)
