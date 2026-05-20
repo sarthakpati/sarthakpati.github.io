@@ -47,4 +47,3 @@ nav_order: 7
 ### 2017
 
 - Live Demonstration of CaPTk at the International Society for Optics and Photonics (SPIE) Medical Imaging Conference
-

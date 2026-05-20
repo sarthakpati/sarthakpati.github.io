@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install Prettier
-        run: npm install -g prettier
+        run: npm install -g prettier@3.1.1
 
       - name: Check for Prettier
         run: npx prettier --version || echo "Prettier not found"
