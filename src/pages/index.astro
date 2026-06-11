@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { PROFILE } from '../data/profile';
-import { OPENINGS, PROJECTS } from '../data/site';
+import { PROJECTS, CAPABILITIES } from '../data/site';
 import WindField from '../components/WindField.astro';
 import Eyebrow from '../components/Eyebrow.astro';
 import CTABand from '../components/CTABand.astro';
@@ -33,17 +33,19 @@ const STATS = [
           <div>
             <Eyebrow num="01" label="About" class="mb-5 reveal reveal-1" />
             <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
-            <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-8 reveal reveal-2">
+            <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-4 reveal reveal-2">
               {PROFILE.title}
             </h1>
+            <p class="font-mono text-sm md:text-base text-slate mb-8 reveal reveal-2">{PROFILE.subtitle}</p>
             <div class="space-y-4 text-ink-soft leading-relaxed max-w-2xl reveal reveal-3">
               {PROFILE.bio.split('\n\n').map((para) => (
                 <p set:html={para} />
               ))}
             </div>
-            <div class="flex gap-5 mt-8 reveal reveal-4">
+            <div class="flex flex-wrap items-center gap-5 mt-8 reveal reveal-4">
+              <a href="/resume_sarthak.pdf" target="_blank" rel="noopener" class="inline-block bg-saffron text-paper font-medium px-6 py-2.5 rounded-sm hover:bg-saffron-bright transition-colors duration-200">Résumé (PDF)</a>
               <a href="/publications/" class="link-ink text-ink font-medium">View publications</a>
-              <a href="/cv/" class="link-ink text-ink font-medium">Download CV</a>
+              <a href="/cv/" class="link-ink text-ink font-medium">Full CV</a>
             </div>
           </div>
           <!-- Proof bar (sidebar on desktop) -->
@@ -62,12 +64,34 @@ const STATS = [
       </div>
     </section>
 
+    <!-- ── What I Build (recruiter-facing capabilities) ── -->
+    <section class="relative py-24 border-b border-ink/10">
+      <div class="max-w-5xl mx-auto px-6">
+        <Eyebrow num="02" label="What I build" class="mb-3" />
+        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">02</h2>
+        <h2 class="h-display text-3xl md:text-4xl text-ink mb-6 pr-48">From research to production</h2>
+        <p class="text-ink-soft leading-relaxed max-w-2xl mb-12">
+          I architect and ship AI systems end-to-end — concept, design, deployment — for regulated, high-stakes
+          domains. Eleven years turning research into software that runs in production.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 mb-14">
+          {CAPABILITIES.map((c) => (
+            <div class="border-t-2 border-ink/80 pt-5">
+              <h3 class="font-display text-xl font-semibold text-ink">{c.title}</h3>
+              <p class="text-sm text-ink-soft mt-2 leading-relaxed">{c.desc}</p>
+              <p class="label-mono text-saffron mt-3">{c.metric}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <!-- ── Open Source Section ── -->
     <section class="relative py-24 border-b border-ink/10">
       <div class="max-w-5xl mx-auto px-6">
-        <Eyebrow num="02" label="Open source" class="mb-3" />
-        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">02</h2>
-        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 pr-48">Selected projects</h2>
+        <Eyebrow num="03" label="Open source" class="mb-3" />
+        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">03</h2>
+        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 pr-48">Selected Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           {PROJECTS.map((project) => (
             <a
@@ -81,28 +105,6 @@ const STATS = [
                 {project.name}
               </h3>
               <p class="text-sm text-ink-soft mt-2 leading-relaxed">{project.desc}</p>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Research Focus Cards ── -->
-    <section class="relative bg-cream py-24 border-b border-ink/10">
-      <div class="max-w-5xl mx-auto px-6">
-        <Eyebrow num="03" label="Focus areas" class="mb-3" />
-        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">03</h2>
-        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 pr-48">Where I focus</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {OPENINGS.map((o) => (
-            <a
-              href={o.url}
-              target="_blank"
-              rel="noopener"
-              class="block bg-paper p-7 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200 border-t-2 border-saffron"
-            >
-              <h3 class="font-display text-lg font-semibold text-ink mb-2">{o.title}</h3>
-              <p class="text-sm text-ink-soft leading-relaxed">{o.description}</p>
             </a>
           ))}
         </div>

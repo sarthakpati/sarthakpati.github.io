@@ -3,7 +3,7 @@
 export const PROFILE = {
   name: "Sarthak Pati",
   title: "Founder of VerySafe.ai",
-  subtitle: "AI safety researcher & engineer · Vice Chair, MLCommons Medical Working Group",
+  subtitle: "AI Safety Researcher & Engineer · Vice Chair, MLCommons Medical Working Group",
   image: "/prof_pic.jpg",
   bio: `AI researcher, engineer, and founder building trustworthy, end-to-end AI systems for regulated, high-stakes domains. I hold a Ph.D. in Computer Science from the Technical University of Munich (summa cum laude) and bring 11+ years of operationalizing AI from prototype to production.
 

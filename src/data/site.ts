@@ -93,6 +93,31 @@ export const OPENINGS = [
   },
 ];
 
+/* ── What I build (recruiter-facing capabilities — sourced from résumé) ── */
+
+export const CAPABILITIES = [
+  {
+    title: "End-to-end AI systems",
+    desc: "Architect and ship AI from prototype to production — multimodal data, low-code pipelines, clinical-grade workflows.",
+    metric: "GaNDLF — 30% faster prototyping, now an MLCommons project",
+  },
+  {
+    title: "Confidential & federated compute",
+    desc: "Privacy-preserving ML that trains and benchmarks across institutions without moving sensitive data.",
+    metric: "USD 9M+ in NIH/NCI grants led · deployed on 6 continents",
+  },
+  {
+    title: "Optimization & deployment",
+    desc: "Make models run where compute, latency, and cost are constrained — edge, HPC, and low-resource environments.",
+    metric: "10–50% less compute · up to 70% lower inference latency",
+  },
+  {
+    title: "Benchmarking & evaluation",
+    desc: "Trustworthy, reproducible evaluation of medical and enterprise AI at scale.",
+    metric: "MedPerf — federated benchmarking across institutions",
+  },
+];
+
 /* ── GitHub repositories ── */
 
 export const REPOS = [
