@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+---
+
+<Base title="Books" description="Selected readings and references.">
+  <section class="relative py-24 border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="01" label="Books" class="mb-3" />
+      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Books & References</h1>
+      <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
+        A curated list of books and references that have shaped my thinking. Page under construction — check back soon.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-24 bg-paper border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-ink-soft italic">This section is being populated. Stay tuned.</p>
+    </div>
+  </section>
+
+  <CTABand />
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>

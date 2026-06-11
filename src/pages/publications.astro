@@ -1,0 +1,92 @@
+---
+import Base from '../layouts/Base.astro';
+import { parseBibTeX, formatAuthors } from '../lib/bibtex';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+// Single source of truth: papers.bib at build time
+const bibPath = resolve('./public/_bibliography/papers.bib');
+const allPubs = parseBibTeX(readFileSync(bibPath, 'utf-8'));
+
+// Group by year descending
+const byYear = allPubs.reduce<Record<string, typeof allPubs>>((acc, pub) => {
+  const year = pub.year ? String(pub.year) : 'n.d.';
+  (acc[year] ??= []).push(pub);
+  return acc;
+}, {} as Record<string, typeof allPubs>);
+const years = Object.keys(byYear).sort((a, b) => {
+  if (a === 'n.d.') return 1;
+  if (b === 'n.d.') return -1;
+  return Number(b) - Number(a);
+});
+
+// Build-time helper to format authors array
+function fmtAuthors(entry: any): string {
+  if (!entry.authors || entry.authors.length === 0) return '';
+  const names = Array.isArray(entry.authors) ? entry.authors : [entry.authors];
+  if (names.length <= 6) return names.join(', ');
+  return names.slice(0, 5).join(', ') + ', et al.';
+}
+
+// Build-time helper to get title for display
+function getTitle(pub: any): string {
+  return pub.title || pub.fields?.title || pub.id;
+}
+---
+
+<Base title="Publications" description={`${allPubs.length} publications in Nature, Nature Communications, IEEE, The Lancet Oncology, and more.`}>
+  <section class="relative py-24 border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="01" label="Publications" class="mb-3" />
+      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">{allPubs.length} publications</h1>
+      <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
+        Complete list sourced from{' '}
+        <a href="/_bibliography/papers.bib" class="link-ink hover:text-saffron">papers.bib</a>.
+        Curated highlights on{' '}
+        <a href="https://scholar.google.com/citations?user=lL5jPysAAAAJ" class="link-ink hover:text-saffron" target="_blank" rel="noopener">Google Scholar</a>{' '}
+        and{' '}
+        <a href="https://orcid.org/0000-0003-2243-8487" class="link-ink hover:text-saffron" target="_blank" rel="noopener">ORCID</a>.
+      </p>
+    </div>
+  </section>
+
+  {years.map((year, yi) => (
+    <section key={year} class="py-20 border-b border-ink/10 bg-paper">
+      <div class="max-w-5xl mx-auto px-6">
+        <Eyebrow num={`${String(yi + 1).padStart(2, '0')}`} label={`Year ${year}`} class="mb-8" />
+        <ul class="space-y-7">
+          {byYear[year].map((pub) => (
+            <li class="border-t border-ink/10 pt-6 first:border-t-0 first:pt-0">
+              {pub.url ? (
+                <a href={pub.url} class="font-display text-lg leading-snug text-ink hover:text-saffron transition-colors link-ink" target="_blank" rel="noopener">
+                  {getTitle(pub)}
+                </a>
+              ) : pub.doi ? (
+                <a href={`https://doi.org/${pub.doi}`} class="font-display text-lg leading-snug text-ink hover:text-saffron transition-colors link-ink" target="_blank" rel="noopener">
+                  {getTitle(pub)}
+                </a>
+              ) : (
+                <span class="font-display text-lg leading-snug text-ink">{getTitle(pub)}</span>
+              )}
+              <p class="text-sm text-slate mt-1">{fmtAuthors(pub)}</p>
+              <div class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">
+                {pub.journal && <span class="text-slate">{pub.journal}</span>}
+                {pub.fields.volume && <span class="text-slate">Vol. {pub.fields.volume}</span>}
+                <span class="label-mono text-saffron">{pub.year || pub.fields?.year || 'n.d.'}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <CTABand />
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>

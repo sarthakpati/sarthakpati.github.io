@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import { teachingData } from '../lib/teaching';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+
+// Group by year descending
+const byYear = teachingData.reduce<Record<string, typeof teachingData>>((acc, t) => {
+  (acc[t.year] ??= []).push(t);
+  return acc;
+}, {} as Record<string, typeof teachingData>);
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<Base title="Teaching" description="Workshops, tutorials, and educational presentations.">
+  <section class="relative py-24 border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="01" label="Teaching" class="mb-3" />
+      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Teaching & Tutorials</h1>
+      <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
+        Workshops, tutorials, and educational presentations on federated learning, medical imaging, and reproducible AI.
+      </p>
+    </div>
+  </section>
+
+  {/* Upcoming */}
+  <section class="py-16 bg-paper border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-xl font-semibold text-ink mb-4">Upcoming</h2>
+      <p class="text-ink-soft text-sm">Check back soon for upcoming tutorials and workshops.</p>
+    </div>
+  </section>
+
+  {/* Past */}
+  {years.map((year) => (
+    <section key={year} class="py-16 border-b border-ink/10 bg-paper">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-display text-2xl font-semibold text-ink mb-6">{year}</h2>
+        <ul class="space-y-4">
+          {byYear[year].map((t) => (
+            <li class="flex gap-3 items-start text-ink-soft pb-4 border-b border-ink/10 last:border-b-0">
+              <span class="text-saffron mt-1 font-bold">→</span>
+              <div>
+                {t.conference ? (
+                  <a href={t.link || '#'} target="_blank" rel="noopener" class="font-medium text-ink hover:text-saffron transition-colors link-ink block">{t.title}</a>
+                ) : (
+                  <span class="font-medium text-ink block">{t.title}</span>
+                )}
+                {t.conference && <span class="text-sm text-slate mt-0.5">{t.conference}</span>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <CTABand />
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>

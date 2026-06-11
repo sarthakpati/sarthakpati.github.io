@@ -1,0 +1,119 @@
+---
+import Base from '../layouts/Base.astro';
+import { PROFILE } from '../data/profile';
+import { OPENINGS, PROJECTS } from '../data/site';
+import WindField from '../components/WindField.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+// Count publications from BibTeX at build time (single source of truth)
+const bibPath = resolve('./public/_bibliography/papers.bib');
+const bibContent = readFileSync(bibPath, 'utf-8');
+const pubCount = (bibContent.match(/@(\w+)\s*\{/g) || []).length;
+
+// Stats computed at build time
+const STATS = [
+  { value: `${pubCount}`, label: `publications in Nature, IEEE, Lancet` },
+  { value: '11+', label: 'years operationalizing AI' },
+  { value: '$9M+', label: 'NIH/NCI-funded research led' },
+  { value: '40+', label: 'conda-forge recipes maintained' },
+  { value: '71', label: 'sites in largest FL study (FeTS)' },
+];
+---
+
+<Base title="Home" description={PROFILE.bio.slice(0, 120)}>
+  <div class="relative overflow-hidden">
+    <!-- ── Hero Section ── -->
+    <section class="relative min-h-[75vh] flex items-center border-b border-ink/10">
+      <WindField class="text-saffron" />
+      <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12 items-start">
+          <div>
+            <Eyebrow num="01" label="About" class="mb-5 reveal reveal-1" />
+            <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+            <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-8 reveal reveal-2">
+              {PROFILE.title}
+            </h1>
+            <div class="space-y-4 text-ink-soft leading-relaxed max-w-2xl reveal reveal-3">
+              {PROFILE.bio.split('\n\n').map((para) => (
+                <p>{para}</p>
+              ))}
+            </div>
+            <div class="flex gap-5 mt-8 reveal reveal-4">
+              <a href="/publications/" class="link-ink text-ink font-medium">View publications</a>
+              <a href="/cv/" class="link-ink text-ink font-medium">Download CV</a>
+            </div>
+          </div>
+          <!-- Proof bar (sidebar on desktop) -->
+          <aside class="bg-cream rounded-sm p-6 reveal reveal-4 lg:sticky lg:top-20">
+            <p class="label-mono text-slate mb-5">At a glance</p>
+            <ul class="space-y-5">
+              {STATS.map((stat) => (
+                <li class="border-t border-ink/10 pt-4 first:border-t-0 first:pt-0">
+                  <p class="font-display text-3xl font-bold text-ink">{stat.value}</p>
+                  <p class="text-xs text-slate mt-1">{stat.label}</p>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Open Source Section ── -->
+    <section class="relative py-24 border-b border-ink/10">
+      <div class="max-w-5xl mx-auto px-6">
+        <Eyebrow num="02" label="Open source" class="mb-3" />
+        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">02</h2>
+        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 pr-48">Selected projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {PROJECTS.map((project) => (
+            <a
+              href={project.href}
+              target="_blank"
+              rel="noopener"
+              class="group block border-t-2 border-ink/80 pt-6 hover:border-saffron transition-colors duration-200"
+            >
+              <p class="label-mono text-saffron mb-2">{project.meta}</p>
+              <h3 class="font-display text-xl font-semibold text-ink group-hover:text-saffron transition-colors">
+                {project.name}
+              </h3>
+              <p class="text-sm text-ink-soft mt-2 leading-relaxed">{project.desc}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Research Focus Cards ── -->
+    <section class="relative bg-cream py-24 border-b border-ink/10">
+      <div class="max-w-5xl mx-auto px-6">
+        <Eyebrow num="03" label="Focus areas" class="mb-3" />
+        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">03</h2>
+        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 pr-48">Where I focus</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {OPENINGS.map((o) => (
+            <a
+              href={o.url}
+              target="_blank"
+              rel="noopener"
+              class="block bg-paper p-7 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200 border-t-2 border-saffron"
+            >
+              <h3 class="font-display text-lg font-semibold text-ink mb-2">{o.title}</h3>
+              <p class="text-sm text-ink-soft leading-relaxed">{o.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <CTABand />
+  </div>
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>

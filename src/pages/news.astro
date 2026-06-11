@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+
+// Recent news items — update manually for now
+const news = [
+  {
+    date: '2026-01-27',
+    title: 'New dataset at Nature Scientific Data',
+    body: 'The 2024 BraTS-MEN-RT dataset publication in Scientific Data. 570 radiotherapy planning 3D T1-weighted post-contrast MRIs, 500 expert-annotated GTVs.',
+    link: '#',
+  },
+  {
+    date: '2025-07-26',
+    title: 'Optimization of DL models for low-resource inference',
+    body: 'New publication at Computers in Biology and Medicine covering model optimization across radiology, histopathology, and medical RGB imaging.',
+    link: '#',
+  },
+  {
+    date: '2025-06-25',
+    title: 'Unsupervised brain extraction QC approach',
+    body: 'New publication at Journal of Imaging Informatics in Medicine. Unsupervised QC method achieving 0.9 accuracy for pre-op and 0.87 for post-op scans.',
+    link: '#',
+  },
+  {
+    date: '2025-02-15',
+    title: 'Transfer learning for Alzheimer\'s disease prediction',
+    body: 'New publication at NeuroImage. Transfer learning boosting AD diagnosis accuracy from 63% to 99% in scenario A.',
+    link: '#',
+  },
+];
+
+const formatDate = (d: string) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<Base title="News" description="Recent announcements and updates.">
+  <section class="relative py-24 border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="01" label="News" class="mb-3" />
+      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Recent news</h1>
+      <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
+        Latest publications, datasets, and milestones.
+      </p>
+    </div>
+  </section>
+
+  {news.map((item) => (
+    <article class="py-16 border-b border-ink/10 bg-paper">
+      <div class="max-w-5xl mx-auto px-6">
+        <span class="label-mono text-saffron mb-3 block">{formatDate(item.date)}</span>
+        <h2 class="font-display text-2xl font-semibold text-ink mb-3">{item.title}</h2>
+        <p class="text-ink-soft leading-relaxed max-w-3xl">{item.body}</p>
+        {item.link && item.link !== '#' && (
+          <a href={item.link} target="_blank" rel="noopener" class="inline-block mt-3 text-sm link-ink text-saffron hover:text-saffron-bright transition-colors">Read more →</a>
+        )}
+      </div>
+    </article>
+  ))}
+
+  <CTABand />
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>

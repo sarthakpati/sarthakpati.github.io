@@ -1,0 +1,989 @@
+---
+---
+
+@article{labella20262024,
+  title={The 2024 Brain Tumor Segmentation Challenge Meningioma Radiotherapy (BraTS-MEN-RT) dataset},
+  author={LaBella, Dominic and Schumacher, Katherine and Mix, Michael and Leu, Kevin and McBurney-Lin, Shan and Nedelec, Pierre and Villanueva-Meyer, Javier and Raleigh, David R and Shapey, Jonathan and Vercauteren, Tom and others},
+  journal={Scientific Data},
+  year={2026},
+  publisher={Nature Publishing Group UK London},
+  abstract={Meningiomas are the most common primary intracranial tumors, frequently requiring radiotherapy as a part of management. Effective radiotherapy planning for meningiomas necessitates accurate and consistent segmentation of target volumes on MRI, a process that is complex, labor-intensive, and dependent on expert expertise. The 2024 Brain Tumor Segmentation Challenge Meningioma Radiotherapy (BraTS-MEN-RT) Dataset addresses this problem by providing the largest multi-institutional collection of systematically annotated radiotherapy planning MRIs for meningiomas. Publicly accessible, this dataset comprises 570 radiotherapy planning 3D T1-weighted post-contrast MRIs at native resolutions, with 500 cases featuring expert-annotated gross tumor volumes (GTV). Annotations follow standardized radiotherapy planning protocols and include both intact and postoperative meningioma cases, ensuring wide clinical relevance. Contributions from seven diverse medical centers across the United States and the United Kingdom enhance the dataset’s generalizability. The dataset aims to accelerate the development of automated segmentation methods for radiotherapy planning, improving workflow efficiency, reducing interobserver variability, and ultimately enhancing patient outcomes.},
+  doi={10.1038/s41597-026-06649-x},
+  url={https://www.nature.com/articles/s41597-026-06649-x},
+}
+
+@article{linardos2025federated,
+  title={The Federated Tumor Segmentation (FeTS) Challenge 2024: Efficient and Robust Aggregation Methods},
+  author={Linardos, Akis and Pati, Sarthak and Baid, Ujjwal and Edwards, Brandon and Foley, Patrick and Ta, Kevin and Chung, Verena and Sheller, Micah and Khan, Muhammad Irfan and Jafaritadi, Mojtaba and others},
+  journal={Machine Learning for Biomedical Imaging},
+  volume={3},
+  number={December 2025 issue},
+  pages={757--774},
+  year={2025},
+  abstract={We present the design and results of the MICCAI Federated Tumor Segmentation (FeTS) Challenge 2024, which focuses on federated learning (FL) for glioma sub-region segmentation in multi-parametric MRI scans. Unlike previous FeTS challenges, this iteration exclusively evaluates novel weight aggregation methods for increased robustness and efficiency. Participating methods from six teams are evaluated using a standardized FL setup and a multi-institutional dataset derived from the BraTS glioma benchmark—a dataset consisting of 1,251 training cases, 219 validation cases, and 570 hidden test cases, with segmentations of enhancing tumor (ET), tumor core (TC), and whole tumor (WT). Teams are ranked by a cumulative scoring system that accounts for segmentation performance—measured by Dice Similarity Coefficient (DSC) and 95th percentile Hausdorff Distance (HD95)—and communication efficiency assessed through the convergence score. A PID-controller-based approach emerges as the top-performing method, achieving a mean DSC of 0.733, 0.761, and 0.751 for ET, TC, and WT, respectively, with corresponding HD95 values of 33.922mm, 33.623mm, and 32.309mm, while also being the most efficient with a convergence score of 0.764. These results contribute to ongoing advances in FL, building on top-performers from previous iterations of the challenge and surpassing them, highlighting the potential of PID controllers as a powerful mechanism for stabilizing and optimizing weight aggregation in FL. The challenge code is available at https://github.com/FeTS-AI/Challenge}
+}
+
+@article{labella2025img,
+  title={IMG-69. FeTS 2.0: Federated learning sets benchmark in post-op GBM segmentation},
+  author={LaBella, Dominic and Kassem, Hasan and Edwards, Brandon and Sheller, Micah and Pati, Sarthak and Aristizabal, Alejandro and Huang, Raymond and Baid, Ujjwal and Karargyris, Alexandros and Bakas, Spyridon and others},
+  journal={Neuro-Oncology},
+  volume={27},
+  number={Supplement\_5},
+  pages={v289--v289},
+  year={2025},
+  publisher={Oxford University Press US},
+  abstract={Acquiring MRI scans from multi-institutional clinical data presents challenges, particularly in ensuring stability of radiomic features across sites with different scanners and acquisitions. Feature stability is critical for subsequent analyses, including disease classification and development of biomarkers. This work evaluates the stability of radiomic features extracted from medulloblastoma (malignant pediatric brain tumor) across 3 sites with different tesla strengths. Our goal is to evaluate features’ stability prior to incorporating them into diagnostic/prognostic frameworks.}
+}
+
+@article{thakur2025img,
+  title={IMG-121. BraTS-Pathology 2024: Insights and Future Directions Informed by the AI-RANO \& RANO-RGP Effort to Assess Glioblastoma Heterogeneity},
+  author={Thakur, Siddhesh and Malec, Sylwia and Pitarc, Carla and Linardos, Akis and Innani, Shubham and Adap, Sanyukta and Faghani, Shahriar and Moassefi, Mana and Nasrallah, MacLean and Ahrendsen, Jared and others},
+  journal={Neuro-Oncology},
+  volume={27},
+  number={Supplement\_5},
+  pages={v303--v304},
+  year={2025},
+  publisher={Oxford University Press US},
+  abstract={Standard-of-care (SOC) radiation therapy (RT) planning utilizes a uniform, isotropic 2cm-expansion of the T1-contrast-enhancing or T2-hyperintensity lesion (CEL, T2L) to generate a clinical target volume (CTV), without considering anisotropic tumor infiltration. We hypothesize that incorporating vision-transformers into our segmentation-based deep-learning approach for generating CTVs from predictions of tumor progression using either pre-surgical or pre-RT metabolic and diffusion-weighted MRI will result in personalized CTVs that are more sensitive to detecting infiltrating tumor and spare more healthy brain compared to SOC-CTVs.}
+}
+
+@article{pati2025screening,
+  title={From screening to subtyping in a single glance},
+  author={Pati, Sarthak},
+  journal={Patterns},
+  volume={6},
+  number={10},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.patter.2025.101391},
+  url={https://doi.org/10.1016/j.patter.2025.101391},
+  abstract={Fragmented AI tools struggle with the complex diagnosis of fine-grained diseases from radiological images. A new study in Patterns introduces the "screening-to-subtyping" (S2S) framework, a holistic deep learning system integrating the entire diagnostic workflow from detection to subtyping. Validated on complex thoracic cancers, the S2S-Med system demonstrated superior accuracy, outperforming existing benchmarks. A human-AI experiment revealed that the AI's performance surpassed AI-assisted physicians and that physician trust correlated with greater improvement. The S2S framework is a significant step toward enhancing precision medicine and establishing a new paradigm for human-AI partnership.}
+}
+
+@article{thakur2025optimization,
+  title={Optimization of deep learning models for inference in low resource environments},
+  author={Thakur, Siddhesh and Pati, Sarthak and Wu, Junwen and Panchumarthy, Ravi and Karkada, Deepthi and Kozlov, Alexander and Shamporov, Vasily and Suslov, Alexander and Lyakhov, Daniil and Proshin, Maksim and others},
+  journal={Computers in Biology and Medicine},
+  volume={196},
+  pages={110615},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.compbiomed.2025.110615},
+  url={https://doi.org/10.1016/j.compbiomed.2025.110615}
+}
+
+@article{kofler2025brainlesion,
+  title={BrainLesion Suite: A Flexible and User-Friendly Framework for Modular Brain Lesion Image Analysis},
+  author={Kofler, Florian and Rosier, Marcel and Astaraki, Mehdi and M{\"o}ller, Hendrik and Mekki, Ilhem Isra and Buchner, Josef A and Schmick, Anton and Pfiffer, Arianna and Oswald, Eva and Zimmer, Lucas and others},
+  journal={arXiv preprint arXiv:2507.09036},
+  year={2025},
+  doi={10.48550/arXiv.2507.09036},
+  url={https://doi.org/10.48550/arXiv.2507.09036},
+  abstract={BrainLesion Suite is a versatile toolkit for building modular brain lesion image analysis pipelines in Python. Following Pythonic principles, BrainLesion Suite is designed to provide a 'brainless' development experience, minimizing cognitive effort and streamlining the creation of complex workflows for clinical and scientific practice. At its core is an adaptable preprocessing module that performs co-registration, atlas registration, and optional skull-stripping and defacing on arbitrary multi-modal input images. BrainLesion Suite leverages algorithms from the BraTS challenge to synthesize missing modalities, inpaint lesions, and generate pathology-specific tumor segmentations. BrainLesion Suite also enables quantifying segmentation model performance, with tools such as panoptica to compute lesion-wise metrics. Although BrainLesion Suite was originally developed for image analysis pipelines of brain lesions such as glioma, metastasis, and multiple sclerosis, it can be adapted for other biomedical image analysis applications. The individual BrainLesion Suite packages and tutorials are accessible on GitHub.}
+}
+
+@article{Zenk2025FeTS,
+  author = {Zenk, Marcel and Baid, Uday and Pati, Sarthak and others},
+  title = {Towards fair decentralized benchmarking of healthcare AI algorithms with the Federated Tumor Segmentation (FeTS) challenge},
+  journal = {Nature Communications},
+  volume = {16},
+  pages = {6274},
+  year = {2025},
+  doi = {10.1038/s41467-025-60466-1},
+  url = {https://www.nature.com/articles/s41467-025-60466-1},
+  abstract={Computational competitions are the standard for benchmarking medical image analysis algorithms, but they typically use small curated test datasets acquired at a few centers, leaving a gap to the reality of diverse multicentric patient data. To this end, the Federated Tumor Segmentation (FeTS) Challenge represents the paradigm for real-world algorithmic performance evaluation. The FeTS challenge is a competition to benchmark (i) federated learning aggregation algorithms and (ii) state-of-the-art segmentation algorithms, across multiple international sites. Weight aggregation and client selection techniques were compared using a multicentric brain tumor dataset in realistic federated learning simulations, yielding benefits for adaptive weight aggregation, and efficiency gains through client sampling. Quantitative performance evaluation of state-of-the-art segmentation algorithms on data distributed internationally across 32 institutions yielded good generalization on average, albeit the worst-case performance revealed data-specific modes of failure. Similar multi-site setups can help validate the real-world utility of healthcare AI algorithms in the future.}
+}
+
+@article{noller2025informatics,
+  title={Informatics at the Frontier of Cancer Research},
+  author={Noller, Kathleen and Botsis, Taxiarchis and Camara, Pablo G and Ciotti, Lauren and Cooper, Lee AD and Goecks, Jeremy and Griffith, Malachi and Haas, Brian J and Ideker, Trey and Karchin, Rachel and others},
+  journal={Cancer Research},
+  year={2025},
+  publisher={American Association for Cancer Research},
+  doi={10.1158/0008-5472.CAN-24-2829},
+  url={https://doi.org/10.1158/0008-5472.CAN-24-2829},
+  abstract={Digitized healthcare data, high-throughput profiling technologies, and data repositories have facilitated the emergence of a new era of cancer research. Each data stream requires specialized analysis methods for interpretation. The data-driven era of cancer research requires the development, enhancement, and sustainment of informatics technology software infrastructure, including fundamental methodology development in artificial intelligence and data science. We review current and emerging informatics technology developments for cancer research and discovery, spanning molecular and cellular characterization, image analysis, informatics, and therapeutics. Summarizing the diverse methods and applications of informatics throughout cancer research identifies themes and emerging areas for the next generation of cancer research.}
+}
+
+@article{melba:2025:005:fathikazerooni,
+  title = {BraTS-PEDs: Results of the Multi-Consortium International Pediatric Brain Tumor Segmentation Challenge 2023},
+  author = {Fathi Kazerooni, Anahita and Khalili, Nastaran and Liu, Xinyang and Haldar, Debanjan and Jiang, Zhifan and Zapaishchykova, Anna and Pavaine, Julija and Shah, Lubdha M. and Jones, Blaise V. and Sheth, Nakul and Prabhu, Sanjay P. and McAllister, Aaron S. and Tu, Wenxin and Nandolia, Khanak K. and Rodriguez, Andres F. and Shaikh, Ibraheem Salman and Sanchez-Montano, Mariana and Lai, Hollie Anne and Adewole, Maruf and Albrecht, Jake and Anazodo, Udunna and Anderson, Hannah and Anwar, Syed Muhammed and Aristizabal, Alejandro and Bagheri, Sina and Baid, Ujjwal and Bergquist, Timothy and Borja, Austin J. and Calabrese, Evan and Chung, Verena and Conte, Gian-Marco and Eddy, James and Ezhov, Ivan and Familiar, Ariana M. and Farahani, Keyvan and Gandhi, Deep and Gottipati, Anurag and Haldar, Shuvanjan and Iglesias, Juan Eugenio and Janas, Anastasia and Elaine, Elaine and Karargyris, Alexandros and Kassem, Hasan and Khalili, Neda and Kofler, Florian and LaBella, Dominic and Van Leemput, Koen and Li, Hongwei B. and Maleki, Nazanin and Meier, Zeke and Menze, Bjoern and Moawad, Ahmed W. and Pati, Sarthak and Piraud, Marie and Poussaint, Tina and Reitman, Zachary J. and Rudie, Jeffrey D. and Saluja, Rachit and Sheller, MIcah and Shinohara, Russell Takeshi and Viswanathan, Karthik and Wang, Chunhao and Wiestler, Benedikt and Wiggins, Walter F. and Davatzikos, Christos and Storm, Phillip B. and Bornhorst, Miriam and Packer, Roger and Hummel, Trent and de Blank, Peter and Hoffman, Lindsey and Aboian, Mariam and Nabavizadeh, Ali and Ware, Jeffrey B. and Kann, Benjamin H. and Rood, Brian and Resnick, Adam and Bakas, Spyridon and Vossough, Arastoo and Linguraru, Marius George},
+  journal = {Machine Learning for Biomedical Imaging},
+  volume = {3},
+  issue = {June 2025},
+  year = {2025},
+  pages = {72--87},
+  issn = {2766-905X},
+  doi = {10.59275/j.melba.2025-f6fg},
+  url = {https://melba-journal.org/2025:005},
+  abstract={Pediatric central nervous system tumors are the leading cause of cancer-related deaths in children. The five-year survival rate for high-grade glioma in children is less than 20%. The development of new treatments is dependent upon multi-institutional collaborative clinical trials requiring reproducible and accurate centralized response assessment. We present the results of the BraTS-PEDs 2023 challenge, the first Brain Tumor Segmentation (BraTS) challenge focused on pediatric brain tumors. This challenge utilized data acquired from multiple international consortia dedicated to pediatric neuro-oncology and clinical trials. BraTS-PEDs 2023 aimed to evaluate volumetric segmentation algorithms for pediatric brain gliomas from magnetic resonance imaging using standardized quantitative performance evaluation metrics employed across the BraTS 2023 challenges. The top-performing AI approaches for pediatric tumor analysis included ensembles of nnU-Net and Swin UNETR, Auto3DSeg, or nnU-Net with a self-supervised framework. The BraTS-PEDs 2023 challenge fostered collaboration between clinicians (neuro-oncologists, neuroradiologists) and AI/imaging scientists, promoting faster data sharing and the development of automated volumetric analysis techniques. These advancements could significantly benefit clinical trials and improve the care of children with brain tumors.}
+}
+
+@article{Pati2025,
+  author    = {Sarthak Pati and Stefan Wagner and Siddhesh Thakur and Evan Calabrese and Russell Shinohara and Spyridon Bakas},
+  title     = {An Unsupervised Brain Extraction Quality Control Approach for Efficient Neuro-Oncology Studies},
+  journal   = {Journal of Imaging Informatics in Medicine},
+  year      = {2025},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  doi       = {10.1007/s10278-025-01570-y},
+  url       = {https://doi.org/10.1007/s10278-025-01570-y},
+  issn      = {2948-2933},
+  abstract  = {Brain extraction is essential in neuroimaging studies for patient privacy and optimizing computational analyses. Manual creation of 3D brain masks is labor-intensive, prompting the development of automatic computational methods. Robust quality control (QC) is hence necessary for the effective use of these methods in large-scale studies. However, previous automated QC methods have been limited in flexibility regarding algorithmic architecture and data adaptability. We introduce a novel approach inspired by a statistical outlier detection paradigm to efficiently identify potentially erroneous data. Our QC method is unsupervised, resource-efficient, and requires minimal parameter tuning. We quantitatively evaluated its performance using morphological features of brain masks generated from three automated brain extraction tools across multi-institutional pre- and post-operative brain glioblastoma MRI scans. We achieved an accuracy of 0.9 for pre- and 0.87 for post-operative scans, thus demonstrating the effectiveness of our proposed QC tool for brain extraction. Additionally, the method shows potential for other tasks where a user-defined feature space can be defined. Our novel QC approach offers significant improvements in flexibility and efficiency over previous methods. It is a valuable tool, targeting reassurance of brain masks in neuroimaging and can be adapted for other applications requiring robust QC mechanisms.}
+}
+
+@article{kofler2025brats,
+  title={BraTS orchestrator: Democratizing and Disseminating state-of-the-art brain tumor image analysis},
+  author={Kofler, Florian and Rosier, Marcel and Astaraki, Mehdi and Baid, Ujjwal and M{\"o}ller, Hendrik and Buchner, Josef A and Steinbauer, Felix and Oswald, Eva and de la Rosa, Ezequiel and Ezhov, Ivan and others},
+  journal={arXiv preprint arXiv:2506.13807},
+  year={2025},
+  doi={10.48550/arXiv.2506.13807},
+  url={https://doi.org/10.48550/arXiv.2506.13807},
+  abstract={The Brain Tumor Segmentation (BraTS) cluster of challenges has significantly advanced brain tumor image analysis by providing large, curated datasets and addressing clinically relevant tasks. However, despite its success and popularity, algorithms and models developed through BraTS have seen limited adoption in both scientific and clinical communities. To accelerate their dissemination, we introduce BraTS orchestrator, an open-source Python package that provides seamless access to state-of-the-art segmentation and synthesis algorithms for diverse brain tumors from the BraTS challenge ecosystem. Available on GitHub, the package features intuitive tutorials designed for users with minimal programming experience, enabling both researchers and clinicians to easily deploy winning BraTS algorithms for inference. By abstracting the complexities of modern deep learning, BraTS orchestrator democratizes access to the specialized knowledge developed within the BraTS community, making these advances readily available to broader neuro-radiology and neuro-oncology audiences.}
+}
+
+@article{parampottupadam2025inclusive,
+  title={Inclusive, Differentially Private Federated Learning for Clinical Data},
+  author={Parampottupadam, Santhosh and Co{\c{s}}{\u{g}}un, Melih and Pati, Sarthak and Zenk, Maximilian and Roy, Saikat and Bounias, Dimitrios and Hamm, Benjamin and Sav, Sinem and Floca, Ralf and Maier-Hein, Klaus},
+  journal={arXiv preprint arXiv:2505.22108},
+  year={2025},
+  doi={10.48550/arXiv.2505.22108},
+  url={https://doi.org/10.48550/arXiv.2505.22108},
+  abstract={Federated Learning (FL) offers a promising approach for training clinical AI models without centralizing sensitive patient data. However, its real-world adoption is hindered by challenges related to privacy, resource constraints, and compliance. Existing Differential Privacy (DP) approaches often apply uniform noise, which disproportionately degrades model performance, even among well-compliant institutions. In this work, we propose a novel compliance-aware FL framework that enhances DP by adaptively adjusting noise based on quantifiable client compliance scores. Additionally, we introduce a compliance scoring tool based on key healthcare and security standards to promote secure, inclusive, and equitable participation across diverse clinical settings. Extensive experiments on public datasets demonstrate that integrating under-resourced, less compliant clinics with highly regulated institutions yields accuracy improvements of up to 15% over traditional FL. This work advances FL by balancing privacy, compliance, and performance, making it a viable solution for real-world clinical workflows in global healthcare.}
+}
+
+@article{maleki2025analysis,
+  title={Analysis of the MICCAI Brain Tumor Segmentation--Metastases (BraTS-METS) 2025 Lighthouse Challenge: Brain Metastasis Segmentation on Pre-and Post-treatment MRI},
+  author={Maleki, Nazanin and Amiruddin, Raisa and Moawad, Ahmed W and Yordanov, Nikolay and Gkampenis, Athanasios and Fehringer, Pascal and Umeh, Fabian and Chukwurah, Crystal and Memon, Fatima and Petrovic, Bojan and others},
+  journal={arXiv preprint arXiv:2504.12527},
+  year={2025},
+  url={10.48550/arXiv.2504.12527},
+  doi={https://doi.org/10.48550/arXiv.2504.12527},
+  abstract={Despite continuous advancements in cancer treatment, brain metastatic disease remains a significant complication of primary cancer and is associated with an unfavorable prognosis. One approach for improving diagnosis, management, and outcomes is to implement algorithms based on artificial intelligence for the automated segmentation of both pre- and post-treatment MRI brain images. Such algorithms rely on volumetric criteria for lesion identification and treatment response assessment, which are still not available in clinical practice. Therefore, it is critical to establish tools for rapid volumetric segmentations methods that can be translated to clinical practice and that are trained on high quality annotated data. The BraTS-METS 2025 Lighthouse Challenge aims to address this critical need by establishing inter-rater and intra-rater variability in dataset annotation by generating high quality annotated datasets from four individual instances of segmentation by neuroradiologists while being recorded on video (two instances doing "from scratch" and two instances after AI pre-segmentation). This high-quality annotated dataset will be used for testing phase in 2025 Lighthouse challenge and will be publicly released at the completion of the challenge. The 2025 Lighthouse challenge will also release the 2023 and 2024 segmented datasets that were annotated using an established pipeline of pre-segmentation, student annotation, two neuroradiologists checking, and one neuroradiologist finalizing the process. It builds upon its previous edition by including post-treatment cases in the dataset. Using these high-quality annotated datasets, the 2025 Lighthouse challenge plans to test benchmark algorithms for automated segmentation of pre-and post-treatment brain metastases (BM), trained on diverse and multi-institutional datasets of MRI images obtained from patients with brain metastases.}
+}
+
+@phdthesis{dissertation,
+	author = {Pati, Sarthak},
+	title = {Towards Reproducible, Stable, and Robust Machine Learning Research in Clinical Environments},
+	year = {2025},
+	school = {Technische Universität München},
+	pages = {147},
+	language = {en},
+	abstract = {Towards Reproducible, Stable, and Robust Machine Learning Research in Clinical Environments is a dissertation that guides researchers to analyze their work through the lens of clinical deployment. It highlights the challenges a research project faces when considering clinical translation and the considerations needed to overcome them. It emphasizes the importance of healthcare data in medicine and showcases academic contributions and relevant publications. Finally, it summarizes the results of the work and provides future directions, thus providing a broad outlook.},
+	keywords = {deep learning, robustness, stability, Reproducibility},
+	note = {},
+	url = {https://mediatum.ub.tum.de/1734184},
+  html={https://mediatum.ub.tum.de/1734184}
+}
+
+@article{turrisi2025adapting,
+  title={Adapting to evolving MRI data: A transfer learning approach for Alzheimer's disease prediction},
+  author={Turrisi, Rosanna and Pati, Sarthak and Pioggia, Giovanni and Tartarisco, Gennaro and Alzheimer's Disease Neuroimaging Initiative and others},
+  journal={NeuroImage},
+  volume={307},
+  pages={121016},
+  year={2025},
+  publisher={Academic Press},
+  html={https://doi.org/10.1016/j.neuroimage.2025.121016},
+  abstract={Integrating 3D magnetic resonance imaging (MRI) with machine learning has shown promising results in healthcare, especially in detecting Alzheimer's Disease (AD). However, changes in MRI technologies and acquisition protocols often yield limited data, leading to potential overfitting. This study explores Transfer Learning (TL) approaches to enhance AD diagnosis using a Baseline model consisting of a 3D-Convolutional Neural Network trained on 80 3T MRI scans. Two scenarios are explored: (A) utilizing historical data to address changes in MRI acquisitions (from 1.5T to 3T MRI), and (B) adapting 2D models pre-trained on ImageNet (ResNet18, ResNet50, ResNet101) for 3D image processing when historical data is unavailable. In both scenarios, two modeling approaches are tested. The General Approach involves distinct feature extraction and classification steps, using Radiomic features and TL-based features evaluated with six classifiers. The Deep Approach integrates these steps by fine-tuning the pre-trained models for AD diagnosis. In scenario (A), TL significantly boosts the Baseline's accuracy from 63% to 99%. In scenario (B), Radiomic features better represents 3D MRI than TL-features in the General Approach. Nonetheless, fine-tuning models pre-trained on natural images can increase the Baseline's accuracy by up to 12 percentage points, achieving an overall accuracy of 83%.}
+}
+
+@article{kassem2025collaborative,
+  title={Collaborative evaluation for performance assessment of medical imaging applications},
+  author={Kassem, Hasan and Singh, Akshita and Aristizabal, Alejandro and Bakas, Spyridon and Sheller, Micah and Umeton, Renato and Pati, Sarthak and Moorthy, Prakash Narayana and Karargyris, Alexandros},
+  booktitle={Trustworthy AI in Medical Imaging},
+  pages={205--222},
+  year={2025},
+  publisher={Academic Press},
+  html={https://doi.org/10.1016/B978-0-44-323761-4.00019-5},
+  abstract={With a growing number of medical imaging applications being developed for clinical use, there comes a need for extensive performance assessment to meet regulatory requirements as well as to build trust among healthcare stakeholders. Evaluation of these applications on external data can contribute to their objective and rigorous validation. Healthcare stakeholders can form partnerships to enable collaborative evaluation of medical imaging applications transparently and under neutral governance. Collaborative evaluation can unlock the power of diverse data, democratize the pursuit of clinically useful applications, and support regulatory compliance. This chapter offers background on validation in the context of product lifecycle, highlighting the importance of external real-world data; it introduces collaborative evaluation while discussing key considerations; it provides existing solutions that support collaborative evaluation; and finally, it lays out ideas for future improvements.}
+}
+
+@article{akbari2024machine,
+  title={Machine learning-based prognostic subgrouping of glioblastoma: A multicenter study},
+  author={Akbari, Hamed and Bakas, Spyridon and Sako, Chiharu and Fathi Kazerooni, Anahita and Villanueva-Meyer, Javier and Garcia, Jose A and Mamourian, Elizabeth and Liu, Fang and Cao, Quy and Shinohara, Russell T and others},
+  journal={Neuro-Oncology},
+  pages={noae260},
+  year={2024},
+  publisher={Oxford University Press US},
+  html={https://doi.org/10.1093/neuonc/noae260},
+  abstract={Background: Glioblastoma (GBM) is the most aggressive adult primary brain cancer, characterized by significant heterogeneity, posing challenges for patient management, treatment planning, and clinical trial stratification. Methods: We developed a highly reproducible, personalized prognostication, and clinical subgrouping system using machine learning (ML) on routine clinical data, magnetic resonance imaging (MRI), and molecular measures from 2838 demographically diverse patients across 22 institutions and 3 continents. Patients were stratified into favorable, intermediate, and poor prognostic subgroups (I, II, and III) using Kaplan–Meier analysis (Cox proportional model and hazard ratios [HR]). Results: The ML model stratified patients into distinct prognostic subgroups with HRs between subgroups I–II and I–III of 1.62 (95% CI: 1.43–1.84, P < .001) and 3.48 (95% CI: 2.94–4.11, P < .001), respectively. Analysis of imaging features revealed several tumor properties contributing unique prognostic value, supporting the feasibility of a generalizable prognostic classification system in a diverse cohort. Conclusions: Our ML model demonstrates extensive reproducibility and online accessibility, utilizing routine imaging data rather than complex imaging protocols. This platform offers a unique approach to personalized patient management and clinical trial stratification in GBM.}
+}
+
+@article{baid2024pan,
+  title={Pan-Cancer Tumor Infiltrating Lymphocyte Detection based on Federated Learning},
+  author={Baid, Ujjwal and Pati, Sarthak and Kurc, Tahsin M and Gupta, Rajarsi and Bremer, Erich and Abousamra, Shahira and Thakur, Siddhesh P and Saltz, Joel H and Bakas, Spyridon},
+  booktitle={2024 IEEE International Conference on Big Data (BigData)},
+  pages={7640--7647},
+  year={2024},
+  organization={IEEE},
+  html={https://doi.org/10.1109/BigData62323.2024.10825083},
+  abstract={Advances in deep learning (DL) have shown great promise in revolutionizing healthcare, notwithstanding their success hinging on the availability of centralized large and diverse data. Such centralization is challenging because of numerous concerns relating to privacy, data-ownership, intellectual property, and compliance with varying regulatory policies. Federated learning (FL), offers a new decentralized paradigm to train DL models in healthcare. In this study, we evaluate the effect of FL in developing DL models for the analysis of digitized tissue sections, specifically whole slide images (WSIs). A classification application was considered as the example use case, to quantify the distribution of Tumor Infiltrating Lymphocytes (TILs), which are a critical biomarker in cancer research, providing valuable insights into patient outcomes. We trained a VGG classification model using 50 × 50 micron patches extracted from the WSIs with their associated TIL/nonTIL label. We simulated a FL environment, where different cancer types are included across each collaborating node. Our results show that the model trained with the federated training approach achieves similar performance, both quantitatively and qualitatively, to that of a model trained with all the training data pooled at a centralized location. Our study shows that FL has tremendous potential for enabling the development of more robust and accurate models for histopathology image analysis without having to collect large and diverse training data at a single location. Particularly for TILs, our FL approach yields a single DL model trained across numerous anatomical sites and able to robustly generalize to unseen cancer types.}
+}
+
+@article{whybra2024image,
+  title={The image biomarker standardization initiative: standardized convolutional filters for reproducible radiomics and enhanced clinical insights},
+  author={Whybra, Philip and Zwanenburg, Alex and Andrearczyk, Vincent and Schaer, Roger and Apte, Aditya P and Ayotte, Alexandre and Baheti, Bhakti and Bakas, Spyridon and Bettinelli, Andrea and Boellaard, Ronald and others},
+  journal={Radiology},
+  volume={310},
+  number={2},
+  pages={e231319},
+  year={2024},
+  publisher={Radiological Society of North America},
+  html={https://doi.org/10.1148/radiol.2020191145},
+  abstract={The Image Biomarker Standardization Initiative validated consensus-based reference values for 169 radiomics features, thus enabling calibration and verification of radiomics software.}
+}
+
+@article{melba:2025:003:labella,
+    title = {Analysis of the BraTS 2023 Intracranial Meningioma Segmentation Challenge},
+    author = {LaBella, Dominic and Baid, Ujjwal and Khanna, Omaditya and McBurney-Lin, Shan and McLean, Ryan and Nedelec, Pierre and Rashid, Arif and Tahon, Nourel Hoda and Altes, Talissa and Bhalerao, Radhika and Dhemesh, Yaseen and Godfrey, Devon and Hilal, Fathi and Floyd, Scott and Janas, Anastasia and Kazerooni, Anahita Fathi and Kirkpatrick, John and Kent, Collin and Kofler, Florian and Leu, Kevin and Maleki, Nazanin and Menze, Bjoern and Pajot, Maxence and Reitman, Zachary J. and Rudie, Jeffrey D. and Saluja, Rachit and Velichko, Yury and Wang, Chunhao and Warman, Pranav and Adewole, Maruf and Albrecht, Jake and Anazodo, Udunna and Anwar, Syed Muhammad and Bergquist, Timothy and Chen, Sully Francis and Chung, Verena and Chai, Rong and Conte, Gian-Marco and Dako, Farouk and Eddy, James and Ezhov, Ivan and Khalili, Nastaran and Iglesias, Juan Eugenio and Jiang, Zhifan and Johanson, Elaine and Van Leemput, Koen and Li, Hongwei Bran and Linguraru, Marius George and Liu, Xinyang and Mahtabfar, Aria and Meier, Zeke and Moawad, Ahmed W and Mongan, John and Piraud, Marie and Shinohara, Russell Takeshi and Wiggins, Walter F. and Abayazeed, Aly H. and Akinola, Rachel and Jakab, András and Bilello, Michel and Correia de Verdier, Maria and Crivellaro, Priscila and Davatzikos, Christos and Farahani, Keyvan and Freymann, John and Hess, Christopher and Huang, Raymond and Lohmann, Philipp and Moassefi, Mana and Pease, Matthew W. and Vollmuth, Phillipp and Sollmann, Nico and Diffley, David and Nandolia, Khanak K. and Warren, Daniel I and Hussain, Ali and Fehringer, Pascal and Bronstein, Yulia and Deptula, Lisa and Stein, Evan G. and Taherzadeh, Mahsa and Portela de Oliveira, Eduardo and Haughey, Aoife and Kontzialis, Marinos and Saba, Luca and Turner, Benjamin and Brüßeler, Melanie M. T. and Ansari, Shehbaz and Gkampenis, Athanasios and Weiss, David Maximilian and Mansour, Aya and Shawali, Islam H. and Yordanov, Nikolay and Stein, Joel M. and Hourani, Roula and Moshebah, Mohammed Yahya and Abouelatta, Ahmed Magdy and Rizvi, Tanvir and Willms, Klara and Martin, Dann C. and Okar, Abdullah and D'Anna, Gennaro and Taha, Ahmed and Sharifi, Yasaman and Faghani, Shahriar and Kite, Dominic and Pinho, Marco and Haider, Muhammad Ammar and Aristizabal, Alejandro and Karargyris, Alexandros and Kassem, Hasan and Pati, Sarthak and Sheller, Micah and Alonso-Basanta, Michelle and Villanueva-Meyer, Javier and Rauschecker, Andreas M and Nada, Ayman and Aboian, Mariam and Flanders, Adam E. and Wiestler, Benedikt and Bakas, Spyridon and Calabrese, Evan},
+    journal = {Machine Learning for Biomedical Imaging},
+    volume = {3},
+    issue = {March 2025 issue},
+    year = {2025},
+    pages = {38--58},
+    issn = {2766-905X},
+    doi = {https://doi.org/10.59275/j.melba.2025-bea1},
+    url = {https://melba-journal.org/2025:003},
+    html={https://doi.org/10.59275/j.melba.2025-bea1},
+    abstract={We describe the design and results from the BraTS 2023 Intracranial Meningioma Segmentation Challenge. The BraTS Meningioma Challenge differed from prior BraTS Glioma challenges in that it focused on meningiomas, which are typically benign extra-axial tumors with diverse radiologic and anatomical presentation and a propensity for multiplicity. Nine participating teams each developed deep-learning automated segmentation models using image data from the largest multi-institutional systematically expert annotated multilabel multi-sequence meningioma MRI dataset to date, which included 1000 training set cases, 141 validation set cases, and 283 hidden test set cases. Each case included T2, FLAIR, T1, and T1Gd brain MRI sequences with associated tumor compartment labels delineating enhancing tumor, non-enhancing tumor, and surrounding non-enhancing FLAIR hyperintensity. Participant automated segmentation models were evaluated and ranked based on a scoring system evaluating lesion-wise metrics including dice similarity coefficient (DSC) and 95% Hausdorff Distance. The top ranked team had a lesion-wise median dice similarity coefficient (DSC) of 0.976, 0.976, and 0.964 for enhancing tumor, tumor core, and whole tumor, respectively and a corresponding average DSC of 0.899, 0.904, and 0.871, respectively. These results serve as state-of-the-art benchmarks for future pre-operative meningioma automated segmentation algorithms. Additionally, we found that 1286 of 1424 cases (90.3%) had at least 1 compartment voxel abutting the edge of the skull-stripped image edge, which requires further investigation into optimal pre-processing face anonymization steps.}
+}
+
+@article{bakas2024brats,
+  title={BraTS-Path Challenge: Assessing Heterogeneous Histopathologic Brain Tumor Sub-regions},
+  author={Bakas, Spyridon and Thakur, Siddhesh P and Faghani, Shahriar and Moassefi, Mana and Baid, Ujjwal and Chung, Verena and Pati, Sarthak and Innani, Shubham and Baheti, Bhakti and Albrecht, Jake and others},
+  journal={arXiv preprint arXiv:2405.10871},
+  year={2024},
+  html={https://doi.org/10.48550/arXiv.2405.10871},
+  abstract={Glioblastoma is the most common primary adult brain tumor, with a grim prognosis - median survival of 12-18 months following treatment, and 4 months otherwise. Glioblastoma is widely infiltrative in the cerebral hemispheres and well-defined by heterogeneous molecular and micro-environmental histopathologic profiles, which pose a major obstacle in treatment. Correctly diagnosing these tumors and assessing their heterogeneity is crucial for choosing the precise treatment and potentially enhancing patient survival rates. In the gold-standard histopathology-based approach to tumor diagnosis, detecting various morpho-pathological features of distinct histology throughout digitized tissue sections is crucial. Such "features" include the presence of cellular tumor, geographic necrosis, pseudopalisading necrosis, areas abundant in microvascular proliferation, infiltration into the cortex, wide extension in subcortical white matter, leptomeningeal infiltration, regions dense with macrophages, and the presence of perivascular or scattered lymphocytes. With these features in mind and building upon the main aim of the BraTS Cluster of Challenges this https URL, the goal of the BraTS-Path challenge is to provide a systematically prepared comprehensive dataset and a benchmarking environment to develop and fairly compare deep-learning models capable of identifying tumor sub-regions of distinct histologic profile. These models aim to further our understanding of the disease and assist in the diagnosis and grading of conditions in a consistent manner.}
+}
+
+@article{labella2024brain,
+  title={Brain tumor segmentation (brats) challenge 2024: Meningioma radiotherapy planning automated segmentation},
+  author={LaBella, Dominic and Schumacher, Katherine and Mix, Michael and Leu, Kevin and McBurney-Lin, Shan and Nedelec, Pierre and Villanueva-Meyer, Javier and Shapey, Jonathan and Vercauteren, Tom and Chia, Kazumi and others},
+  journal={arXiv preprint arXiv:2405.18383},
+  year={2024},
+  html={https://doi.org/10.48550/arXiv.2405.18383},
+  abstract={The 2024 Brain Tumor Segmentation Meningioma Radiotherapy (BraTS-MEN-RT) challenge aims to advance automated segmentation algorithms using the largest known multi-institutional dataset of radiotherapy planning brain MRIs with expert-annotated target labels for patients with intact or postoperative meningioma that underwent either conventional external beam radiotherapy or stereotactic radiosurgery. Each case includes a defaced 3D post-contrast T1-weighted radiotherapy planning MRI in its native acquisition space, accompanied by a single-label "target volume" representing the gross tumor volume (GTV) and any at-risk postoperative site. Target volume annotations adhere to established radiotherapy planning protocols, ensuring consistency across cases and institutions. For preoperative meningiomas, the target volume encompasses the entire GTV and associated nodular dural tail, while for postoperative cases, it includes at-risk resection cavity margins as determined by the treating institution. Case annotations were reviewed and approved by expert neuroradiologists and radiation oncologists. Participating teams will develop, containerize, and evaluate automated segmentation models using this comprehensive dataset. Model performance will be assessed using an adapted lesion-wise Dice Similarity Coefficient and the 95% Hausdorff distance. The top-performing teams will be recognized at the Medical Image Computing and Computer Assisted Intervention Conference in October 2024. BraTS-MEN-RT is expected to significantly advance automated radiotherapy planning by enabling precise tumor segmentation and facilitating tailored treatment, ultimately improving patient outcomes.
+}
+}
+
+@article{doiphode2024advancing,
+  title={Advancing volumetric breast density segmentation: a deep learning approach with digital breast tomosynthesis},
+  author={Doiphode, Nehal and Ahluwalia, Vinayak S and Mankowski, Walter C and Cohen, Eric A and Pati, Sarthak and Pantalone, Lauren and Bakas, Spyridon and Brooks, Ari and Vachon, Celine M and Conant, Emily F and others},
+  booktitle={17th International Workshop on Breast Imaging (IWBI 2024)},
+  volume={13174},
+  pages={153--160},
+  year={2024},
+  organization={SPIE},
+  html={https://doi.org/10.1117/12.3027010},
+  abstract={Recognizing breast density as a critical risk factor for breast cancer, traditionally assessed through subjective radiological evaluation within the BI-RADS framework, this research seeks to mitigate inter-observer variability through automated, quantitative analysis. The transition to DBT offers a quasi-3D perspective potentially enhancing the accuracy of BD assessments yet faces limitations with current FDA-cleared methods for volumetric breast density (VBD) estimation. Addressing these challenges, our work introduces a fully automated computational tool leveraging deep learning to accurately assess VBD from 3D DBT images without reliance on raw 2D data. Employing retrospective data compliant with privacy regulations, this study utilized DBT screening examinations from the Hospital of the University of Pennsylvania. The development of a three-class segmentation model, based on the U-Net architecture, was undertaken to differentiate between non-breast/background, fatty breast tissue, and dense breast tissue in DBT images. A novel two-stage training method was devised to enhance model performance, particularly in avoiding mis-segmentation issues common in high-resolution medio-lateral oblique images. This approach first utilized resized images for global shape information recognition, followed by refined segmentation using a 3D U-Net on filtered input, emphasizing accurate dense tissue identification. Our model demonstrated exemplary performance, with the Dice score—a critical metric for evaluating segmentation accuracy—revealing substantial agreement between the model's predictions and actual data. Validation of the model's effectiveness in breast cancer risk estimation was conducted through a case-control study, demonstrating a statistically significant association between DL-estimated VBD and cancer diagnosis. Additional factors, including BMI and age at screening, were also found to be significantly associated with cancer status, underscoring the multifactorial nature of breast cancer risk. The model's predictive capability was further evidenced by an AUC of 0.63, indicating good performance. The study's implications are profound, offering a clinically significant tool for personalized breast cancer risk prediction and potentially enhancing screening strategies across diverse populations.}
+}
+
+@article{hamamci2024generatect,
+  title={Generatect: Text-conditional generation of 3d chest ct volumes},
+  author={Hamamci, Ibrahim Ethem and Er, Sezgin and Sekuboyina, Anjany and Simsar, Enis and Tezcan, Alperen and Simsek, Ayse Gulnihan and Esirgun, Sevval Nil and Almas, Furkan and Do{\u{g}}an, Irem and Dasdelen, Muhammed Furkan and others},
+  booktitle={European Conference on Computer Vision},
+  pages={126--143},
+  year={2024},
+  organization={Springer Nature Switzerland Cham},
+  html={https://doi.org/10.1007/978-3-031-72986-7_8},
+  abstract={Text-conditional medical image generation is vital for radiology, augmenting small datasets, preserving data privacy, and enabling patient-specific modeling. However, its applications in 3D medical imaging, such as CT and MRI, which are crucial for critical care, remain unexplored. In this paper, we introduce GenerateCT, the first approach to generating 3D medical imaging conditioned on free-form medical text prompts. GenerateCT incorporates a text encoder and three key components: a novel causal vision transformer for encoding 3D CT volumes, a text-image transformer for aligning CT and text tokens, and a text-conditional super-resolution diffusion model. Without directly comparable methods in 3D medical imaging, we benchmarked GenerateCT against cutting-edge methods, demonstrating its superiority across all key metrics. Importantly, we explored GenerateCT's clinical applications by evaluating its utility in a multi-abnormality classification task. First, we established a baseline by training a multi-abnormality classifier on our real dataset. To further assess the model's generalization to external datasets and its performance with unseen prompts in a zero-shot scenario, we employed an external dataset to train the classifier, setting an additional benchmark. We conducted two experiments in which we doubled the training datasets by synthesizing an equal number of volumes for each set using GenerateCT. The first experiment demonstrated an 11% improvement in the AP score when training the classifier jointly on real and generated volumes. The second experiment showed a 7% improvement when training on both real and generated volumes based on unseen prompts. Moreover, GenerateCT enables the scaling of synthetic training datasets to arbitrary sizes. As an example, we generated 100,000 3D CT volumes, fivefold the number in our real dataset, and trained the classifier exclusively on these synthetic volumes. Impressively, this classifier surpassed the performance of the one trained on all available real data by a margin of 8%. Lastly, domain experts evaluated the generated volumes, confirming a high degree of alignment with the text prompts. Access our code, model weights, training data, and generated data at https://github.com/ibrahimethemhamamci/GenerateCT.}
+}
+
+@article{pati2024privacy,
+  title={Privacy preservation for federated learning in health care},
+  author={Pati, Sarthak and Kumar, Sourav and Varma, Amokh and Edwards, Brandon and Lu, Charles and Qu, Liangqiong and Wang, Justin J and Lakshminarayanan, Anantharaman and Wang, Shih-han and Sheller, Micah J and others},
+  journal={Patterns},
+  volume={5},
+  number={7},
+  year={2024},
+  publisher={Elsevier},
+  html={https://doi.org/10.1016/j.patter.2024.100974},
+  abstract={Significant improvements can be made to clinical AI applications when multiple health-care institutions collaborate to build models that leverage large and diverse datasets. Federated learning (FL) provides a method for such AI model training, where each institution shares only model updates derived from their private training data, rather than the explicit patient data. This has been demonstrated to advance the state of the art for many clinical AI applications. However, open and persistent federations bring up the question of trust, and model updates have raised considerations of possible information leakage. Prior work has gone into understanding the inherent privacy risks and into developing mitigation techniques. Focusing on FL in health care, we review the privacy risks and the costs and limitations associated with state-of-the-art mitigations. We hope to provide a guide to health-care researchers seeking to engage in FL as a new paradigm of secure and private collaborative AI.}
+}
+
+@article{kazerooni2024brats,
+  title={BraTS-PEDs: results of the multi-consortium international pediatric brain tumor segmentation challenge 2023},
+  author={Kazerooni, Anahita Fathi and Khalili, Nastaran and Liu, Xinyang and Haldar, Debanjan and Jiang, Zhifan and Zapaishchykova, Anna and Pavaine, Julija and Shah, Lubdha M and Jones, Blaise V and Sheth, Nakul and others},
+  journal={arXiv preprint arXiv:2407.08855},
+  year={2024},
+  html={https://doi.org/10.48550/arXiv.2407.08855},
+  abstract={Pediatric central nervous system tumors are the leading cause of cancer-related deaths in children. The five-year survival rate for high-grade glioma in children is less than 20%. The development of new treatments is dependent upon multi-institutional collaborative clinical trials requiring reproducible and accurate centralized response assessment. We present the results of the BraTS-PEDs 2023 challenge, the first Brain Tumor Segmentation (BraTS) challenge focused on pediatric brain tumors. This challenge utilized data acquired from multiple international consortia dedicated to pediatric neuro-oncology and clinical trials. BraTS-PEDs 2023 aimed to evaluate volumetric segmentation algorithms for pediatric brain gliomas from magnetic resonance imaging using standardized quantitative performance evaluation metrics employed across the BraTS 2023 challenges. The top-performing AI approaches for pediatric tumor analysis included ensembles of nnU-Net and Swin UNETR, Auto3DSeg, or nnU-Net with a self-supervised framework. The BraTSPEDs 2023 challenge fostered collaboration between clinicians (neuro-oncologists, neuroradiologists) and AI/imaging scientists, promoting faster data sharing and the development of automated volumetric analysis techniques. These advancements could significantly benefit clinical trials and improve the care of children with brain tumors.}
+}
+
+@article{afiaz2024best,
+  title={Best practices to evaluate the impact of biomedical research software—metric collection beyond citations},
+  author={Afiaz, Awan and Ivanov, Andrey A and Chamberlin, John and Hanauer, David and Savonen, Candace L and Goldman, Mary J and Morgan, Martin and Reich, Michael and Getka, Alexander and Holmes, Aaron and others},
+  journal={Bioinformatics},
+  volume={40},
+  number={8},
+  pages={btae469},
+  year={2024},
+  publisher={Oxford University Press},
+  html={https://doi.org/10.1093/bioinformatics/btae469},
+  abstract={Motivation: Software is vital for the advancement of biology and medicine. Impact evaluations of scientific software have primarily emphasized traditional citation metrics of associated papers, despite these metrics inadequately capturing the dynamic picture of impact and despite challenges with improper citation. Results: To understand how software developers evaluate their tools, we conducted a survey of participants in the Informatics Technology for Cancer Research (ITCR) program funded by the National Cancer Institute (NCI). We found that although developers realize the value of more extensive metric collection, they find a lack of funding and time hindering. We also investigated software among this community for how often infrastructure that supports more nontraditional metrics were implemented and how this impacted rates of papers describing usage of the software. We found that infrastructure such as social media presence, more in-depth documentation, the presence of software health metrics, and clear information on how to contact developers seemed to be associated with increased mention rates. Analysing more diverse metrics can enable developers to better understand user engagement, justify continued funding, identify novel use cases, pinpoint improvement areas, and ultimately amplify their software's impact. Challenges are associated, including distorted or misleading metrics, as well as ethical and security concerns. More attention to nuances involved in capturing impact across the spectrum of biomedical software is needed. For funders and developers, we outline guidance based on experience from our community. By considering how we evaluate software, we can empower developers to create tools that more effectively accelerate biological and medical research progress. Availability and implementation: More information about the analysis, as well as access to data and code is available at https://github.com/fhdsl/ITCR_Metrics_manuscript_website.}
+}
+
+@article{pati2024gandlf,
+  title={GaNDLF-Synth: A Framework to Democratize Generative AI for (Bio) Medical Imaging},
+  author={Pati, Sarthak and Mazurek, Szymon and Bakas, Spyridon},
+  journal={arXiv preprint arXiv:2410.00173},
+  year={2024},
+  html={https://doi.org/10.48550/arXiv.2410.00173},
+  abstract={Generative Artificial Intelligence (GenAI) is a field of AI that creates new data samples from existing ones. It utilizing deep learning to overcome the scarcity and regulatory constraints of healthcare data by generating new data points that integrate seamlessly with original datasets. This paper explores the background and motivation for GenAI, and introduces the Generally Nuanced Deep Learning Framework for Synthesis (GaNDLF-Synth) to address a significant gap in the literature and move towards democratizing the implementation and assessment of image synthesis tasks in healthcare. GaNDLF-Synth describes a unified abstraction for various synthesis algorithms, including autoencoders, generative adversarial networks, and diffusion models. Leveraging the GANDLF-core framework, it supports diverse data modalities and distributed computing, ensuring scalability and reproducibility through extensive unit testing. The aim of GaNDLF-Synth is to lower the entry barrier for GenAI, and make it more accessible and extensible by the wider scientific community.}
+}
+
+@article{villanueva2024artificial,
+  title={Artificial Intelligence for Response Assessment in Neuro Oncology (AI-RANO), part 1: review of current advancements},
+  author={Villanueva-Meyer, Javier E and Bakas, Spyridon and Tiwari, Pallavi and Lupo, Janine M and Calabrese, Evan and Davatzikos, Christos and Bi, Wenya Linda and Ismail, Marwa and Akbari, Hamed and Lohmann, Philipp and others},
+  journal={The Lancet Oncology},
+  volume={25},
+  number={11},
+  pages={e581--e588},
+  year={2024},
+  publisher={Elsevier},
+  html={https://doi.org/10.1016/S1470-2045(24)00316-4},
+  abstract={The development, application, and benchmarking of artificial intelligence (AI) tools to improve diagnosis, prognostication, and therapy in neuro-oncology are increasing at a rapid pace. This Policy Review provides an overview and critical assessment of the work to date in this field, focusing on diagnostic AI models of key genomic markers, predictive AI models of response before and after therapy, and differentiation of true disease progression from treatment-related changes, which is a considerable challenge based on current clinical care in neuro-oncology. Furthermore, promising future directions, including the use of AI for automated response assessment in neuro-oncology, are discussed.}
+}
+
+@article{bakas2024artificial,
+  title={Artificial Intelligence for Response Assessment in Neuro Oncology (AI-RANO), part 2: recommendations for standardisation, validation, and good clinical practice},
+  author={Bakas, Spyridon and Vollmuth, Philipp and Galldiks, Norbert and Booth, Thomas C and Aerts, Hugo JWL and Bi, Wenya Linda and Wiestler, Benedikt and Tiwari, Pallavi and Pati, Sarthak and Baid, Ujjwal and others},
+  journal={The Lancet Oncology},
+  volume={25},
+  number={11},
+  pages={e589--e601},
+  year={2024},
+  publisher={Elsevier},
+  html={https://doi.org/10.1016/S1470-2045(24)00315-2},
+  abstract={Technological advancements have enabled the extended investigation, development, and application of computational approaches in various domains, including health care. A burgeoning number of diagnostic, predictive, prognostic, and monitoring biomarkers are continuously being explored to improve clinical decision making in neuro-oncology. These advancements describe the increasing incorporation of artificial intelligence (AI) algorithms, including the use of radiomics. However, the broad applicability and clinical translation of AI are restricted by concerns about generalisability, reproducibility, scalability, and validation. This Policy Review intends to serve as the leading resource of recommendations for the standardisation and good clinical practice of AI approaches in health care, particularly in neuro-oncology. To this end, we investigate the repeatability, reproducibility, and stability of AI in response assessment in neuro-oncology in studies on factors affecting such computational approaches, and in publicly available open-source data and computational software tools facilitating these goals. The pathway for standardisation and validation of these approaches is discussed with the view of trustworthy AI enabling the next generation of clinical trials. We conclude with an outlook on the future of AI-enabled neuro-oncology.}
+}
+
+@article{moawad2024brain,
+  title={The Brain Tumor Segmentation-Metastases (BraTS-METS) Challenge 2023: Brain Metastasis Segmentation on Pre-treatment MRI},
+  author={Moawad, Ahmed W and Janas, Anastasia and Baid, Ujjwal and Ramakrishnan, Divya and Saluja, Rachit and Ashraf, Nader and Maleki, Nazanin and Jekel, Leon and Yordanov, Nikolay and Fehringer, Pascal and others},
+  journal={ArXiv},
+  pages={arXiv--2306},
+  year={2024},
+  html={https://doi.org/10.48550/arXiv.2306.00838},
+  abstract={The translation of AI-generated brain metastases (BM) segmentation into clinical practice relies heavily on diverse, high-quality annotated medical imaging datasets. The BraTS-METS 2023 challenge has gained momentum for testing and benchmarking algorithms using rigorously annotated internationally compiled real-world datasets. This study presents the results of the segmentation challenge and characterizes the challenging cases that impacted the performance of the winning algorithms. Untreated brain metastases on standard anatomic MRI sequences (T1, T2, FLAIR, T1PG) from eight contributed international datasets were annotated in stepwise method: published UNET algorithms, student, neuroradiologist, final approver neuroradiologist. Segmentations were ranked based on lesion-wise Dice and Hausdorff distance (HD95) scores. False positives (FP) and false negatives (FN) were rigorously penalized, receiving a score of 0 for Dice and a fixed penalty of 374 for HD95. Eight datasets comprising 1303 studies were annotated, with 402 studies (3076 lesions) released on Synapse as publicly available datasets to challenge competitors. Additionally, 31 studies (139 lesions) were held out for validation, and 59 studies (218 lesions) were used for testing. Segmentation accuracy was measured as rank across subjects, with the winning team achieving a LesionWise mean score of 7.9. Common errors among the leading teams included false negatives for small lesions and misregistration of masks in this http URL BraTS-METS 2023 challenge successfully curated well-annotated, diverse datasets and identified common errors, facilitating the translation of BM segmentation across varied clinical environments and providing personalized volumetric reports to patients undergoing BM treatment.}
+}
+
+@article{thakur2024tmic,
+  title={TMIC-60. BRATS-PATH: ASSESSING HETEROGENEOUS HISTOPATHOLOGIC REGIONS IN GLIOBLASTOMA},
+  author={Thakur, Siddhesh and Faghani, Shahriar and Moassefi, Mana and Baid, Ujjwal and Chung, Verena and Pati, Sarthak and Innani, Shubham and Baheti, Bhakti and Albrecht, Jacob and Karargyris, Alexandros and others},
+  journal={Neuro-Oncology},
+  volume={26},
+  number={Supplement\_8},
+  pages={viii312--viii312},
+  year={2024},
+  publisher={Oxford University Press US},
+  html={https://doi.org/10.1093/neuonc/noae165.1238},
+  abstract={Glioblastoma, the most common malignant primary adult brain tumor, poses significant diagnostic and treatment challenges due to its heterogeneous molecular and micro-environmental profiles. To this end, we organize the BraTS-Path challenge to provide a public benchmarking environment and a comprehensive dataset to develop and validate AI models for identifying distinct histopathologic glioblastoma sub-regions in H&E-stained digitized tissue sections. We identified 188 multi-institutional diagnostic slides of glioblastoma (IDH-wt, Gr.4) cases, from the TCGA-GBM and TCGA-LGG data collections, following their reclassification according to the 2021 WHO classification criteria. Sub-regions were selected according to distinctive morphology of histopathologic features and included aggressive tumor biology and areas consistent with potential treatment effect. Selected sub-region annotations included cellular tumor, geographic necrosis, cortical infiltration, pseudopalisading necrosis, microvascular proliferation, white matter penetration, regions dense with macrophages, leptomeningeal infiltration, and presence of lymphocytes. We obtained 107,340 patches of size 512x512 from the 9 sub-regions. A global network of board-certified expert neuropathologists defined and followed a systematic annotation protocol based on clinical definitions and only delineated sub-regions with high confidence, thus ensuring high-quality standardized data. Each tissue section was assigned to an annotator-approver pair, with the annotator delineating sub-regions and the approver ensuring the consistency of the annotations. By crowdsourcing annotations, the BraTS-Path challenge harnesses the collective expertise of clinical neuropathologists and fosters a collaborative environment to advance the neuro-oncology field. The anticipated developed algorithms are expected to integrate state-of-the-art computational methods, achieving high accuracy in identifying diverse histopathologic features and advancing clinical decision-making processes. The BraTS-Path challenge aims to bridge the gap between research and clinical practice by promoting the development of AI-driven tools for precise tumor characterization. This collaborative effort can significantly enhance our understanding of glioblastoma, improve diagnostic accuracy, and inform treatment strategies, thereby contributing to better patient outcomes.}
+}
+
+@article{ahluwalia2024volumetric,
+  title={Volumetric Breast Density Estimation From Three-Dimensional Reconstructed Digital Breast Tomosynthesis Images Using Deep Learning},
+  author={Ahluwalia, Vinayak S and Doiphode, Nehal and Mankowski, Walter C and Cohen, Eric A and Pati, Sarthak and Pantalone, Lauren and Bakas, Spyridon and Brooks, Ari and Vachon, Celine M and Conant, Emily F and others},
+  journal={JCO Clinical Cancer Informatics},
+  volume={8},
+  pages={e2400103},
+  year={2024},
+  publisher={Wolters Kluwer Health},
+  html={https://doi.org/10.1200/CCI.24.00103},
+  abstract={Purpose: Breast density is a widely established independent breast cancer risk factor. With the increasing utilization of digital breast tomosynthesis (DBT) in breast cancer screening, there is an opportunity to estimate volumetric breast density (VBD) routinely. However, current available methods extrapolate VBD from two-dimensional (2D) images acquired using DBT and/or depend on the existence of raw DBT data, which is rarely archived by clinical centers because of storage constraints. Methods: We retrospectively analyzed 1,080 nonactionable three-dimensional (3D) reconstructed DBT screening examinations acquired between 2011 and 2016. Reference tissue segmentations were generated using previously validated software that uses 3D reconstructed slices and raw 2D DBT data. We developed a deep learning (DL) model that segments dense and fatty breast tissue from background. We then applied this model to estimate %VBD and absolute dense volume (ADV) in cm3 in a separate case-control sample (180 cases and 654 controls). We created two conditional logistic regression models, relating each model-derived density measurement to likelihood of contralateral breast cancer diagnosis, adjusted for age, BMI, family history, and menopausal status. Results: The DL model achieved unweighted and weighted Dice scores of 0.88 (standard deviation [SD] = 0.08) and 0.76 (SD = 0.15), respectively, on the held-out test set, demonstrating good agreement between the model and 3D reference segmentations. There was a significant association between the odds of breast cancer diagnosis and model-derived VBD (odds ratio [OR], 1.41 [95 % CI, 1.13 to 1.77]; P = .002), with an AUC of 0.65 (95% CI, 0.60 to 0.69). ADV was also significantly associated with breast cancer diagnosis (OR, 1.45 [95% CI, 1.22 to 1.73]; P < .001) with an AUC of 0.67 (95% CI, 0.62 to 0.71).Conclusion: DL-derived density measures derived from 3D reconstructed DBT images are associated with breast cancer diagnosis.}
+}
+
+@article{agraz2023robust,
+  title={Robust image population based stain color normalization: How many reference slides are enough?},
+  author={Agraz, Jose L and Grenko, Caleb M and Chen, Andrew A and Viaene, Angela N and Nasrallah, MacLean D and Pati, Sarthak and Kurc, Tahsin and Saltz, Joel and Feldman, Michael D and Akbari, Hamed and others},
+  journal={IEEE Open Journal of Engineering in Medicine and Biology},
+  volume={3},
+  pages={218--226},
+  year={2023},
+  publisher={IEEE},
+  html={https://doi.org/10.1109/OJEMB.2023.3234443},
+  abstract={Histopathologic evaluation of Hematoxylin & Eosin (H&E) stained slides is essential for disease diagnosis, revealing tissue morphology, structure, and cellular composition. Variations in staining protocols and equipment result in images with color nonconformity. Although pathologists compensate for color variations, these disparities introduce inaccuracies in computational whole slide image (WSI) analysis, accentuating data domain shift and degrading generalization. Current state-of-the-art normalization methods employ a single WSI as reference, but selecting a single WSI representative of a complete WSI-cohort is infeasible, inadvertently introducing normalization bias. We seek the optimal number of slides to construct a more representative reference based on composite/aggregate of multiple H&E density histograms and stain-vectors, obtained from a randomly selected WSI population (WSI-Cohort-Subset). We utilized 1,864 IvyGAP WSIs as a WSI-cohort, and built 200 WSI-Cohort-Subsets varying in size (from 1 to 200 WSI-pairs) using randomly selected WSIs. The WSI-pairs' mean Wasserstein Distances and WSI-Cohort-Subsets' standard deviations were calculated. The Pareto Principle defined the optimal WSI-Cohort-Subset size. The WSI-cohort underwent structure-preserving color normalization using the optimal WSI-Cohort-Subset histogram and stain-vector aggregates. Numerous normalization permutations support WSI-Cohort-Subset aggregates as representative of a WSI-cohort through WSI-cohort CIELAB color space swift convergence, as a result of the law of large numbers and shown as a power law distribution. We show normalization at the optimal (Pareto Principle) WSI-Cohort-Subset size and corresponding CIELAB convergence: a) Quantitatively, using 500 WSI-cohorts; b) Quantitatively, using 8,100 WSI-regions; c) Qualitatively, using 30 cellular tumor normalization permutations. Aggregate-based stain normalization may contribute in increasing computational pathology robustness, reproducibility, and integrity.}
+}
+
+@article{eisenmann2023winner,
+  title={Why is the winner the best?},
+  author={Eisenmann, Matthias and Reinke, Annika and Weru, Vivienn and Tizabi, Minu D and Isensee, Fabian and Adler, Tim J and Ali, Sharib and Andrearczyk, Vincent and Aubreville, Marc and Baid, Ujjwal and others},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and Pattern recognition},
+  pages={19955--19966},
+  year={2023},
+  html={https://openaccess.thecvf.com/content/CVPR2023/html/Eisenmann_Why_Is_the_Winner_the_Best_CVPR_2023_paper.html},
+  abstract={International benchmarking competitions have become fundamental for the comparative performance assessment of image analysis methods. However, little attention has been given to investigating what can be learnt from these competitions. Do they really generate scientific progress? What are common and successful participation strategies? What makes a solution superior to a competing method? To address this gap in the literature, we performed a multi-center study with all 80 competitions that were conducted in the scope of IEEE ISBI 2021 and MICCAI 2021. Statistical analyses performed based on comprehensive descriptions of the submitted algorithms linked to their rank as well as the underlying participation strategies revealed common characteristics of winning solutions. These typically include the use of multi-task learning (63%) and/or multi-stage pipelines (61%), and a focus on augmentation (100%), image preprocessing (97%), data curation (79%), and postprocessing (66%). The "typical" lead of a winning team is a computer scientist with a doctoral degree, five years of experience in biomedical image analysis, and four years of experience in deep learning. Two core general development strategies stood out for highly-ranked teams: the reflection of the metrics in the method design and the focus on analyzing and handling failure cases. According to the organizers, 43% of the winning algorithms exceeded the state of the art but only 11% completely solved the respective domain problem. The insights of our study could help researchers (1) improve algorithm development strategies when approaching new problems, and (2) focus on open research questions revealed by this work.}
+}
+
+@article{pati2023gandlf,
+  title={GaNDLF: the generally nuanced deep learning framework for scalable end-to-end clinical workflows},
+  author={Pati, Sarthak and Thakur, Siddhesh P and Hamamc{\i}, {\.I}brahim Ethem and Baid, Ujjwal and Baheti, Bhakti and Bhalerao, Megh and G{\"u}ley, Orhun and Mouchtaris, Sofia and Lang, David and Thermos, Spyridon and others},
+  journal={Communications Engineering},
+  volume={2},
+  number={1},
+  pages={23},
+  year={2023},
+  publisher={Nature Publishing Group UK London},
+  selected={true},
+  html={https://doi.org/10.1038/s44172-023-00066-3},
+  abstract={Deep Learning (DL) has the potential to optimize machine learning in both the scientific and clinical communities. However, greater expertise is required to develop DL algorithms, and the variability of implementations hinders their reproducibility, translation, and deployment. Here we present the community-driven Generally Nuanced Deep Learning Framework (GaNDLF), with the goal of lowering these barriers. GaNDLF makes the mechanism of DL development, training, and inference more stable, reproducible, interpretable, and scalable, without requiring an extensive technical background. GaNDLF aims to provide an end-to-end solution for all DL-related tasks in computational precision medicine. We demonstrate the ability of GaNDLF to analyze both radiology and histology images, with built-in support for k-fold cross-validation, data augmentation, multiple modalities and output classes. Our quantitative performance evaluation on numerous use cases, anatomies, and computational tasks supports GaNDLF as a robust application framework for deployment in clinical workflows.},
+  preview={gandlf.png},
+}
+
+@article{hamamci2023generatect0,
+  title={Generatect: Text-guided 3d chest ct generation},
+  author={Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and Tezcan, Alperen and Simsek, Ayse Gulnihan and Almas, Furkan and Esirgun, Sevval Nil and Reynaud, Hadrien and Pati, Sarthak and Bluethgen, Christian and others},
+  journal={CoRR},
+  year={2023},
+  html={https://openreview.net/forum?id=OYijG9zV2v},
+  abstract={GenerateCT, the first approach to generating 3D medical imaging conditioned on free-form medical text prompts, incorporates a text encoder and three key components: a novel causal vision transformer for encoding 3D CT volumes, a text-image transformer for aligning CT and text tokens, and a text-conditional super-resolution diffusion model. Without directly comparable methods in 3D medical imaging, we benchmarked GenerateCT against cutting-edge methods, demonstrating its superiority across all key metrics. Importantly, we evaluated GenerateCT's clinical applications in a multi-abnormality classification task. First, we established a baseline by training a multi-abnormality classifier on our real dataset. To further assess the model's generalization to external data and performance with unseen prompts in a zero-shot scenario, we employed an external set to train the classifier, setting an additional benchmark. We conducted two experiments in which we doubled the training datasets by synthesizing an equal number of volumes for each set using GenerateCT. The first experiment demonstrated an 11% improvement in the AP score when training the classifier jointly on real and generated volumes. The second experiment showed a 7% improvement when training on both real and generated volumes based on unseen prompts. Moreover, GenerateCT enables the scaling of synthetic training datasets to arbitrary sizes. As an example, we generated 100,000 3D CTs, fivefold the number in our real set, and trained the classifier exclusively on these synthetic CTs. Impressively, this classifier surpassed the performance of the one trained on all available real data by a margin of 8%. Last, domain experts evaluated the generated volumes, confirming a high degree of alignment with the text prompt. Access our code, model weights, training data, and generated data at https://github.com/ibrahimethemhamamci/GenerateCT}
+}
+
+@article{ethem2023generatect1,
+  title={GenerateCT: Text-Conditional Generation of 3D Chest CT Volumes},
+  author={Ethem Hamamci, Ibrahim and Er, Sezgin and Sekuboyina, Anjany and Simsar, Enis and Tezcan, Alperen and Gulnihan Simsek, Ayse and Nil Esirgun, Sevval and Almas, Furkan and Dogan, Irem and Furkan Dasdelen, Muhammed and others},
+  journal={arXiv e-prints},
+  pages={arXiv--2305},
+  year={2023},
+  html={https://doi.org/10.48550/arXiv.2305.16037},
+  abstract={GenerateCT, the first approach to generating 3D medical imaging conditioned on free-form medical text prompts, incorporates a text encoder and three key components: a novel causal vision transformer for encoding 3D CT volumes, a text-image transformer for aligning CT and text tokens, and a text-conditional super-resolution diffusion model. Without directly comparable methods in 3D medical imaging, we benchmarked GenerateCT against cutting-edge methods, demonstrating its superiority across all key metrics. Importantly, we evaluated GenerateCT's clinical applications in a multi-abnormality classification task. First, we established a baseline by training a multi-abnormality classifier on our real dataset. To further assess the model's generalization to external data and performance with unseen prompts in a zero-shot scenario, we employed an external set to train the classifier, setting an additional benchmark. We conducted two experiments in which we doubled the training datasets by synthesizing an equal number of volumes for each set using GenerateCT. The first experiment demonstrated an 11% improvement in the AP score when training the classifier jointly on real and generated volumes. The second experiment showed a 7% improvement when training on both real and generated volumes based on unseen prompts. Moreover, GenerateCT enables the scaling of synthetic training datasets to arbitrary sizes. As an example, we generated 100,000 3D CTs, fivefold the number in our real set, and trained the classifier exclusively on these synthetic CTs. Impressively, this classifier surpassed the performance of the one trained on all available real data by a margin of 8%. Last, domain experts evaluated the generated volumes, confirming a high degree of alignment with the text prompt. Access our code, model weights, training data, and generated data at https://github.com/ibrahimethemhamamci/GenerateCT}
+}
+
+@article{hamamci2023dentex,
+  title={Dentex: An abnormal tooth detection with dental enumeration and diagnosis benchmark for panoramic x-rays},
+  author={Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and Yuksel, Atif Emre and Gultekin, Sadullah and Ozdemir, Serife Damla and Yang, Kaiyuan and Li, Hongwei Bran and Pati, Sarthak and Stadlinger, Bernd and others},
+  journal={arXiv preprint arXiv:2305.19112},
+  year={2023},
+  html={https://doi.org/10.48550/arXiv.2305.19112},
+  abstract={Panoramic X-rays are frequently used in dentistry for treatment planning, but their interpretation can be both time-consuming and prone to error. Artificial intelligence (AI) has the potential to aid in the analysis of these X-rays, thereby improving the accuracy of dental diagnoses and treatment plans. Nevertheless, designing automated algorithms for this purpose poses significant challenges, mainly due to the scarcity of annotated data and variations in anatomical structure. To address these issues, the Dental Enumeration and Diagnosis on Panoramic X-rays Challenge (DENTEX) has been organized in association with the International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) in 2023. This challenge aims to promote the development of algorithms for multi-label detection of abnormal teeth, using three types of hierarchically annotated data: partially annotated quadrant data, partially annotated quadrant-enumeration data, and fully annotated quadrant-enumeration-diagnosis data, inclusive of four different diagnoses. In this paper, we present the results of evaluating participant algorithms on the fully annotated data, additionally investigating performance variation for quadrant, enumeration, and diagnosis labels in the detection of abnormal teeth. The provision of this annotated dataset, alongside the results of this challenge, may lay the groundwork for the creation of AI-powered tools that can offer more precise and efficient diagnosis and treatment planning in the field of dentistry. The evaluation code and datasets can be accessed at https://github.com/ibrahimethemhamamci/DENTEX.}
+}
+
+@article{afiaz2023evaluation,
+  title={Evaluation of software impact designed for biomedical research: Are we measuring what's meaningful?},
+  author={Afiaz, Awan and Ivanov, Andrey A and Chamberlin, John and Hanauer, David and Savonen, Candace L and Goldman, Mary J and Morgan, Martin and Reich, Michael and Getka, Alexander and Holmes, Aaron and others},
+  journal={ArXiv},
+  pages={arXiv--2306},
+  year={2023},
+  html={https://doi.org/10.48550/arXiv.2306.03255},
+  abstract={Software is vital for the advancement of biology and medicine. Analysis of usage and impact metrics can help developers determine user and community engagement, justify additional funding, encourage additional use, identify unanticipated use cases, and help define improvement areas. However, there are challenges associated with these analyses including distorted or misleading metrics, as well as ethical and security concerns. More attention to the nuances involved in capturing impact across the spectrum of biological software is needed. Furthermore, some tools may be especially beneficial to a small audience, yet may not have compelling typical usage metrics. We propose more general guidelines, as well as strategies for more specific types of software. We highlight outstanding issues regarding how communities measure or evaluate software impact. To get a deeper understanding of current practices for software evaluations, we performed a survey of participants in the Informatics Technology for Cancer Research (ITCR) program funded by the National Cancer Institute (NCI). We also investigated software among this community and others to assess how often infrastructure that supports such evaluations is implemented and how this impacts rates of papers describing usage of the software. We find that developers recognize the utility of analyzing software usage, but struggle to find the time or funding for such analyses. We also find that infrastructure such as social media presence, more in-depth documentation, the presence of software health metrics, and clear information on how to contact developers seem to be associated with increased usage rates. Our findings can help scientific software developers make the most out of evaluations of their software.}
+}
+
+@article{karargyris2023federated,
+  title={Federated benchmarking of medical artificial intelligence with MedPerf},
+  author={Karargyris, Alexandros and Umeton, Renato and Sheller, Micah J and Aristizabal, Alejandro and George, Johnu and Wuest, Anna and Pati, Sarthak and Kassem, Hasan and Zenk, Maximilian and Baid, Ujjwal and others},
+  journal={Nature machine intelligence},
+  volume={5},
+  number={7},
+  pages={799--810},
+  year={2023},
+  publisher={Nature Publishing Group UK London},
+  html={https://doi.org/10.1038/s42256-023-00652-2},
+  abstract={Medical artificial intelligence (AI) has tremendous potential to advance healthcare by supporting and contributing to the evidence-based practice of medicine, personalizing patient treatment, reducing costs, and improving both healthcare provider and patient experience. Unlocking this potential requires systematic, quantitative evaluation of the performance of medical AI models on large-scale, heterogeneous data capturing diverse patient populations. Here, to meet this need, we introduce MedPerf, an open platform for benchmarking AI models in the medical domain. MedPerf focuses on enabling federated evaluation of AI models, by securely distributing them to different facilities, such as healthcare organizations. This process of bringing the model to the data empowers each facility to assess and verify the performance of AI models in an efficient and human-supervised process, while prioritizing privacy. We describe the current challenges healthcare and AI communities face, the need for an open platform, the design philosophy of MedPerf, its current implementation status and real-world deployment, our roadmap and, importantly, the use of MedPerf with multiple international institutions within cloud-based technology and on-premises scenarios. Finally, we welcome new contributions by researchers and organizations to further strengthen MedPerf as an open benchmarking platform.}
+}
+
+@article{pati2023federated,
+  title={Federated learning enables big data for rare cancer boundary detection (vol 13, 7346, 2022)},
+  author={Pati, Sarthak and Baid, Ujjwal and Edwards, Brandon and Sheller, Micah and Wang, Shih-Han and Reina, G Anthony and Foley, Patrick and Gruzdev, Alexey and Karkada, Deepthi and Davatzikos, Christos and others},
+  year={2023},
+  publisher={NATURE PORTFOLIO},
+  html={https://doi.org/10.1038/s41467-022-33407-5},
+  abstract={Although machine learning (ML) has shown promise across disciplines, out-of-sample generalizability is concerning. This is currently addressed by sharing multi-site data, but such centralization is challenging/infeasible to scale due to various limitations. Federated ML (FL) provides an alternative paradigm for accurate and generalizable ML, by only sharing numerical model updates. Here we present the largest FL study to-date, involving data from 71 sites across 6 continents, to generate an automatic tumor boundary detector for the rare disease of glioblastoma, reporting the largest such dataset in the literature (n=6,314). We demonstrate a 33% delineation improvement for the surgically targetable tumor, and 23% for the complete tumor extent, over a publicly trained model. We anticipate our study to: 1) enable more healthcare studies informed by large diverse data, ensuring meaningful results for rare diseases and underrepresented populations, 2) facilitate further analyses for glioblastoma by releasing our consensus model, and 3) demonstrate the FL effectiveness at such scale and task-complexity as a paradigm shift for multi-site collaborations, alleviating the need for data-sharing.}
+}
+
+@article{pati20233,
+  title={3.11 Federated Learning and Reproducibility in Healthcare},
+  author={Pati, Sarthak},
+  journal={Inverse Biophysical Modeling and Machine Learning in Personalized Oncology},
+  pages={54},
+  year={2023},
+  html={https://drops.dagstuhl.de/storage/04dagstuhl-reports/volume13/issue01/23022/DagRep.13.1.36/DagRep.13.1.36.pdf#page=19}
+}
+
+@article{whybra2023image,
+  title={The Image Biomarker Standardization Initiative: Standardized convolutional filters for quantitative radiomics Authors and affiliations},
+  author={Whybra, Philip and Zwanenburg, Alex and Andrearczyk, Vincent and Schaer, Roger and Apte, Aditya P and Ayotte, Alexandre and Baheti, Bhakti and Bakas, Spyridon and Bettinelli, Andrea and Boellaard, Ronald and others},
+  year={2023},
+  html={https://hal.science/hal-04305625/},
+  abstract={Background: Filters applied to medical imaging can highlight various structures and patterns. Despite their widespread use in radiomics analyses, lack of standardization of convolutional filters negatively affects reproducibility. Purpose: To standardize convolutional filters for radiomics analyses. Materials and Methods: This study consisted of three phases. In the first phase, we aimed to establish 36 reference response maps for convolutional filters based on digital phantoms: mean, Laplacian-of-Gaussian, Laws kernels, Gabor kernels, separable and non separable wavelets (including decomposed forms) and Riesz transformations of convolutional filters. In the second phase, we aimed to find reference values for 396 intensity-based features computed from response maps of 22 filter and image processing configurations, based on computed tomography (CT) imaging. Afterwards, reproducibility of standardized convolutional filters and feature values was assessed during a validation phase, using a public dataset of multi-modal imaging (CT, FDG-PET, T1w-MR) from 51 patients with soft-tissue sarcoma. Results: In phase 1, 15 teams from 7 countries were able to find reference response maps for 33 of 36 filter configurations. In phase 2, 11 teams were able to find reference feature values for 323 of 396 features. Consensus on reference feature values for Riesz transformations was not established. During the validation phase, 458 of 486 features were found to be reproducible among 9 teams. Coefficient of variation and quartile coefficient of dispersion features were found to be poorly reproducible for band- and high-pass filters. Conclusion: Eight types of convolutional filters for radiomics were standardized and reference responses and reference feature values for verification and calibration of radiomics software packages were obtained. A web-based tool is available for checking compliance of radiomics software with the reference. }
+}
+
+@article{kofler2023panoptica,
+  title={Panoptica--instance-wise evaluation of 3D semantic and instance segmentation maps},
+  author={Kofler, Florian and M{\"o}ller, Hendrik and Buchner, Josef A and de la Rosa, Ezequiel and Ezhov, Ivan and Rosier, Marcel and Mekki, Isra and Shit, Suprosanna and Negwer, Moritz and Al-Maskari, Rami and others},
+  journal={arXiv preprint arXiv:2312.02608},
+  year={2023},
+  html={https://doi.org/10.48550/arXiv.2312.02608},
+  abstract={This paper introduces panoptica, a versatile and performance-optimized package designed for computing instance-wise segmentation quality metrics from 2D and 3D segmentation maps. panoptica addresses the limitations of existing metrics and provides a modular framework that complements the original intersection over union-based panoptic quality with other metrics, such as the distance metric Average Symmetric Surface Distance. The package is open-source, implemented in Python, and accompanied by comprehensive documentation and tutorials. panoptica employs a three-step metrics computation process to cover diverse use cases. The efficacy of panoptica is demonstrated on various real-world biomedical datasets, where an instance-wise evaluation is instrumental for an accurate representation of the underlying clinical task. Overall, we envision panoptica as a valuable tool facilitating in-depth evaluation of segmentation methods.}
+}
+
+@article{kofler2023brain,
+  title={The Brain Tumor Segmentation (BraTS) Challenge: Local Synthesis of Healthy Brain Tissue via Inpainting},
+  author={Kofler, Florian and Meissen, Felix and Steinbauer, Felix and Graf, Robert and Ehrlich, Stefan K and Reinke, Annika and Oswald, Eva and Waldmannstetter, Diana and Hoelzl, Florian and Horvath, Izabela and others},
+  journal={arXiv preprint arXiv:2305.08992},
+  year={2023},
+  html={https://doi.org/10.48550/arXiv.2305.08992},
+  abstract={A myriad of algorithms for the automatic analysis of brain MR images is available to support clinicians in their decision-making. For brain tumor patients, the image acquisition time series typically starts with an already pathological scan. This poses problems, as many algorithms are designed to analyze healthy brains and provide no guarantee for images featuring lesions. Examples include, but are not limited to, algorithms for brain anatomy parcellation, tissue segmentation, and brain extraction. To solve this dilemma, we introduce the BraTS inpainting challenge. Here, the participants explore inpainting techniques to synthesize healthy brain scans from lesioned ones. The following manuscript contains the task formulation, dataset, and submission procedure. Later, it will be updated to summarize the findings of the challenge. The challenge is organized as part of the ASNR-BraTS MICCAI challenge.}
+}
+
+@article{baid2022federated,
+  title={Federated Learning for the Classification of Tumor Infiltrating Lymphocytes},
+  author={Baid, Ujjwal and Pati, Sarthak and Kurc, Tahsin and Gupta, Rajarsi and Bremer, Erich and Abousamra, Shahira and Thakur, Siddhesh and Saltz, Joel and Bakas, Spyridon},
+  journal={arXiv preprint arXiv:2203.16622},
+  year={2022},
+  publisher={arXiv},
+  html={https://doi.org/10.48550/arXiv.2203.16622},
+  abstract={We evaluate the performance of federated learning (FL) in developing deep learning models for analysis of digitized tissue sections. A classification application was considered as the example use case, on quantifiying the distribution of tumor infiltrating lymphocytes within whole slide images (WSIs). A deep learning classification model was trained using 50*50 square micron patches extracted from the WSIs. We simulated a FL environment in which a dataset, generated from WSIs of cancer from numerous anatomical sites available by The Cancer Genome Atlas repository, is partitioned in 8 different nodes. Our results show that the model trained with the federated training approach achieves similar performance, both quantitatively and qualitatively, to that of a model trained with all the training data pooled at a centralized location. Our study shows that FL has tremendous potential for enabling development of more robust and accurate models for histopathology image analysis without having to collect large and diverse training data at a single location.}
+}
+
+@misc{ahluwalia2022artificial,
+  title={Artificial-intelligence-driven volumetric breast density estimation with digital breast tomosynthesis in a racially diverse screening cohort.},
+  author={Ahluwalia, Vinayak S and Mankowski, Walter and Pati, Sarthak and Bakas, Spyridon and Brooks, Ari D and Vachon, Celine M and Conant, Emily F and Gastounioti, Aimilia and Kontos, Despina},
+  year={2022},
+  publisher={American Society of Clinical Oncology},
+  html={https://doi.org/10.1200/JCO.2022.40.16_suppl.e13538},
+  abstract={Background: Breast density is considered a well-established breast cancer risk factor. As quasi-3D, digital breast tomosynthesis (DBT) becomes increasingly utilized for screening, there is an opportunity to routinely estimate volumetric breast density (VBD). However, current methods extrapolate VBD from 2D images acquired with DBT and/or depend on the existence of raw DBT data, which is rarely archived due to cost and storage constraints. Using a racially diverse screening cohort, this study evaluates the potential of deep learning for VBD assessment based solely on 3D reconstructed, “for presentation” DBT images. Methods: We retrospectively analyzed 1,080 negative DBT screening exams obtained between 2011 and 2016 from the Hospital of the University of Pennsylvania (racial makeup, 41.2% White, 54.2% Black, 4.6% Other; mean age ± SD, 57 ± 11 years; mean BMI ± SD, 28.7 ± 7.1 kg/m2), for which both 2D raw and 3D reconstructed DBT images (Selenia Dimensions, Hologic Inc) were available. Corresponding 3D reference-standard tissue segmentations were generated from previously validated software that uses both 3D reconstructed slices and raw 2D DBT data to provide VBD metrics, shown to be strongly correlated with VBD measures from MRI image volumes. We based our deep learning algorithm on the U-Net architecture within the open-source Generally Nuanced Deep Learning Framework (GaNDLF) and created a 3-label image segmentation task (background, dense tissue, and fatty tissue). Our dataset was randomly split into training (70%), validation (15%) and test (15%) sets. We report on the performance of our deep learning algorithm against corresponding reference-standard segmentations for a cranio-caudal (CC) view-only subset. We also stratify our results by the two main racial groups (White and Black). Our evaluation measure was the weighted Dice score (DSC), with 0 signifying no overlap and 1 signifying perfect overlap, overall and separately for each label. Results: Our deep learning algorithm achieved an overall DSC of 0.682 (STD = 0.136). It accurately segmented the three labels of background, fatty tissue, and dense tissue, with DSC scores of 0.995, 0.884, and 0.617, respectively. DSC for White and Black women were 0.688 (STD = 0.127) and 0.680 (STD = 0.146), respectively. Conclusions: Our preliminary analysis suggests that deep learning shows promise in the estimation of VBD using 3D DBT reconstructed, “for presentation” CC view images and does not demonstrate bias among racial groups. Future work involving optimization of performance in other breast views as well as transfer learning based on ground truth masks by clinical radiologists could further enhance this method. In view of rapid clinical conversion to DBT screening, such a tool has the potential to enable large retrospective epidemiological and personalized risk assessment studies of breast density with DBT.}
+}
+
+@article{muthukrishnan2022mammofl,
+  title={MammoFL: Mammographic Breast Density Estimation using Federated Learning},
+  author={Muthukrishnan, Ramya and Heyler, Angelina and Katti, Keshava and Pati, Sarthak and Mankowski, Walter and Alahari, Aprupa and Sanborn, Michael and Conant, Emily F and Scott, Christopher and Winham, Stacey and others},
+  journal={arXiv preprint arXiv:2206.05575},
+  year={2022},
+  html={https://doi.org/10.48550/arXiv.2206.05575}
+}
+
+@article{ahluwalia2022deep,
+  title={Deep-learning-enabled volumetric breast density estimation with digital breast tomosynthesis},
+  author={Ahluwalia, Vinayak S and Mankowski, Walter and Pati, Sarthak and Bakas, Spyridon and Brooks, Ari and Vachon, Celine M and Conant, Emily F and Gastounioti, Aimilia and Kontos, Despina},
+  journal={Cancer Research},
+  volume={82},
+  number={12\_Supplement},
+  pages={1929--1929},
+  year={2022},
+  publisher={The American Association for Cancer Research},
+  html={https://doi.org/10.1158/1538-7445.AM2022-1929}
+}
+
+@article{chitalia2022expert,
+  title={Expert tumor annotations and radiomics for locally advanced breast cancer in DCE-MRI for ACRIN 6657/I-SPY1},
+  author={Chitalia, Rhea and Pati, Sarthak and Bhalerao, Megh and Thakur, Siddhesh Pravin and Jahani, Nariman and Belenky, Vivian and McDonald, Elizabeth S and Gibbs, Jessica and Newitt, David C and Hylton, Nola M and others},
+  journal={Scientific data},
+  volume={9},
+  number={1},
+  pages={440},
+  year={2022},
+  publisher={Nature Publishing Group UK London},
+  html={https://doi.org/10.1038/s41597-022-01555-4}
+}
+
+@article{bakas2022university,
+  title={The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI, clinical, genomics, \& radiomics},
+  author={Bakas, Spyridon and Sako, Chiharu and Akbari, Hamed and Bilello, Michel and Sotiras, Aristeidis and Shukla, Gaurav and Rudie, Jeffrey D and Santamar{\'\i}a, Natali Flores and Kazerooni, Anahita Fathi and Pati, Sarthak and others},
+  journal={Scientific data},
+  volume={9},
+  number={1},
+  pages={453},
+  year={2022},
+  publisher={Nature Publishing Group UK London},
+  html={https://doi.org/10.1038/s41597-022-01560-7}
+}
+
+@article{pati2022federatedtool,
+  title={The Federated Tumor Segmentation (FeTS) tool: an open-source solution to further solid tumor research},
+  author={Pati, Sarthak and Baid, Ujjwal, Edwards, Brandon and Sheller, Micah J and Foley, Patrick and Reina, G Anthony and Thakur, Siddhesh P and Sako, Chiharu and Bilello, Michel and Davatzikos, Christos and Martin, Jason and others},
+  journal={Physics in Medicine \& Biology},
+  volume={67},
+  number={20},
+  pages={204002},
+  year={2022},
+  publisher={IOP Science},
+  html={http://www.doi.org/10.1088/1361-6560/ac9449}
+}
+
+@article{foley2022openfl,
+  title={OpenFL: The Open Federated Learning library},
+  author={Foley, Patrick and Sheller, Micah J and Edwards, Brandon and Pati, Sarthak and Riviera, Walter and Sharma, Mansi and Moorthy, Prakash Narayana and Wang, Shi-han and Martin, Jason and Mirhaji, Parsa and others},
+  journal={Physics in Medicine \& Biology},
+  volume={67},
+  number={21},
+  pages={214001},
+  year={2022},
+  publisher={IOP Science},
+  html={http://www.doi.org/10.1088/1361-6560/ac97d9}
+}
+
+@article{eisenmann2022biomedical,
+  title={Biomedical image analysis competitions: The state of current participation practice},
+  author={Eisenmann, Matthias and Reinke, Annika and Weru, Vivienn and Tizabi, Minu Dietlinde and Isensee, Fabian and Adler, Tim J and Godau, Patrick and Cheplygina, Veronika and Kozubek, Michal and Ali, Sharib and others},
+  journal={arXiv preprint arXiv:2212.08568},
+  year={2022},
+  html={https://doi.org/10.48550/arXiv.2212.08568}
+}
+
+@article{pati2022federated,
+  title={Federated learning enables big data for rare cancer boundary detection},
+  author={Pati, Sarthak and Baid, Ujjwal and Edwards, Brandon and Sheller, Micah and Wang, Shih-Han and Reina, G Anthony and Foley, Patrick and Gruzdev, Alexey and Karkada, Deepthi and Davatzikos, Christos and others},
+  journal={Nature Communications},
+  volume={13},
+  number={1},
+  pages={1--17},
+  year={2022},
+  publisher={Nature Publishing Group},
+  selected={true},
+  html={https://doi.org/10.1038/s41467-022-33407-5},
+  abstract={Although machine learning (ML) has shown promise across disciplines, out-of-sample generalizability is concerning. This is currently addressed by sharing multi-site data, but such centralization is challenging/infeasible to scale due to various limitations. Federated ML (FL) provides an alternative paradigm for accurate and generalizable ML, by only sharing numerical model updates. Here we present the largest FL study to-date, involving data from 71 sites across 6 continents, to generate an automatic tumor boundary detector for the rare disease of glioblastoma, reporting the largest such dataset in the literature (n=6,314). We demonstrate a 33% delineation improvement for the surgically targetable tumor, and 23% for the complete tumor extent, over a publicly trained model. We anticipate our study to: 1) enable more healthcare studies informed by large diverse data, ensuring meaningful results for rare diseases and underrepresented populations, 2) facilitate further analyses for glioblastoma by releasing our consensus model, and 3) demonstrate the FL effectiveness at such scale and task-complexity as a paradigm shift for multi-site collaborations, alleviating the need for data-sharing.},
+  preview={fets.png}
+}
+
+@article{baheti2022nimg,
+  title={NIMG-25. OPTIMIZATION OF ARTIFICIAL INTELLIGENCE ALGORITHMS FOR LOW-RESOURCE/CLINICAL ENVIRONMENTS: FOCUS ON CLINICALLY-RELEVANT GLIOMA REGION DELINEATION},
+  author={Baheti, Bhakti and Thakur, Siddhesh and Pati, Sarthak and Karkada, Deepthi and Panchumarthy, Ravi and Wu, Junwen and Mohan, Suyash and Nasrallah, MacLean and Shah, Prashant and Bakas, Spyridon},
+  journal={Neuro-Oncology},
+  volume={24},
+  number={Suppl 7},
+  pages={vii167},
+  year={2022},
+  html={https://doi.org/10.1093/neuonc/noac209.643}
+}
+
+@article{baheti2022leveraging,
+  title={Leveraging 2D deep learning ImageNet-trained models for native 3D medical image analysis},
+  author={Baheti, Bhakti and Pati, Sarthak and Menze, Bjoern and Bakas, Spyridon},
+  booktitle={International MICCAI Brainlesion Workshop},
+  pages={68--79},
+  year={2022},
+  organization={Springer Nature Switzerland Cham},
+  html={https://doi.org/10.1007/978-3-031-33842-7_6}
+}
+
+@article{pati2022summary,
+  title={Summary of Best Papers Selected for the 2023 Edition of the IMIA Yearbook, Section Cancer Informatics (CI)},
+  author={Pati, S and Baid, U and Edwards, B and Sheller, M and Wang, SH and Reina, GA and others},
+  journal={IEEE/ACM Trans Comput Biol Bioinform},
+  volume={19},
+  number={4},
+  pages={2334--2344},
+  year={2022},
+  html={http://www.doi.org/10.1055/s-0043-1768767}
+}
+
+@article{venet2021accurate,
+  title={Accurate and Robust Alignment of Differently Stained Histologic Images Based on Greedy Diffeomorphic Registration},
+  author={Venet, Ludovic and Pati, Sarthak and Feldman, Michael D. and Nasrallah, MacLean P. and Yushkevich, Paul and Bakas, Spyridon},
+  journal={Applied Sciences},
+  volume={11},
+  number={4},
+  year={2021},
+  html={https://doi.org/10.3390/app11041892}
+}
+
+@article{pati2021federated,
+  title={The federated tumor segmentation (fets) challenge},
+  author={Pati, Sarthak and Baid, Ujjwal and Zenk, Maximilian and Edwards, Brandon and Sheller, Micah and Reina, G Anthony and Foley, Patrick and Gruzdev, Alexey and Martin, Jason and Albarqouni, Shadi and others},
+  journal={arXiv preprint arXiv:2105.05874},
+  year={2021},
+  html={https://doi.org/10.48550/arXiv.2105.05874}
+}
+
+@article{reina2021openfl,
+  title={OpenFL: An open-source framework for Federated Learning},
+  author={Reina, G Anthony and Gruzdev, Alexey and Foley, Patrick and Perepelkina, Olga and Sharma, Mansi and Davidyuk, Igor and Trushkin, Ilya and Radionov, Maksim and Mokrov, Aleksandr and Agapov, Dmitry and others},
+  journal={arXiv preprint arXiv:2105.06413},
+  year={2021},
+  html={https://doi.org/10.48550/arXiv.2105.06413}
+}
+
+@misc{bakas2021federated,
+  title={Federated Tumor Segmentation},
+  author={Bakas, Spyridon and Sheller, Micah and Pati, Sarthak and Edwards, Brandon and Reina, G Anthony and Baid, Ujjwal and Chen, Yong and Shinohara, Russell (Taki) and Martin, Jason and Menze, Bjoern and others},
+  journal={zenodo.4573127},
+  volume={4573127},
+  number={https://doi.org/10.5281/zenodo.4573127},
+  year={2021},
+  publisher={Zenodo},
+  html={https://doi.org/10.5281/zenodo.4573127}
+}
+
+@misc{pati2021labelfusion,
+  title={LabelFusion: Medical Image label fusion of segmentations},
+  author={Pati, Sarthak and Baid, Ujjwal and Bakas, Spyridon},
+  journal={Zenodo},
+  year={2021},
+  publisher={Zenodo},
+  html={https://doi.org/10.5281/zenodo.4534122}
+}
+
+@article{baid2021rsna,
+  title={The rsna-asnr-miccai brats 2021 benchmark on brain tumor segmentation and radiogenomic classification},
+  author={Baid, Ujjwal and Ghodasara, Satyam and Mohan, Suyash and Bilello, Michel and Calabrese, Evan and Colak, Errol and Farahani, Keyvan and Kalpathy-Cramer, Jayashree and Kitamura, Felipe C and Pati, Sarthak and others},
+  journal={arXiv preprint arXiv:2107.02314},
+  year={2021},
+  html={https://doi.org/10.48550/arXiv.2107.02314}
+}
+
+@article{bounias2021interactive,
+  title={Interactive machine learning-based multi-label segmentation of solid tumors and organs},
+  author={Bounias, Dimitrios and Singh, Ashish and Bakas, Spyridon and Pati, Sarthak and Rathore, Saima and Akbari, Hamed and Bilello, Michel and Greenberger, Benjamin A and Lombardo, Joseph and Chitalia, Rhea D and others},
+  journal={Applied Sciences},
+  volume={11},
+  number={16},
+  pages={7488},
+  year={2021},
+  publisher={MDPI},
+  html={https://doi.org/10.3390/app11167488}
+}
+
+@article{pati2021estimating,
+  title={Estimating glioblastoma biophysical growth parameters using deep learning regression},
+  author={Pati, Sarthak and Sharma, Vaibhav and Aslam, Heena and Thakur, Siddhesh P and Akbari, Hamed and Mang, Andreas and Subramanian, Shashank and Biros, George and Davatzikos, Christos and Bakas, Spyridon},
+  booktitle={Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 6th International Workshop, BrainLes 2020, Held in Conjunction with MICCAI 2020, Lima, Peru, October 4, 2020, Revised Selected Papers, Part I 6},
+  pages={157--167},
+  year={2021},
+  organization={Springer International Publishing},
+  html={https://doi.org/10.1007/978-3-030-72084-1_15}
+}
+
+@article{baid2021federated,
+  title={The Federated Tumor Segmentation (FeTS) Initiative: The First Real-World Large-Scale Data-Private Collaboration Focusing On Neuro-Oncology},
+  author={Baid, Ujjwal and Pati, Sarthak and Thakur, Siddhesh and Edwards, Brandon and Sheller, Micah and Martin, Jason and Bakas, Spyridon},
+  journal={Neuro-Oncology},
+  volume={23},
+  number={Supplement\_6},
+  pages={vi135--vi136},
+  year={2021},
+  publisher={Oxford University Press},
+  html={https://doi.org/10.1093/neuonc/noab196.532}
+}
+
+@article{guley2021classification,
+  title={Classification of infection and ischemia in diabetic foot ulcers using vgg architectures},
+  author={G{\"u}ley, Orhun and Pati, Sarthak and Bakas, Spyridon},
+  booktitle={Diabetic foot ulcers grand challenge},
+  pages={76--89},
+  year={2021},
+  publisher={Springer International Publishing Cham},
+  html={https://doi.org/10.1007/978-3-030-94907-5_6}
+}
+
+@article{thakur2021optimization,
+  title={Optimization of deep learning based brain extraction in mri for low resource environments},
+  author={Thakur, Siddhesh P and Pati, Sarthak and Panchumarthy, Ravi and Karkada, Deepthi and Wu, Junwen and Kurtaev, Dmitry and Sako, Chiharu and Shah, Prashant and Bakas, Spyridon},
+  booktitle={International MICCAI Brainlesion Workshop},
+  pages={151--167},
+  year={2021},
+  organization={Springer International Publishing Cham},
+  html={https://doi.org/10.1007/978-3-031-08999-2_12}
+}
+
+@article{zwanenburg2020image,
+  title={The image biomarker standardization initiative: standardized quantitative radiomics for high-throughput image-based phenotyping},
+  author={Zwanenburg, Alex and Valli{\`e}res, Martin and Abdalah, Mahmoud A and Aerts, Hugo JWL and Andrearczyk, Vincent and Apte, Aditya and Ashrafinia, Saeed and Bakas, Spyridon and Beukinga, Roelof J and Boellaard, Ronald and others},
+  journal={Radiology},
+  volume={295},
+  number={2},
+  pages={328--338},
+  year={2020},
+  publisher={Radiological Society of North America},
+  html={https://doi.org/10.1148/radiol.2020191145}
+}
+
+@article{fathi2020cancer,
+  title={Cancer imaging phenomics via CaPTk: multi-institutional prediction of progression-free survival and pattern of recurrence in glioblastoma},
+  author={Fathi Kazerooni, Anahita and Akbari, Hamed and Shukla, Gaurav and Badve, Chaitra and Rudie, Jeffrey D and Sako, Chiharu and Rathore, Saima and Bakas, Spyridon and Pati, Sarthak and Singh, Ashish and others},
+  journal={JCO clinical cancer informatics},
+  volume={4},
+  pages={234--244},
+  year={2020},
+  publisher={American Society of Clinical Oncology},
+  html={https://doi.org/10.1200/CCI.19.00121}
+}
+
+@article{borovec2020anhir,
+  title={ANHIR: automatic non-rigid histological image registration challenge},
+  author={Borovec, Ji{\v{r}}{\'\i} and Kybic, Jan and Arganda-Carreras, Ignacio and Sorokin, Dmitry V and Bueno, Gloria and Khvostikov, Alexander V and Bakas, Spyridon and Chang, Eric I-Chao and Heldmann, Stefan and Kartasalo, Kimmo and others},
+  journal={IEEE transactions on medical imaging},
+  volume={39},
+  number={10},
+  pages={3042--3052},
+  year={2020},
+  publisher={IEEE},
+  html={https://doi.org/10.1109/TMI.2020.2986331}
+}
+
+@article{pati2020cancer,
+  title={The cancer imaging phenomics toolkit (CaPTk): technical overview},
+  author={Pati, Sarthak and Singh, Ashish and Rathore, Saima and Gastounioti, Aimilia and Bergman, Mark and Ngo, Phuc and Ha, Sung Min and Bounias, Dimitrios and Minock, James and Murphy, Grayson and others},
+  booktitle={Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 5th International Workshop, BrainLes 2019, Held in Conjunction with MICCAI 2019, Shenzhen, China, October 17, 2019, Revised Selected Papers, Part II 5},
+  pages={380--394},
+  year={2020},
+  organization={Springer International Publishing},
+  html={https://doi.org/10.1007/978-3-030-46643-5_38}
+}
+
+@article{mcnitt2020standardization,
+  title={Standardization in quantitative imaging: a multicenter comparison of radiomic features from different software packages on digital reference objects and patient data sets},
+  author={McNitt-Gray, Michael and Napel, S and Jaggi, A and Mattonen, SA and Hadjiiski, L and Muzi, M and Goldgof, D and Balagurunathan, Y and Pierce, LA and Kinahan, PE and others},
+  journal={Tomography},
+  volume={6},
+  number={2},
+  pages={118},
+  year={2020},
+  html={https://doi.org/10.18383/j.tom.2019.00031}
+}
+
+@article{thakur2020brain,
+  title={Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training},
+  author={Thakur, Siddhesh and Doshi, Jimit and Pati, Sarthak and Rathore, Saima and Sako, Chiharu and Bilello, Michel and Ha, Sung Min and Shukla, Gaurav and Flanders, Adam and Kotrotsou, Aikaterini and others},
+  journal={Neuroimage},
+  volume={220},
+  pages={117081},
+  year={2020},
+  publisher={Academic Press},
+  html={https://doi.org/10.1016/j.neuroimage.2020.117081}
+}
+
+@article{sheller2020federated,
+  title={Federated learning in medicine: facilitating multi-institutional collaborations without sharing patient data},
+  author={Sheller, Micah J and Edwards, Brandon and Reina, G Anthony and Martin, Jason and Pati, Sarthak and Kotrotsou, Aikaterini and Milchenko, Mikhail and Xu, Weilin and Marcus, Daniel and Colen, Rivka R and others},
+  journal={Scientific reports},
+  volume={10},
+  number={1},
+  pages={12598},
+  year={2020},
+  publisher={Nature Publishing Group UK London},
+  html={https://doi.org/10.1038/s41598-020-69250-1}
+}
+
+@article{kofler2021robust,
+  title={Robust, primitive, and unsupervised quality estimation for segmentation ensembles},
+  author={Kofler, Florian and Ezhov, Ivan and Fidon, Lucas and Pirkl, Carolin M and Paetzold, Johannes C and Burian, Egon and Pati, Sarthak and El Husseini, Malek and Navarro, Fernando and Shit, Suprosanna and others},
+  journal={Frontiers in Neuroscience},
+  volume={15},
+  pages={752780},
+  year={2021},
+  publisher={Frontiers Media SA},
+  html={https://doi.org/10.3389/fnins.2021.752780}
+}
+
+@article{depeursinge2020standardised,
+  title={Standardised convolutional filtering for radiomics},
+  author={Depeursinge, Adrien and Andrearczyk, Vincent and Whybra, Philip and van Griethuysen, Joost and M{\"u}ller, Henning and Schaer, Roger and Valli{\`e}res, Martin and Zwanenburg, Alex},
+  journal={arXiv preprint arXiv:2006.05470},
+  year={2020},
+  html={https://doi.org/10.48550/arXiv.2006.05470}
+}
+
+
+@article{rathore2020multi,
+  title={Multi-institutional noninvasive in vivo characterization of IDH, 1p/19q, and EGFRvIII in glioma using neuro-Cancer Imaging Phenomics Toolkit (neuro-CaPTk)},
+  author={Rathore, Saima and Mohan, Suyash and Bakas, Spyridon and Sako, Chiharu and Badve, Chaitra and Pati, Sarthak and Singh, Ashish and Bounias, Dimitrios and Ngo, Phuc and Akbari, Hamed and others},
+  journal={Neuro-oncology advances},
+  volume={2},
+  number={Supplement\_4},
+  pages={iv22--iv34},
+  year={2020},
+  publisher={Oxford University Press US},
+  html={https://doi.org/10.1093/noajnl/vdaa128}
+}
+
+@article{pati2020tmod,
+  title={TMOD-09. GLIOBLASTOMA BIOPHYSICAL GROWTH ESTIMATION USING DEEP LEARNING-BASED REGRESSION},
+  author={Pati, Sarthak and Sharma, Vaibhav and Aslam, Heena and Thakur, Siddhesh and Akbari, Hamed and Mang, Andreas and Subramanian, Shashank and Biros, George and Davatzikos, Christos and Bakas, Spyridon},
+  journal={Neuro-Oncology},
+  volume={22},
+  number={Supplement\_2},
+  pages={ii229--ii229},
+  year={2020},
+  publisher={Oxford University Press US},
+  html={https://doi.org/10.1093/neuonc/noaa215.960}
+}
+
+@article{pati2020reproducibility,
+  title={Reproducibility analysis of multi-institutional paired expert annotations and radiomic features of the Ivy Glioblastoma Atlas Project (Ivy GAP) dataset},
+  author={Pati, Sarthak and Verma, Ruchika and Akbari, Hamed and Bilello, Michel and Hill, Virginia B and Sako, Chiharu and Correa, Ramon and Beig, Niha and Venet, Ludovic and Thakur, Siddhesh and others},
+  journal={Medical physics},
+  volume={47},
+  number={12},
+  pages={6039--6052},
+  year={2020},
+  selected={true},
+  html={https://doi.org/10.1002/mp.14556},
+  abstract={Purpose: The availability of radiographic magnetic resonance imaging (MRI) scans for the Ivy Glioblastoma Atlas Project (Ivy GAP) has opened up opportunities for development of radiomic markers for prognostic/predictive applications in glioblastoma (GBM). In this work, we address two critical challenges with regard to developing robust radiomic approaches: (a) the lack of availability of reliable segmentation labels for glioblastoma tumor sub-compartments (i.e., enhancing tumor, non-enhancing tumor core, peritumoral edematous/infiltrated tissue) and (b) identifying “reproducible” radiomic features that are robust to segmentation variability across readers/sites. Acquisition and validation methods: From TCIA's Ivy GAP cohort, we obtained a paired set (n = 31) of expert annotations approved by two board-certified neuroradiologists at the Hospital of the University of Pennsylvania (UPenn) and at Case Western Reserve University (CWRU). For these studies, we performed a reproducibility study that assessed the variability in (a) segmentation labels and (b) radiomic features, between these paired annotations. The radiomic variability was assessed on a comprehensive panel of 11 700 radiomic features including intensity, volumetric, morphologic, histogram-based, and textural parameters, extracted for each of the paired sets of annotations. Our results demonstrated (a) a high level of inter-rater agreement (median value of DICE ≥0.8 for all sub-compartments), and (b) ≈24% of the extracted radiomic features being highly correlated (based on Spearman's rank correlation coefficient) to annotation variations. These robust features largely belonged to morphology (describing shape characteristics), intensity (capturing intensity profile statistics), and COLLAGE (capturing heterogeneity in gradient orientations) feature families. Data format and usage notes: We make publicly available on TCIA's Analysis Results Directory (https://doi.org/10.7937/9j41-7d44), the complete set of (a) multi-institutional expert annotations for the tumor sub-compartments, (b) 11 700 radiomic features, and (c) the associated reproducibility meta-analysis. Potential applications: The annotations and the associated meta-data for Ivy GAP are released with the purpose of enabling researchers toward developing image-based biomarkers for prognostic/predictive applications in GBM.},
+  preview={reproducibility.png}
+}
+
+@article{thakur2019skull,
+  title={Skull-stripping of glioblastoma MRI scans using 3D deep learning},
+  author={Thakur, Siddhesh P and Doshi, Jimit and Pati, Sarthak and Ha, Sung Min and Sako, Chiharu and Talbar, Sanjay and Kulkarni, Uday and Davatzikos, Christos and Erus, Guray and Bakas, Spyridon},
+  booktitle={International MICCAI Brainlesion Workshop},
+  pages={57--68},
+  year={2019},
+  organization={Springer International Publishing Cham},
+  html={https://doi.org/10.1007/978-3-030-46640-4_6}
+}
+
+@article{davatzikos2018cancer,
+  title={Cancer imaging phenomics toolkit: quantitative imaging analytics for precision diagnostics and predictive modeling of clinical outcome},
+  author={Davatzikos, Christos and Rathore, Saima and Bakas, Spyridon and Pati, Sarthak and Bergman, Mark and Kalarot, Ratheesh and Sridharan, Patmaa and Gastounioti, Aimilia and Jahani, Nariman and Cohen, Eric and others},
+  journal={Journal of medical imaging},
+  volume={5},
+  number={1},
+  pages={011018--011018},
+  year={2018},
+  publisher={Society of Photo-Optical Instrumentation Engineers},
+  html={https://doi.org/10.1117/1.JMI.5.1.011018}
+}
+
+@article{rathore2018brain,
+  title={Brain cancer imaging phenomics toolkit (brain-CaPTk): an interactive platform for quantitative analysis of glioblastoma},
+  author={Rathore, Saima and Bakas, Spyridon and Pati, Sarthak and Akbari, Hamed and Kalarot, Ratheesh and Sridharan, Patmaa and Rozycki, Martin and Bergman, Mark and Tunc, Birkan and Verma, Ragini and others},
+  booktitle={Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: Third International Workshop, BrainLes 2017, Held in Conjunction with MICCAI 2017, Quebec City, QC, Canada, September 14, 2017, Revised Selected Papers 3},
+  pages={133--145},
+  year={2018},
+  organization={Springer International Publishing},
+  html={https://doi.org/10.1007/978-3-319-75238-9_12}
+}
+
+@article{bakas2016glistrboost,
+  title={GLISTRboost: combining multimodal MRI segmentation, registration, and biophysical tumor growth modeling with gradient boosting machines for glioma segmentation},
+  author={Bakas, Spyridon and Zeng, Ke and Sotiras, Aristeidis and Rathore, Saima and Akbari, Hamed and Gaonkar, Bilwaj and Rozycki, Martin and Pati, Sarthak and Davatzikos, Christos},
+  booktitle={Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: First International Workshop, Brainles 2015, Held in Conjunction with MICCAI 2015, Munich, Germany, October 5, 2015, Revised Selected Papers 1},
+  pages={144--155},
+  year={2016},
+  organization={Springer International Publishing},
+  html={https://doi.org/10.1007/978-3-319-30858-6_13}
+}
+
+@article{zeng2016segmentation,
+  title={Segmentation of gliomas in pre-operative and post-operative multimodal magnetic resonance imaging volumes based on a hybrid generative-discriminative framework},
+  author={Zeng, Ke and Bakas, Spyridon and Sotiras, Aristeidis and Akbari, Hamed and Rozycki, Martin and Rathore, Saima and Pati, Sarthak and Davatzikos, Christos},
+  booktitle={Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: Second International Workshop, BrainLes 2016, with the Challenges on BRATS, ISLES and mTOP 2016, Held in Conjunction with MICCAI 2016, Athens, Greece, October 17, 2016, Revised Selected Papers 2},
+  pages={184--194},
+  year={2016},
+  organization={Springer International Publishing},
+  html={https://doi.org/10.1007/978-3-319-55524-9_18}
+}
+
+@article{pati2013accurate,
+  title={Accurate pose estimation using single marker single camera calibration system},
+  author={Pati, Sarthak and Erat, Okan and Wang, Lejing and Weidert, Simon and Euler, Ekkehard and Navab, Nassir and Fallavollita, Pascal},
+  booktitle={Medical Imaging 2013: Image-Guided Procedures, Robotic Interventions, and Modeling},
+  volume={8671},
+  pages={564--569},
+  year={2013},
+  organization={SPIE},
+  html={https://doi.org/10.1117/12.2006776}
+}
+
+@article{pati2010locomotion,
+  title={Locomotion classification using EMG signal},
+  author={Pati, Sarthak and Joshi, Deepak and Mishra, Ashutosh},
+  booktitle={2010 International Conference on Information and Emerging Technologies},
+  pages={1--6},
+  year={2010},
+  organization={IEEE},
+  html={https://doi.org/10.1109/ICIET.2010.5625677}
+}

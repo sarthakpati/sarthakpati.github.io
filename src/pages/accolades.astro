@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+
+const awards = [
+  { title: "Dean's List", detail: 'Doctoral dissertation (top 10%), TUM 2020-2024' },
+  { title: "Nature Communications Engineering Editor's Choice 2023", detail: 'For GaNDLF framework', link: 'https://www.nature.com/articles/s44172-023-00151-7#Sec4' },
+  { title: 'Nature Communications Top 25 Health Sciences Articles 2022', detail: 'Federated Learning paper' },
+  { title: 'Plenary Presentation (top 8%)', detail: 'Pendergrass Symposium 2023 — COFE ecosystem' },
+  { title: 'Best Poster Award (top 5%)', detail: 'NIH ITCR Annual Scientific Meeting 2020 and 2022' },
+  { title: 'Oral Presentation (top 5%)', detail: 'Penderglass Symposium 2021 & 2022' },
+  { title: 'Magna cum Laude (top 10%)', detail: 'Pendergrass Symposium 2021' },
+  { title: '2nd Place', detail: 'Automatic Non-Rigid Histological Image Registration Challenge 2019' },
+  { title: '1st Place', detail: 'Brain Tumor Segmentation Challenge at MICCAI 2015' },
+];
+
+const media = [
+  { name: 'Wall Street Journal', desc: 'Federated learning for tumor detection', url: 'https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200' },
+  { name: 'Eureka Alert', desc: 'Science news and research updates', url: 'https://www.eurekalert.org/news-releases/972921' },
+  { name: 'News Medical', desc: 'Federated learning coverage', url: 'https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx' },
+  { name: 'IU News', desc: 'AI breast cancer risk prediction grant', url: 'https://news.iu.edu/live/news/37787-iu-led-study-uses-ai-to-predict-breast-cancer-risk' },
+  { name: 'Science Daily', desc: 'Grant award coverage', url: 'https://www.sciencedaily.com/releases/2022/12/221205104205.htm' },
+];
+---
+
+<Base title="Accolades" description="Awards, recognition, and media mentions.">
+  <section class="relative py-24 border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="01" label="Accolades" class="mb-3" />
+      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Awards & Recognition</h1>
+    </div>
+  </section>
+
+  {/* Awards */}
+  <section class="py-20 bg-paper border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <ul class="space-y-0">
+        {awards.map((a) => (
+          <li class="pb-7 border-b border-ink/10 last:border-b-0 group">
+            <div class="flex gap-3 items-start">
+              <span class="text-saffron font-bold mt-1">✓</span>
+              <div>
+                <strong class="text-ink block">{a.title}</strong>
+                {a.link ? (
+                  <a href={a.link} target="_blank" rel="noopener" class="text-sm text-ink-soft hover:text-saffron transition-colors link-ink mt-1 inline-block">
+                    {a.detail} →
+                  </a>
+                ) : (
+                  <p class="text-sm text-ink-soft">{a.detail}</p>
+                )}
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  {/* Media */}
+  <section class="py-20 bg-cream border-b border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="02" label="Media" class="mb-8" />
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Press coverage</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {media.map((m) => (
+          <a href={m.url} target="_blank" rel="noopener" class="group block bg-paper p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200 border-t-2 border-transparent hover:border-saffron">
+            <h3 class="font-display text-lg font-semibold text-ink group-hover:text-saffron transition-colors">{m.name}</h3>
+            <p class="text-sm text-ink-soft mt-1">{m.desc}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABand />
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>

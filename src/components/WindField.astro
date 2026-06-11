@@ -1,0 +1,29 @@
+---
+/** Decorative SVG wind-streamline background. Purely aesthetic. */
+interface Props {
+  class?: string;
+}
+
+const { class: cls = '' } = Astro.props;
+---
+
+<svg
+  aria-hidden="true"
+  class={`absolute inset-0 w-full h-full overflow-visible ${cls}`}
+  viewBox="0 0 1200 400"
+  preserveAspectRatio="none"
+>
+  <path class="windline" d="M-100,80 C150,20 350,150 600,100 S900,200 1300,60" fill="none" stroke="#191c22" stroke-opacity="0.04" stroke-width="1" stroke-dasharray="8 6" />
+  <path class="windline" d="M-100,140 C200,200 400,50 700,130 S950,60 1300,120" fill="none" stroke="#191c22" stroke-opacity="0.03" stroke-width="0.8" stroke-dasharray="12 8" style="animation-duration:80s; animation-delay:-20s" />
+  <path class="windline" d="M-100,220 C250,160 450,280 750,180 S1000,260 1300,200" fill="none" stroke="#e87228" stroke-opacity="0.08" stroke-width="1.2" stroke-dasharray="10 4" style="animation-duration:50s; animation-delay:-10s" />
+  <path class="windline" d="M-100,300 C180,350 380,220 650,290 S920,230 1300,280" fill="none" stroke="#191c22" stroke-opacity="0.03" stroke-width="0.8" stroke-dasharray="6 10" style="animation-duration:90s; animation-delay:-40s" />
+</svg>
+
+<style is:global>
+  .windline {
+    animation: windDrift 60s linear infinite;
+  }
+  @keyframes windDrift {
+    to { stroke-dashoffset: -1200; }
+  }
+</style>

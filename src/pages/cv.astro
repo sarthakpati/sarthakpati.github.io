@@ -1,0 +1,155 @@
+---
+import Base from '../layouts/Base.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import Eyebrow from '../components/Eyebrow.astro';
+import CTABand from '../components/CTABand.astro';
+
+const resumePath = resolve('./assets/json/resume.json');
+const resume: any = JSON.parse(readFileSync(resumePath, 'utf-8'));
+
+const fmtDate = (d: string) => {
+  if (!d) return 'Present';
+  try {
+    const date = new Date(d);
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+  } catch {
+    return d;
+  }
+};
+---
+
+<Base title="CV / Resume" description="Professional experience, education, and qualifications.">
+  <section class="relative py-24 border-b border-ink/10 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <Eyebrow num="01" label="Curriculum Vitae" class="mb-3" />
+      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Curriculum Vitae</h1>
+      <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
+        Full downloadable PDF available below. Key highlights are listed on this page.
+      </p>
+      <div class="mt-6 reveal reveal-3">
+        <a href="/resume_sarthak.pdf" download class="inline-flex items-center gap-2 bg-saffron text-paper font-medium px-6 py-3 rounded-sm hover:bg-saffron-bright transition-colors text-sm">
+          <span>&#x2B07;</span> Download PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Education */}
+  <section class="py-20 bg-paper">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Education</h2>
+      <div class="space-y-0">
+        {resume.education.map((e: any) => (
+          <div class="pb-7 border-b border-ink/10 last:border-b-0">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-1">
+              <h3 class="font-display text-lg font-semibold text-ink">{e.studyType} in {e.area}</h3>
+              <span class="label-mono text-slate whitespace-nowrap">{fmtDate(e.startDate)} &ndash; {fmtDate(e.endDate)}</span>
+            </div>
+            <p class="text-saffron font-medium text-sm">{e.institution}</p>
+            {e.score && <p class="text-xs text-slate mt-0.5">{e.score}</p>}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Experience */}
+  <section class="py-20 bg-cream border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Professional Experience</h2>
+      <div class="space-y-0">
+        {resume.work.map((w: any) => (
+          <div class="pb-7 border-b border-ink/10 last:border-b-0">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-1">
+              <h3 class="font-display text-lg font-semibold text-ink">{w.position}</h3>
+              <span class="label-mono text-slate whitespace-nowrap">{fmtDate(w.startDate)} &ndash; {w.endDate === 'Present' ? 'Present' : fmtDate(w.endDate)}</span>
+            </div>
+            <p class="text-saffron font-medium text-sm">{w.name}</p>
+            {w.location && <p class="text-xs text-slate mt-0.5">{w.location}</p>}
+            {w.highlights?.length ? (
+              <ul class="mt-2 space-y-1 text-sm text-ink-soft">
+                {w.highlights.map((h: string) => (
+                  <li class="flex gap-2"><span class="text-saffron mt-0.5">&#x2192;</span><span>{h}</span></li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Awards */}
+  <section class="py-20 bg-paper border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Awards & Recognition</h2>
+      <div class="space-y-0">
+        {resume.awards.map((a: any) => (
+          <div class="pb-6 border-b border-ink/10 last:border-b-0">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-1">
+              <h3 class="font-semibold text-base text-ink">{a.title}</h3>
+              <span class="label-mono text-slate whitespace-nowrap">{fmtDate(a.date)}</span>
+            </div>
+            <p class="text-sm text-saffron font-medium">{a.awarder}</p>
+            {a.summary && <p class="text-sm text-ink-soft mt-1">{a.summary}</p>}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Certificates */}
+  <section class="py-20 bg-cream border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Certificates</h2>
+      <div class="space-y-0">
+        {resume.certificates.map((c: any) => (
+          <div class="pb-4 border-b border-ink/10 last:border-b-0">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
+              <h3 class="font-semibold text-base text-ink">{c.name}</h3>
+              <span class="label-mono text-slate whitespace-nowrap">{fmtDate(c.startDate)}</span>
+            </div>
+            <p class="text-sm text-slate">{c.issuer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Skills */}
+  <section class="py-20 bg-paper border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
+        {resume.skills.slice(0, 30).map((s: any) => (
+          <div class="px-3 py-2.5 bg-cream text-sm font-medium text-ink-soft rounded-sm">
+            {s.name}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Languages */}
+  <section class="py-20 bg-cream border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-2xl font-semibold text-ink mb-8">Languages</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {resume.languages.map((l: any) => (
+          <div class="flex justify-between items-center p-4 bg-paper rounded-sm border border-ink/10">
+            <span class="font-medium text-ink">{l.language}</span>
+            <span class="label-mono text-saffron text-xs">{l.fluency}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABand />
+</Base>
+
+<style is:global>
+  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
+</style>
