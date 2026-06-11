@@ -2,18 +2,16 @@
 
 export const siteConfig = {
   title: "Sarthak's Profile",
-  description:
-    'AI researcher, engineer, and founder. PhD from TUM summa cum laude.',
-  url: 'https://sarthakpati.github.io',
-  keywords:
-    'AI, machine learning, medical imaging, federated learning, reproducibility, AI safety',
-  icon: '💡',
+  description: "AI researcher, engineer, and founder. PhD from TUM summa cum laude.",
+  url: "https://sarthakpati.github.io",
+  keywords: "AI, machine learning, medical imaging, federated learning, reproducibility, AI safety",
+  icon: "💡",
   max_width: 930,
-  lang: 'en',
+  lang: "en",
   // Repository display config
-  repo_theme_light: 'default',
-  repo_theme_dark: 'dark',
-  repo_trophies: { enabled: true, theme_light: 'flat', theme_dark: 'gitdimmed' },
+  repo_theme_light: "default",
+  repo_theme_dark: "dark",
+  repo_trophies: { enabled: true, theme_light: "flat", theme_dark: "gitdimmed" },
   // Publication badge config
   enable_publication_badges: {
     altmetric: true,

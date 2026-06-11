@@ -1,9 +1,9 @@
-import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  site: 'https://sarthakpati.github.io',
+  site: "https://sarthakpati.github.io",
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],

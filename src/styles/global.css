@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /* ── Dark mode — class strategy (auto-detected via system pref) ── */
 @theme {
@@ -14,9 +14,9 @@
   --color-saffron: #e87228;
   --color-saffron-bright: #f09040;
 
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-sans: 'Archivo', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Archivo", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 /* Dark mode overrides — MUST be outside @theme for Tailwind v4 */
@@ -30,9 +30,9 @@
   --color-saffron: #f59e44;
   --color-saffron-bright: #fbbf6a;
 
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-sans: 'Archivo', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Archivo", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 /* ── Base ── */
@@ -115,11 +115,21 @@
   animation: reveal 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
-.reveal-1 { animation-delay: 0s; }
-.reveal-2 { animation-delay: 0.08s; }
-.reveal-3 { animation-delay: 0.16s; }
-.reveal-4 { animation-delay: 0.24s; }
-.reveal-5 { animation-delay: 0.32s; }
+.reveal-1 {
+  animation-delay: 0s;
+}
+.reveal-2 {
+  animation-delay: 0.08s;
+}
+.reveal-3 {
+  animation-delay: 0.16s;
+}
+.reveal-4 {
+  animation-delay: 0.24s;
+}
+.reveal-5 {
+  animation-delay: 0.32s;
+}
 
 /* ── Wind-field SVG animation ── */
 @keyframes windDrift {

@@ -13,8 +13,8 @@ export interface BibTexEntry {
 
 function parseAuthorString(authors: string): string[] {
   return authors
-    .split(' and ')
-    .map(a => a.trim())
+    .split(" and ")
+    .map((a) => a.trim())
     .filter(Boolean);
 }
 
@@ -37,7 +37,7 @@ export function parseBibTeX(content: string): BibTexEntry[] {
       let value = fieldMatch[2].trim();
 
       // Clean up value
-      value = value.replace(/\s+/g, ' ');
+      value = value.replace(/\s+/g, " ");
       if (value.startsWith('"')) value = value.slice(1);
       if (value.endsWith('"')) value = value.slice(0, -1);
 
@@ -66,20 +66,20 @@ export function parseBibTeX(content: string): BibTexEntry[] {
 }
 
 export function formatAuthors(entry: BibTexEntry): string {
-  if (!entry.authors || entry.authors.length === 0) return '';
+  if (!entry.authors || entry.authors.length === 0) return "";
 
   if (entry.authors.length === 1) return entry.authors[0];
-  if (entry.authors.length === 2) return entry.authors.join(' and ');
+  if (entry.authors.length === 2) return entry.authors.join(" and ");
 
-  return entry.authors.slice(0, -1).join(', ') + ', and ' + entry.authors[entry.authors.length - 1];
+  return entry.authors.slice(0, -1).join(", ") + ", and " + entry.authors[entry.authors.length - 1];
 }
 
 export function formatCitation(entry: BibTexEntry): string {
   const authors = formatAuthors(entry);
-  const title = entry.title ? `"${entry.title}"` : '';
-  const journal = entry.journal || '';
-  const year = entry.year ? `(${entry.year})` : '';
+  const title = entry.title ? `"${entry.title}"` : "";
+  const journal = entry.journal || "";
+  const year = entry.year ? `(${entry.year})` : "";
 
   const parts = [authors, title, journal, year].filter(Boolean);
-  return parts.join('. ') + '.';
+  return parts.join(". ") + ".";
 }
