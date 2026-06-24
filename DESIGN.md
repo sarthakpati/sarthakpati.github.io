@@ -31,16 +31,16 @@ Source of truth in code: [`src/styles/global.css`](src/styles/global.css).
 Two themes, identical token names. Light is the default; `.dark` on `<html>`
 swaps the values. **Always reference the token, never the raw hex.**
 
-| Token             | Role                              | Light       | Dark        |
-| ----------------- | --------------------------------- | ----------- | ----------- |
-| `paper`           | Page background                   | `#f8f9fb`   | `#0d0f14`   |
-| `cream`           | Raised surface — cards, sidebars  | `#eceff5`   | `#141620`   |
-| `ink`             | Primary text, headings            | `#191c22`   | `#e8eaf0`   |
-| `ink-soft`        | Body copy                         | `#353c49`   | `#b0b5c0`   |
-| `slate`           | Muted — captions, meta, inactive  | `#4f5d6d`   | `#6b7280`   |
-| `brand-blue`      | Secondary accent / link blue      | `#1e5ebb`   | `#6ea8fe`   |
-| `saffron`         | **Primary accent** — CTAs, hover  | `#e87228`   | `#f59e44`   |
-| `saffron-bright`  | Accent hover / brighter emphasis  | `#f09040`   | `#fbbf6a`   |
+| Token            | Role                             | Light     | Dark      |
+| ---------------- | -------------------------------- | --------- | --------- |
+| `paper`          | Page background                  | `#f8f9fb` | `#0d0f14` |
+| `cream`          | Raised surface — cards, sidebars | `#eceff5` | `#141620` |
+| `ink`            | Primary text, headings           | `#191c22` | `#e8eaf0` |
+| `ink-soft`       | Body copy                        | `#353c49` | `#b0b5c0` |
+| `slate`          | Muted — captions, meta, inactive | `#4f5d6d` | `#6b7280` |
+| `brand-blue`     | Secondary accent / link blue     | `#1e5ebb` | `#6ea8fe` |
+| `saffron`        | **Primary accent** — CTAs, hover | `#e87228` | `#f59e44` |
+| `saffron-bright` | Accent hover / brighter emphasis | `#f09040` | `#fbbf6a` |
 
 ### Roles at a glance
 
@@ -109,18 +109,25 @@ Plain text links (nav, footer socials) skip the underline and just transition
 Reusable structures already in the codebase. Reach for these before inventing new ones.
 
 ### Buttons / CTAs
+
 ```html
-<a class="inline-block bg-saffron text-paper font-medium px-6 py-2.5 rounded-sm
-          hover:bg-saffron-bright transition-colors duration-200">Label</a>
+<a
+  class="inline-block bg-saffron text-paper font-medium px-6 py-2.5 rounded-sm
+          hover:bg-saffron-bright transition-colors duration-200"
+  >Label</a
+>
 ```
+
 Solid saffron, `paper` text, `rounded-sm` (never fully rounded), 200ms color
 transition. This is the only filled-button style.
 
 ### Eyebrow ([`Eyebrow.astro`](src/components/Eyebrow.astro))
+
 A `.label-mono` kicker with an optional section number, saffron on light
 (`tone="light"`) or `cream` on dark (`tone="dark"`). Pairs with a `.ghost-num`.
 
 ### Card / list item
+
 ```html
 <div class="border-t-2 border-ink/80 pt-5">
   <h3 class="font-display text-xl font-semibold text-ink">Title</h3>
@@ -128,23 +135,28 @@ A `.label-mono` kicker with an optional section number, saffron on light
   <p class="label-mono text-saffron mt-3">METRIC</p>
 </div>
 ```
+
 Cards lead with a **strong top border** (`border-t-2 border-ink/80`), not a box.
 Interactive cards add `hover:border-saffron` and `group-hover:text-saffron`.
 Raised panels (sidebar/aside) use `bg-cream rounded-sm p-6` instead.
 
 ### Dividers
+
 - Hairline section divider: `border-ink/10` (subtle, 10% ink).
 - Emphatic content rule above a card: `border-ink/80` at `border-t-2`.
 
 ### Inverted CTA band ([`CTABand.astro`](src/components/CTABand.astro))
+
 `bg-ink text-paper` full-width section, `cream` sub-text, saffron button, and a
 faint saffron streamline SVG at `opacity-[0.03]`.
 
 ### Decorative wind-field ([`WindField.astro`](src/components/WindField.astro))
+
 Animated SVG streamlines (`ink` at 3–4% opacity, one `saffron` line at 8%) that
 drift behind the hero. Purely aesthetic, `aria-hidden`.
 
 ### Layout conventions
+
 - Content column: `max-w-5xl mx-auto px-6`.
 - Section rhythm: `py-24` between major sections, divided by `border-ink/10`.
 - Sticky header: `bg-paper/80 backdrop-blur-sm` + `border-b border-ink/10`.
@@ -166,6 +178,7 @@ drift behind the hero. Purely aesthetic, `aria-hidden`.
 ## 7. Reuse — copy these into a new project
 
 ### A. Tailwind v4 `@theme` block (this project's setup)
+
 ```css
 @import "tailwindcss";
 
@@ -198,13 +211,16 @@ drift behind the hero. Purely aesthetic, `aria-hidden`.
   --color-saffron-bright: #fbbf6a;
 }
 ```
+
 Tokens become utilities automatically: `bg-paper`, `text-ink`, `text-ink-soft`,
 `text-slate`, `bg-cream`, `text-saffron`, `hover:bg-saffron-bright`,
 `font-display`, `font-mono`, etc.
 
 ### B. Framework-agnostic CSS custom properties
+
 For any project not on Tailwind, drop this in a global stylesheet and reference
 `var(--color-*)`:
+
 ```css
 :root {
   --color-paper: #f8f9fb;
@@ -233,19 +249,28 @@ For any project not on Tailwind, drop this in a global stylesheet and reference
 ```
 
 ### C. Fonts
+
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap"
+/>
 ```
 
 ### D. Dark-mode boot script (prevents flash)
+
 ```html
 <script>
-  (function(){var s=localStorage.getItem('theme'),m='(prefers-color-scheme:dark)';
-   if(s==='dark'||(!s&&matchMedia(m).matches))document.documentElement.classList.add('dark')})();
+  (function () {
+    var s = localStorage.getItem("theme"),
+      m = "(prefers-color-scheme:dark)";
+    if (s === "dark" || (!s && matchMedia(m).matches)) document.documentElement.classList.add("dark");
+  })();
 </script>
 ```
+
 Toggle by flipping `.dark` on `<html>` and persisting `theme` in `localStorage`
 (see [`ThemeToggle.astro`](src/components/ThemeToggle.astro)).
 
