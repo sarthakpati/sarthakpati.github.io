@@ -5,7 +5,7 @@ export const PROFILE = {
   title: "Founder of VerySafe.ai",
   subtitle: "AI Safety Researcher & Engineer · Vice Chair, MLCommons Medical Working Group",
   image: "/prof_pic.jpg",
-  bio: `AI researcher, engineer, and founder building trustworthy, end-to-end AI systems for regulated, high-stakes domains. I hold a Ph.D. in Computer Science from the Technical University of Munich (summa cum laude) and bring 11+ years of operationalizing AI from prototype to production.
+  bio: `AI researcher, engineer, and founder building trustworthy, end-to-end AI systems for regulated, high-stakes domains. I hold a Ph.D. in Computer Science from the Technical University of Munich (summa cum laude) and bring 15+ years of operationalizing AI from prototype to production.
 
 I am the founder of <a href="https://verysafe.ai/" class="link-ink">VerySafe.ai</a>, where I am building SafeCompute — a policy-aware compute platform that attaches cryptographic proof to every AI model run through remote attestation, supply-chain provenance, and signed audit lineage. The aim is to let organizations run frontier and open-source LLMs precisely where governance, privacy, and auditability are non-negotiable.
 
