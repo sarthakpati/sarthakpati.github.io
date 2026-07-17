@@ -15,7 +15,7 @@
     "tailwindcss": "^4.1.0"
   },
   "overrides": {
-    "vite": "^7"
+    "vite": "^8"
   },
   "devDependencies": {
     "@fontsource-variable/archivo": "^5.2.8",
