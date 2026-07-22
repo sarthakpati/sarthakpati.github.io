@@ -1,6 +1,6 @@
 # Design System
 
-The visual language for **sarthakpati.github.io** — an editorial, print-inspired
+The visual language for **sarthakpati.github.io**: an editorial, print-inspired
 portfolio. Warm saffron accent on a cool paper-and-ink neutral base, serif display
 type, monospace labels. This document is the single source of truth for color,
 type, and component patterns; copy the token blocks below into any new page,
@@ -15,12 +15,12 @@ Source of truth in code: [`src/styles/global.css`](src/styles/global.css).
 - **Editorial, not corporate.** Section numbers (`01`, `02`), oversized ghost
   numerals, monospace eyebrows, and strong top-borders evoke a printed journal.
 - **Warm accent, cool base.** A single saffron orange does all the accent work
-  against a near-neutral paper/ink palette. Use it sparingly — it should always
+  against a near-neutral paper/ink palette. Use it sparingly; it should always
   read as emphasis.
 - **Quiet by default, loud on interaction.** Hover states shift to saffron;
   resting states stay in the ink/slate range.
 - **Dark mode is first-class.** Every token has a light and dark value. Never
-  hard-code a hex in markup — reference a token so both themes track.
+  hard-code a hex in markup; reference a token so both themes track.
 - **Respect motion preferences.** All animation collapses under
   `prefers-reduced-motion`.
 
@@ -34,12 +34,12 @@ swaps the values. **Always reference the token, never the raw hex.**
 | Token            | Role                             | Light     | Dark      |
 | ---------------- | -------------------------------- | --------- | --------- |
 | `paper`          | Page background                  | `#f8f9fb` | `#0d0f14` |
-| `cream`          | Raised surface — cards, sidebars | `#eceff5` | `#141620` |
+| `cream`          | Raised surface: cards, sidebars  | `#eceff5` | `#141620` |
 | `ink`            | Primary text, headings           | `#191c22` | `#e8eaf0` |
 | `ink-soft`       | Body copy                        | `#353c49` | `#b0b5c0` |
-| `slate`          | Muted — captions, meta, inactive | `#4f5d6d` | `#6b7280` |
+| `slate`          | Muted: captions, meta, inactive  | `#4f5d6d` | `#6b7280` |
 | `brand-blue`     | Secondary accent / link blue     | `#1e5ebb` | `#6ea8fe` |
-| `saffron`        | **Primary accent** — CTAs, hover | `#e87228` | `#f59e44` |
+| `saffron`        | **Primary accent**: CTAs, hover  | `#e87228` | `#f59e44` |
 | `saffron-bright` | Accent hover / brighter emphasis | `#f09040` | `#fbbf6a` |
 
 ### Roles at a glance
@@ -48,7 +48,7 @@ swaps the values. **Always reference the token, never the raw hex.**
 - **Text hierarchy:** `ink` (headings) → `ink-soft` (body) → `slate` (muted).
 - **Accent:** `saffron` for any call-to-action, active nav, link hover, and
   metric labels; `saffron-bright` only as its hover/active brighten.
-- **`brand-blue`** is the reserved secondary — use for in-prose links where
+- **`brand-blue`** is the reserved secondary, used for in-prose links where
   saffron would over-emphasize. Not yet heavily used; keep it for that purpose.
 
 > **Inverted bands.** Sections like the CTA flip to `bg-ink text-paper`, with
@@ -71,11 +71,11 @@ Three families, loaded from Google Fonts in [`src/layouts/Base.astro`](src/layou
 
 Defined in `global.css`; use them instead of re-deriving the styles.
 
-- **`.h-display`** — Fraunces, weight `560`, `letter-spacing: -0.018em`,
+- **`.h-display`**: Fraunces, weight `560`, `letter-spacing: -0.018em`,
   `line-height: 1.05`, `text-wrap: balance`. The default for every heading.
-- **`.label-mono`** — IBM Plex Mono, `0.6875rem` (11px), `letter-spacing: 0.22em`,
+- **`.label-mono`**: IBM Plex Mono, `0.6875rem` (11px), `letter-spacing: 0.22em`,
   uppercase, weight `500`. Eyebrows, kicker labels, footer headings.
-- **`.ghost-num`** — oversized Fraunces numeral, weight `700`, `opacity: 0.06`,
+- **`.ghost-num`**: oversized Fraunces numeral, weight `700`, `opacity: 0.06`,
   absolutely positioned, non-interactive. The decorative section number behind
   headings (paired with an `.h-display` of the same digits).
 
@@ -93,9 +93,9 @@ Defined in `global.css`; use them instead of re-deriving the styles.
 
 Two underlined editorial link styles (`global.css`), chosen by background:
 
-- **`.link-ink`** — for light backgrounds. Bottom border in current color,
+- **`.link-ink`**: for light backgrounds. Bottom border in current color,
   shifts to `saffron` on hover.
-- **`.link-paper`** — for dark/inverted backgrounds. Hover shifts to
+- **`.link-paper`**: for dark/inverted backgrounds. Hover shifts to
   `saffron-bright`.
 
 Plain text links (nav, footer socials) skip the underline and just transition
@@ -165,17 +165,17 @@ drift behind the hero. Purely aesthetic, `aria-hidden`.
 
 ## 6. Motion
 
-- **`.reveal`** — page-load fade-up (`0.8s`, custom ease). Stagger with
+- **`.reveal`**: page-load fade-up (`0.8s`, custom ease). Stagger with
   `.reveal-1` … `.reveal-5` (80ms steps).
-- **`.windline`** — slow infinite `windDrift` (50–90s) on background streamlines.
-- **Transitions** — interactive elements use `transition-colors duration-200`.
-- **`::selection`** — saffron background, paper text.
-- **Reduced motion** — `prefers-reduced-motion: reduce` flattens all animation
+- **`.windline`**: slow infinite `windDrift` (50–90s) on background streamlines.
+- **Transitions**: interactive elements use `transition-colors duration-200`.
+- **`::selection`**: saffron background, paper text.
+- **Reduced motion**: `prefers-reduced-motion: reduce` flattens all animation
   and transition durations to `~0`.
 
 ---
 
-## 7. Reuse — copy these into a new project
+## 7. Reuse: copy these into a new project
 
 ### A. Tailwind v4 `@theme` block (this project's setup)
 
@@ -281,7 +281,7 @@ Toggle by flipping `.dark` on `<html>` and persisting `theme` in `localStorage`
 - **Do** lead emphasis with `saffron`; reserve `saffron-bright` for its hover.
 - **Do** keep body text at `ink-soft`, headings at `ink`, meta at `slate`.
 - **Do** use top-borders (`border-t-2`) over boxes/shadows for structure.
-- **Don't** hard-code hex values in markup — reference a token.
+- **Don't** hard-code hex values in markup; reference a token.
 - **Don't** fully round corners; the system uses `rounded-sm` only.
-- **Don't** introduce a second accent hue — `brand-blue` is the only sanctioned
+- **Don't** introduce a second accent hue; `brand-blue` is the only sanctioned
   secondary, and only for in-prose links.

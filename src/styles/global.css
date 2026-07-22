@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ── Dark mode — class strategy (auto-detected via system pref) ── */
+/* ── Dark mode: class strategy (auto-detected via system pref) ── */
 @theme {
   --default-theme-dark-mode: class;
 
@@ -19,7 +19,7 @@
   --font-mono: "IBM Plex Mono", monospace;
 }
 
-/* Dark mode overrides — MUST be outside @theme for Tailwind v4 */
+/* Dark mode overrides: MUST be outside @theme for Tailwind v4 */
 .dark {
   --color-paper: #0d0f14;
   --color-cream: #141620;
@@ -76,12 +76,12 @@
     font-weight: 500;
   }
 
-  /* Underlined editorial links — light bg */
+  /* Underlined editorial links: light bg */
   .link-ink {
     @apply relative border-b border-current pb-px transition-[color,border-color] duration-200 hover:border-saffron hover:text-saffron;
   }
 
-  /* Underlined editorial links — dark bg */
+  /* Underlined editorial links: dark bg */
   .link-paper {
     @apply relative border-b border-current pb-px transition-[color,border-color] duration-200 hover:border-saffron-bright hover:text-saffron-bright;
   }
