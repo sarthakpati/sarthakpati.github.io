@@ -31,7 +31,7 @@ export const NAV = [
 export const PROJECTS = [
   {
     name: "GaNDLF",
-    desc: "Do-It-Yourself Deep Learning framework for everyone — low-code AI pipelines for healthcare.",
+    desc: "Do-It-Yourself Deep Learning framework for everyone: low-code AI pipelines for healthcare.",
     meta: "Editor's Choice, Communications Engineering (Nature)",
     href: "https://gandlf.org/",
     role: "Creator",
@@ -45,7 +45,7 @@ export const PROJECTS = [
   },
   {
     name: "FeTS",
-    desc: "Federated Tumor Segmentation — largest real-world federated learning study (71 sites, 6 continents).",
+    desc: "Federated Tumor Segmentation: largest real-world federated learning study (71 sites, 6 continents).",
     meta: "Nature Communications",
     href: "https://fets-ai.github.io/",
     role: "Lead researcher",
@@ -66,7 +66,7 @@ export const PROJECTS = [
   },
   {
     name: "GaNDLF-Synth",
-    desc: "Synthetic data generation for medical imaging — training AI with artificial data.",
+    desc: "Synthetic data generation for medical imaging: training AI with artificial data.",
     meta: "arXiv:2410.00173",
     href: "https://github.com/mlcommons/GaNDLF-Synth",
     role: "Creator",
@@ -89,17 +89,17 @@ export const OPENINGS = [
   {
     title: "conda-forge",
     url: "https://github.com/orgs/conda-forge/teams?query=%40sarthakpati",
-    description: "40+ conda-forge recipes — packaging scientific software to maximize reproducibility and impact",
+    description: "40+ conda-forge recipes: packaging scientific software to maximize reproducibility and impact",
   },
 ];
 
-/* ── What I build (recruiter-facing capabilities — sourced from résumé) ── */
+/* ── What I build (recruiter-facing capabilities, sourced from résumé) ── */
 
 export const CAPABILITIES = [
   {
     title: "End-to-end AI systems",
-    desc: "Architect and ship AI from prototype to production — multimodal data, low-code pipelines, clinical-grade workflows.",
-    metric: "GaNDLF — 30% faster prototyping, now an MLCommons project",
+    desc: "Architect and ship AI from prototype to production: multimodal data, low-code pipelines, clinical-grade workflows.",
+    metric: "GaNDLF: 30% faster prototyping, now an MLCommons project",
   },
   {
     title: "Confidential & federated compute",
@@ -108,13 +108,13 @@ export const CAPABILITIES = [
   },
   {
     title: "Optimization & deployment",
-    desc: "Make models run where compute, latency, and cost are constrained — edge, HPC, and low-resource environments.",
+    desc: "Make models run where compute, latency, and cost are constrained: edge, HPC, and low-resource environments.",
     metric: "10–50% less compute · up to 70% lower inference latency",
   },
   {
     title: "Benchmarking & evaluation",
     desc: "Trustworthy, reproducible evaluation of medical and enterprise AI at scale.",
-    metric: "MedPerf — federated benchmarking across institutions",
+    metric: "MedPerf: federated benchmarking across institutions",
   },
 ];
 
@@ -165,7 +165,7 @@ export const PUBS = [
     href: "#",
   },
   {
-    title: "FeTS Challenge: Federated Tumor Segmentation — 71 Sites, 6 Continents",
+    title: "FeTS Challenge: Federated Tumor Segmentation (71 Sites, 6 Continents)",
     venue: "Nature Communications",
     year: "2025",
     note: "Largest federated learning study for neuro-oncology",
@@ -186,13 +186,13 @@ export const PUBS = [
     href: "#",
   },
   {
-    title: "AI for Brain Tumor Treatment Outcome Prediction — AI-RANO Part 1",
+    title: "AI for Brain Tumor Treatment Outcome Prediction (AI-RANO Part 1)",
     venue: "The Lancet Oncology",
     year: "2024",
     href: "#",
   },
   {
-    title: "Deep Learning for Brain Cancer — AI-RANO Part 2",
+    title: "Deep Learning for Brain Cancer (AI-RANO Part 2)",
     venue: "The Lancet Oncology",
     year: "2024",
     href: "#",
