@@ -19,7 +19,7 @@ const STATS = [
   { value: '15+', label: 'years operationalizing AI' },
   { value: '$9M+', label: 'NIH/NCI-funded research led' },
   { value: '40+', label: 'conda-forge recipes maintained' },
-  { value: '70+', label: 'sites in largest FL study (FeTS)' },
+  { value: '71', label: 'sites in largest FL study (FeTS)' },
 ];
 ---
 
@@ -32,7 +32,7 @@ const STATS = [
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12 items-start">
           <div>
             <Eyebrow num="01" label="About" class="mb-5 reveal reveal-1" />
-            <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
+            <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
             <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-4 reveal reveal-2">
               {PROFILE.title}
             </h1>
@@ -68,11 +68,12 @@ const STATS = [
     <section class="relative py-24 border-b border-ink/10">
       <div class="max-w-5xl mx-auto px-6">
         <Eyebrow num="02" label="What I build" class="mb-3" />
-        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">02</h2>
-        <h2 class="h-display text-3xl md:text-4xl text-ink mb-6 pr-48">From research to production</h2>
+        <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">02</span>
+        <h2 class="h-display text-3xl md:text-4xl text-ink mb-6 md:pr-48">From research to production</h2>
         <p class="text-ink-soft leading-relaxed max-w-2xl mb-12">
-          I architect and ship AI systems end-to-end (concept, design, deployment) for regulated, high-stakes
-          domains. Eleven years turning research into software that runs in production.
+          I design and ship AI systems end to end, from first concept to deployment, in domains where the
+          stakes are high and the regulators are paying attention. Most of the last 15 years has gone into
+          turning research into software that runs in production.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 mb-14">
           {CAPABILITIES.map((c) => (
@@ -90,8 +91,8 @@ const STATS = [
     <section class="relative py-24 border-b border-ink/10">
       <div class="max-w-5xl mx-auto px-6">
         <Eyebrow num="03" label="Open source" class="mb-3" />
-        <h2 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">03</h2>
-        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 pr-48">Selected Projects</h2>
+        <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">03</span>
+        <h2 class="h-display text-3xl md:text-4xl text-ink mb-12 md:pr-48">Selected projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           {PROJECTS.map((project) => (
             <a
@@ -115,7 +116,3 @@ const STATS = [
     <CTABand />
   </div>
 </Base>
-
-<style is:global>
-  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
-</style>

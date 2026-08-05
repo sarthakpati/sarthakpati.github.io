@@ -23,14 +23,14 @@ const fmtDate = (d: string) => {
   <section class="relative py-24 border-b border-ink/10 bg-paper">
     <div class="max-w-5xl mx-auto px-6">
       <Eyebrow num="01" label="Curriculum Vitae" class="mb-3" />
-      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
-      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Curriculum Vitae</h1>
+      <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">Curriculum Vitae</h1>
       <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
-        Full downloadable PDF available below. Key highlights are listed on this page.
+        The highlights live on this page; the full story is in the PDF.
       </p>
       <div class="mt-6 reveal reveal-3">
-        <a href="/resume_sarthak.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-saffron text-paper font-medium px-6 py-3 rounded-sm hover:bg-saffron-bright transition-colors text-sm">
-          <span>&#x2B07;</span> Download PDF
+        <a href="/resume_sarthak.pdf" target="_blank" rel="noopener" class="inline-block bg-saffron text-paper font-medium px-6 py-3 rounded-sm hover:bg-saffron-bright transition-colors text-sm">
+          Download the PDF
         </a>
       </div>
     </div>
@@ -149,7 +149,3 @@ const fmtDate = (d: string) => {
 
   <CTABand />
 </Base>
-
-<style is:global>
-  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
-</style>

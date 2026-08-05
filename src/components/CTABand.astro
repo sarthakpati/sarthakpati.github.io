@@ -5,14 +5,14 @@ interface Props {
   email?: string;
 }
 
-const { heading = "Got a problem that needs shipping?", sub = 'Let\'s talk: discovery call on me.', email = 'sarthak@verysafe.ai' } = Astro.props;
+const { heading = 'Trying to ship AI in a regulated domain?', sub = "That's my favorite kind of problem. The first call is on me.", email = 'sarthak@verysafe.ai' } = Astro.props;
 ---
 
 <section class="bg-ink text-paper relative overflow-hidden">
-  <div class="absolute inset-0 opacity-[0.03]">
+  <div class="absolute inset-0 opacity-[0.03] text-saffron">
     <svg viewBox="0 0 1200 400" preserveAspectRatio="none" class="w-full h-full">
-      <path d="M-100,80 C150,20 350,150 600,100 S900,200 1300,60" fill="none" stroke="#e87228" stroke-width="1" stroke-dasharray="8 6" />
-      <path d="M-100,220 C250,160 450,280 750,180 S1000,260 1300,200" fill="none" stroke="#e87228" stroke-width="1.2" stroke-dasharray="10 4" />
+      <path d="M-100,80 C150,20 350,150 600,100 S900,200 1300,60" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="8 6" />
+      <path d="M-100,220 C250,160 450,280 750,180 S1000,260 1300,200" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="10 4" />
     </svg>
   </div>
   <div class="max-w-5xl mx-auto px-6 py-20 text-center relative z-10">

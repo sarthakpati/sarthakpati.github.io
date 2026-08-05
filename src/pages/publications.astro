@@ -40,8 +40,8 @@ function getTitle(pub: any): string {
   <section class="relative py-24 border-b border-ink/10 bg-paper">
     <div class="max-w-5xl mx-auto px-6">
       <Eyebrow num="01" label="Publications" class="mb-3" />
-      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
-      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">{allPubs.length} publications</h1>
+      <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">{allPubs.length} publications</h1>
       <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
         Complete list sourced from{' '}
         <a href="/_bibliography/papers.bib" class="link-ink hover:text-saffron">papers.bib</a>.
@@ -86,7 +86,3 @@ function getTitle(pub: any): string {
 
   <CTABand />
 </Base>
-
-<style is:global>
-  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
-</style>

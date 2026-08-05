@@ -28,8 +28,8 @@ const media = [
   <section class="relative py-24 border-b border-ink/10 bg-paper">
     <div class="max-w-5xl mx-auto px-6">
       <Eyebrow num="01" label="Accolades" class="mb-3" />
-      <h1 class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</h1>
-      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 pr-48 reveal">Awards & Recognition</h1>
+      <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">Awards & recognition</h1>
     </div>
   </section>
 
@@ -39,19 +39,14 @@ const media = [
       <ul class="space-y-0">
         {awards.map((a) => (
           <li class="pb-7 border-b border-ink/10 last:border-b-0 group">
-            <div class="flex gap-3 items-start">
-              <span class="text-saffron font-bold mt-1">✓</span>
-              <div>
-                <strong class="text-ink block">{a.title}</strong>
-                {a.link ? (
-                  <a href={a.link} target="_blank" rel="noopener" class="text-sm text-ink-soft hover:text-saffron transition-colors link-ink mt-1 inline-block">
-                    {a.detail} →
-                  </a>
-                ) : (
-                  <p class="text-sm text-ink-soft">{a.detail}</p>
-                )}
-              </div>
-            </div>
+            <strong class="text-ink block">{a.title}</strong>
+            {a.link ? (
+              <a href={a.link} target="_blank" rel="noopener" class="text-sm text-ink-soft hover:text-saffron transition-colors link-ink mt-1 inline-block">
+                {a.detail} →
+              </a>
+            ) : (
+              <p class="text-sm text-ink-soft">{a.detail}</p>
+            )}
           </li>
         ))}
       </ul>
@@ -76,7 +71,3 @@ const media = [
 
   <CTABand />
 </Base>
-
-<style is:global>
-  .ghost-num { position: absolute; font-family: var(--font-display); font-weight: 700; color: var(--color-ink); opacity: 0.06; pointer-events: none; user-select: none; line-height: 1; }
-</style>

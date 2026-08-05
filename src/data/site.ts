@@ -2,7 +2,7 @@
 
 export const SITE = {
   title: "Sarthak Pati",
-  description: "AI researcher, engineer, and founder building trustworthy AI systems for regulated domains.",
+  description: "Founder of VerySafe.ai. I build AI systems for regulated, high-stakes domains, and the infrastructure to prove they can be trusted.",
   author: "Sarthak Pati",
   email: "sarthak@verysafe.ai",
   url: "https://sarthakpati.github.io",
@@ -98,22 +98,22 @@ export const OPENINGS = [
 export const CAPABILITIES = [
   {
     title: "End-to-end AI systems",
-    desc: "Architect and ship AI from prototype to production: multimodal data, low-code pipelines, clinical-grade workflows.",
+    desc: "I take AI from first prototype to clinical-grade production, multimodal data and all.",
     metric: "GaNDLF: 30% faster prototyping, now an MLCommons project",
   },
   {
     title: "Confidential & federated compute",
-    desc: "Privacy-preserving ML that trains and benchmarks across institutions without moving sensitive data.",
+    desc: "Models train and benchmark across institutions while the sensitive data stays put.",
     metric: "USD 9M+ in NIH/NCI grants led · deployed on 6 continents",
   },
   {
     title: "Optimization & deployment",
-    desc: "Make models run where compute, latency, and cost are constrained: edge, HPC, and low-resource environments.",
+    desc: "I get models running where compute is scarce and latency budgets are real, from edge hardware to HPC.",
     metric: "10–50% less compute · up to 70% lower inference latency",
   },
   {
     title: "Benchmarking & evaluation",
-    desc: "Trustworthy, reproducible evaluation of medical and enterprise AI at scale.",
+    desc: "Evaluation of medical and enterprise AI that other people can actually reproduce and check.",
     metric: "MedPerf: federated benchmarking across institutions",
   },
 ];

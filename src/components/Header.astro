@@ -8,7 +8,10 @@ import ThemeToggle from './ThemeToggle.astro';
     <a href="/" class="font-display font-bold text-xl tracking-tight hover:text-saffron transition-colors duration-200">
       Sarthak Pati
     </a>
-    <ul class="hidden md:flex gap-7 items-center">
+    <ul
+      id="site-nav"
+      class="hidden md:flex gap-7 items-center max-md:absolute max-md:top-full max-md:left-0 max-md:right-0 max-md:flex-col max-md:items-stretch max-md:gap-0 max-md:bg-paper max-md:border-b max-md:border-ink/10 max-md:px-6 max-md:py-3"
+    >
       {
         NAV.map((item) => {
           const isActive = Astro.url.pathname === item.href || (item.href !== '/' && Astro.url.pathname.startsWith(item.href));
@@ -16,8 +19,8 @@ import ThemeToggle from './ThemeToggle.astro';
             <li>
               <a
                 href={item.href}
-                class={`text-sm font-medium transition-colors duration-200 ${
-                  isActive ? 'text-saffron border-b-2 border-saffron' : 'text-slate hover:text-ink'
+                class={`text-sm font-medium transition-colors duration-200 max-md:block max-md:py-2.5 ${
+                  isActive ? 'text-saffron md:border-b-2 md:border-saffron' : 'text-slate hover:text-ink'
                 }`}
               >
                 {item.label}
@@ -29,7 +32,7 @@ import ThemeToggle from './ThemeToggle.astro';
     </ul>
     <div class="flex items-center gap-2">
       <ThemeToggle />
-      <button id="mobile-menu-btn" class="md:hidden p-2 text-ink" aria-label="Toggle menu">
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-ink" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -44,10 +47,11 @@ import ThemeToggle from './ThemeToggle.astro';
 
 <script>
   const btn = document.getElementById('mobile-menu-btn');
-  if (btn) {
+  const nav = document.getElementById('site-nav');
+  if (btn && nav) {
     btn.addEventListener('click', () => {
-      const nav = document.querySelector('nav > ul');
-      if (nav) nav.classList.toggle('hidden');
+      const open = nav.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', String(open));
     });
   }
 </script>
