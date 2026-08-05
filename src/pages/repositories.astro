@@ -42,7 +42,7 @@ repos.sort((a, b) => b.stars - a.stars);
       {repos.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           {repos.map((repo) => (
-            <a href={repo.url} target="_blank" rel="noopener" class="group block bg-paper p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200 border-t-2 border-transparent hover:border-saffron">
+            <a href={repo.url} target="_blank" rel="noopener" class="group block border-t-2 border-ink/80 pt-6 hover:border-saffron transition-colors duration-200">
               <div class="flex items-start justify-between gap-4 mb-2">
                 <h3 class="font-display text-lg font-semibold text-ink group-hover:text-saffron transition-colors">{repo.name}</h3>
                 <span class="label-mono text-slate whitespace-nowrap">{repo.stars.toLocaleString()} stars</span>

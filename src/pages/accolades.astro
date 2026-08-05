@@ -60,7 +60,7 @@ const media = [
       <h2 class="font-display text-2xl font-semibold text-ink mb-8">Press coverage</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         {media.map((m) => (
-          <a href={m.url} target="_blank" rel="noopener" class="group block bg-paper p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-200 border-t-2 border-transparent hover:border-saffron">
+          <a href={m.url} target="_blank" rel="noopener" class="group block border-t-2 border-ink/80 pt-5 hover:border-saffron transition-colors duration-200">
             <h3 class="font-display text-lg font-semibold text-ink group-hover:text-saffron transition-colors">{m.name}</h3>
             <p class="text-sm text-ink-soft mt-1">{m.desc}</p>
           </a>
