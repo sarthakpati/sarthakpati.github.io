@@ -8,6 +8,8 @@ export const PROFILE = {
 
 Most of that work now happens at <a href="https://verysafe.ai/" class="link-ink">VerySafe.ai</a>, where I'm building SafeCompute, a policy-aware compute platform that attaches cryptographic proof to every AI model run, using remote attestation, supply-chain provenance, and signed audit lineage. The point is that you can run frontier and open-source models in the places where someone will eventually ask you to prove what happened.
 
+I also run <a href="https://vaiyu.solutions" class="link-ink">Vaiyu Solutions</a>, where the work is other people's AI: architecture through to production, usually on a pilot that has stalled somewhere short of launch.
+
 Along the way I've led $9M+ in NIH/NCI-funded research, published in Nature, Nature Communications, and IEEE Transactions on Medical Imaging, and I serve as Vice Chair for Algorithmic Development at the MLCommons Medical Working Group.
 
 I think open software makes for better science, so most of my code lives in the open.`,
