@@ -7,20 +7,20 @@ const awards = [
   { title: "Dean's List", detail: 'Doctoral dissertation (top 10%), TUM 2020-2024' },
   { title: "Nature Communications Engineering Editor's Choice 2023", detail: 'For GaNDLF framework', link: 'https://www.nature.com/articles/s44172-023-00151-7#Sec4' },
   { title: 'Nature Communications Top 25 Health Sciences Articles 2022', detail: 'Federated Learning paper' },
-  { title: 'Plenary Presentation (top 8%)', detail: 'Pendergrass Symposium 2023, COFE ecosystem' },
-  { title: 'Best Poster Award (top 5%)', detail: 'NIH ITCR Annual Scientific Meeting 2020 and 2022' },
-  { title: 'Oral Presentation (top 5%)', detail: 'Penderglass Symposium 2021 & 2022' },
-  { title: 'Magna cum Laude (top 10%)', detail: 'Pendergrass Symposium 2021' },
+  { title: 'Plenary Presentation (top 8%)', detail: 'Pendergrass Symposium 2023, for the Comprehensive Federated Ecosystem (COFE)' },
+  { title: 'Best Poster Award (top 5%)', detail: 'NIH ITCR annual scientific meeting, 2020 and 2022' },
+  { title: 'Oral Presentation (top 5%)', detail: 'Pendergrass Symposium: Federated Tumor Segmentation (2021), breast density estimation from tomosynthesis (2022)' },
+  { title: 'Magna cum Laude (top 10%)', detail: 'Pendergrass Symposium 2021, for the Generally Nuanced Deep Learning Framework' },
   { title: '2nd Place', detail: 'Automatic Non-Rigid Histological Image Registration Challenge 2019' },
   { title: '1st Place', detail: 'Brain Tumor Segmentation Challenge at MICCAI 2015' },
 ];
 
 const media = [
-  { name: 'Wall Street Journal', desc: 'Federated learning for tumor detection', url: 'https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200' },
-  { name: 'Eureka Alert', desc: 'Science news and research updates', url: 'https://www.eurekalert.org/news-releases/972921' },
-  { name: 'News Medical', desc: 'Federated learning coverage', url: 'https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx' },
-  { name: 'IU News', desc: 'AI breast cancer risk prediction grant', url: 'https://news.iu.edu/live/news/37787-iu-led-study-uses-ai-to-predict-breast-cancer-risk' },
-  { name: 'Science Daily', desc: 'Grant award coverage', url: 'https://www.sciencedaily.com/releases/2022/12/221205104205.htm' },
+  { name: 'Wall Street Journal', desc: 'Intel and health institutions adopting federated learning to improve tumor detection', url: 'https://www.wsj.com/articles/intel-health-institutions-to-use-emerging-ai-technique-to-improve-tumor-detection-11589191200' },
+  { name: 'EurekAlert', desc: 'The largest brain tumor study to date, run without sharing a single patient scan', url: 'https://www.eurekalert.org/news-releases/972921' },
+  { name: 'News Medical', desc: 'Why federated learning lets you ask medical questions across institutions', url: 'https://www.news-medical.net/news/20200728/Federated-learning-approach-can-help-answer-different-medical-questions.aspx' },
+  { name: 'IU News', desc: 'IU-led study using AI to predict breast cancer risk while addressing health disparities', url: 'https://news.iu.edu/live/news/37787-iu-led-study-uses-ai-to-predict-breast-cancer-risk' },
+  { name: 'Science Daily', desc: 'The same federated brain tumor study, written up for a general audience', url: 'https://www.sciencedaily.com/releases/2022/12/221205104205.htm' },
 ];
 ---
 
@@ -30,6 +30,9 @@ const media = [
       <Eyebrow num="01" label="Accolades" class="mb-3" />
       <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
       <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">Awards & recognition</h1>
+      <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
+        Nearly all of these belong as much to the people I worked with as they do to me.
+      </p>
     </div>
   </section>
 
@@ -69,5 +72,8 @@ const media = [
     </div>
   </section>
 
-  <CTABand />
+  <CTABand
+    heading="Writing about any of this?"
+    sub="Happy to answer questions, and to point you at the collaborators who did the other half of the work."
+  />
 </Base>

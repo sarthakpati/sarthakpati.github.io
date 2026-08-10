@@ -10,6 +10,6 @@ const { num, label, tone = 'light', class: cls = '' } = Astro.props;
 ---
 
 <p class={`label-mono ${tone === 'dark' ? 'text-cream' : 'text-saffron'} ${cls}`}>
-  {num && <span class="mr-2">{num}</span>}
+  {num && <span class="mr-2" aria-hidden="true">{num}</span>}
   {label}
 </p>

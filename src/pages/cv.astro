@@ -22,11 +22,11 @@ const fmtDate = (d: string) => {
 <Base title="CV / Resume" description="Professional experience, education, and qualifications.">
   <section class="relative py-24 border-b border-ink/10 bg-paper">
     <div class="max-w-5xl mx-auto px-6">
-      <Eyebrow num="01" label="Curriculum Vitae" class="mb-3" />
+      <Eyebrow num="01" label="CV" class="mb-3" />
       <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
-      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">Curriculum Vitae</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">Curriculum vitae</h1>
       <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
-        The highlights live on this page; the full story is in the PDF.
+        The highlights are on this page. The PDF is the long version.
       </p>
       <div class="mt-6 reveal reveal-3">
         <a href="/resume_sarthak.pdf" target="_blank" rel="noopener" class="inline-block bg-saffron text-paper font-medium px-6 py-3 rounded-sm hover:bg-saffron-bright transition-colors text-sm">
@@ -147,5 +147,8 @@ const fmtDate = (d: string) => {
     </div>
   </section>
 
-  <CTABand />
+  <CTABand
+    heading="Hiring, or looking for an advisor?"
+    sub="The PDF has the full history. An email gets you a straighter answer than the PDF will."
+  />
 </Base>

@@ -7,31 +7,35 @@ import CTABand from '../components/CTABand.astro';
 const news = [
   {
     date: '2026-01-27',
-    title: 'New dataset at Nature Scientific Data',
-    body: 'The 2024 BraTS-MEN-RT dataset publication in Scientific Data. 570 radiotherapy planning 3D T1-weighted post-contrast MRIs, 500 expert-annotated GTVs.',
+    title: 'BraTS-MEN-RT dataset is out',
+    body: 'The 2024 BraTS-MEN-RT dataset is published in Scientific Data: 570 radiotherapy planning MRIs, 3D T1-weighted and post-contrast, with 500 gross tumor volumes annotated by experts.',
     link: '#',
   },
   {
     date: '2025-07-26',
-    title: 'Optimization of DL models for low-resource inference',
-    body: 'New publication at Computers in Biology and Medicine covering model optimization across radiology, histopathology, and medical RGB imaging.',
+    title: 'Running models where the compute is not',
+    body: 'Out in Computers in Biology and Medicine. What it actually takes to get these models inside a real latency and memory budget, tested across radiology, histopathology, and medical RGB imaging.',
     link: '#',
   },
   {
     date: '2025-06-25',
-    title: 'Unsupervised brain extraction QC approach',
-    body: 'New publication at Journal of Imaging Informatics in Medicine. Unsupervised QC method achieving 0.9 accuracy for pre-op and 0.87 for post-op scans.',
+    title: 'Catching bad brain extractions without labels',
+    body: 'Out in the Journal of Imaging Informatics in Medicine. Brain extraction fails quietly, so this method does the checking on its own: 0.9 accuracy on pre-op scans, 0.87 on post-op.',
     link: '#',
   },
   {
     date: '2025-02-15',
-    title: 'Transfer learning for Alzheimer\'s disease prediction',
-    body: 'New publication at NeuroImage. Transfer learning boosting AD diagnosis accuracy from 63% to 99% in scenario A.',
+    title: 'Alzheimer\'s prediction that survives a scanner upgrade',
+    body: 'Out in NeuroImage. MRI acquisition keeps changing underneath you. Transfer learning took diagnosis accuracy from 63% to 99% in the first of the scenarios we tested.',
     link: '#',
   },
 ];
 
-const formatDate = (d: string) => new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+// Parse as a local date; `new Date('2026-01-27')` is UTC midnight and renders a day early west of GMT.
+const formatDate = (d: string) => {
+  const [y, m, day] = d.split('-').map(Number);
+  return new Date(y, m - 1, day).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+};
 ---
 
 <Base title="News" description="Recent announcements and updates.">
@@ -39,9 +43,9 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString('en-US', { year
     <div class="max-w-5xl mx-auto px-6">
       <Eyebrow num="01" label="News" class="mb-3" />
       <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
-      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">Recent news</h1>
+      <h1 class="h-display text-4xl md:text-5xl text-ink mb-6 md:pr-48 reveal">News</h1>
       <p class="text-ink-soft max-w-xl leading-relaxed reveal reveal-2">
-        Mostly new papers and datasets, logged as they happen.
+        Mostly papers and datasets. I update this when something actually ships, so the gaps are real.
       </p>
     </div>
   </section>
@@ -59,5 +63,8 @@ const formatDate = (d: string) => new Date(d).toLocaleDateString('en-US', { year
     </article>
   ))}
 
-  <CTABand />
+  <CTABand
+    heading="Working on something similar?"
+    sub="I would rather hear about your problem than keep talking about mine."
+  />
 </Base>

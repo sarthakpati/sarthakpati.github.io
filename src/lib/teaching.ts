@@ -40,7 +40,7 @@ export const teachingData: TeachingEntry[] = [
   },
   {
     year: 2023,
-    title: "Invited talk at University of Edinburgh",
+    title: "Invited talk",
     conference: "University of Edinburgh",
   },
   {

@@ -56,7 +56,7 @@ function getTitle(pub: any): string {
   {years.map((year, yi) => (
     <section key={year} class="py-20 border-b border-ink/10 bg-paper">
       <div class="max-w-5xl mx-auto px-6">
-        <Eyebrow num={`${String(yi + 1).padStart(2, '0')}`} label={`Year ${year}`} class="mb-8" />
+        <Eyebrow num={`${String(yi + 2).padStart(2, '0')}`} label={year} class="mb-8" />
         <ul class="space-y-7">
           {byYear[year].map((pub) => (
             <li class="border-t border-ink/10 pt-6 first:border-t-0 first:pt-0">
@@ -84,5 +84,8 @@ function getTitle(pub: any): string {
     </section>
   ))}
 
-  <CTABand />
+  <CTABand
+    heading="Reading one of these for a project?"
+    sub="Happy to talk through the methods, the data, or the parts that did not make it past peer review."
+  />
 </Base>

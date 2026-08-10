@@ -73,26 +73,6 @@ export const PROJECTS = [
   },
 ];
 
-/* ── Research openings / focus areas ── */
-
-export const OPENINGS = [
-  {
-    title: "GaNDLF",
-    url: "https://gandlf.org/",
-    description: "A low-code framework for reproducible, end-to-end AI in healthcare (Editor's Choice, Communications Engineering)",
-  },
-  {
-    title: "MedPerf",
-    url: "https://www.medperf.org",
-    description: "Open, federated benchmarking for medical AI at scale",
-  },
-  {
-    title: "conda-forge",
-    url: "https://github.com/orgs/conda-forge/teams?query=%40sarthakpati",
-    description: "40+ conda-forge recipes: packaging scientific software to maximize reproducibility and impact",
-  },
-];
-
 /* ── What I build (recruiter-facing capabilities, sourced from résumé) ── */
 
 export const CAPABILITIES = [
@@ -104,7 +84,7 @@ export const CAPABILITIES = [
   {
     title: "Confidential & federated compute",
     desc: "Models train and benchmark across institutions while the sensitive data stays put.",
-    metric: "USD 9M+ in NIH/NCI grants led · deployed on 6 continents",
+    metric: "$9M+ in NIH/NCI grants led · deployed on 6 continents",
   },
   {
     title: "Optimization & deployment",
@@ -128,117 +108,3 @@ export const REPOS = [
   "FETS-AI/Front-End",
   "CBICA/CaPTk",
 ];
-
-/* ── Selected publications (transformed from BibTeX source of truth) ── */
-
-export const PUBS = [
-  {
-    title: "2024 BraTS-MEN-RT Dataset for Radiotherapy Planning",
-    venue: "Scientific Data (Nature)",
-    year: "2026",
-    note: "570 radiotherapy MRIs, 500 expert-annotated GTVs",
-    href: "https://doi.org/10.1038/s41597-026-xxxxx",
-  },
-  {
-    title: "Federated Learning for Medical Imaging: A Survey",
-    venue: "Machine Learning for Biomedical Imaging",
-    year: "2025",
-    href: "https://doi.org/10.xxxx/mlbim.2025.xxxx",
-  },
-  {
-    title: "Brain Tumor Segmentation in Post-Op MRI Using Multi-Institutional Data",
-    venue: "Neuro-Oncology (Supplement)",
-    year: "2025",
-    href: "#",
-  },
-  {
-    title: "Screening for Brain Metastases with Deep Learning",
-    venue: "Patterns (Elsevier)",
-    year: "2025",
-    href: "#",
-  },
-  {
-    title: "Optimization of Deep Learning Models for Inference in Low Resource Environments",
-    venue: "Computers in Biology and Medicine",
-    year: "2025",
-    note: "Covers radiology, histopathology, medical imaging",
-    href: "#",
-  },
-  {
-    title: "FeTS Challenge: Federated Tumor Segmentation (71 Sites, 6 Continents)",
-    venue: "Nature Communications",
-    year: "2025",
-    note: "Largest federated learning study for neuro-oncology",
-    href: "#",
-  },
-  {
-    title: "An Unsupervised Brain Extraction Quality Control Approach for Neuro-Oncology Studies",
-    venue: "Journal of Imaging Informatics in Medicine",
-    year: "2025",
-    note: "Achieves 0.9 accuracy for pre-op, 0.87 for post-op scans",
-    href: "#",
-  },
-  {
-    title: "Transfer Learning for Alzheimer's Disease Prediction from Evolving MRI Data",
-    venue: "NeuroImage",
-    year: "2025",
-    note: "Boosting AD diagnosis accuracy from 63% to 99%",
-    href: "#",
-  },
-  {
-    title: "AI for Brain Tumor Treatment Outcome Prediction (AI-RANO Part 1)",
-    venue: "The Lancet Oncology",
-    year: "2024",
-    href: "#",
-  },
-  {
-    title: "Deep Learning for Brain Cancer (AI-RANO Part 2)",
-    venue: "The Lancet Oncology",
-    year: "2024",
-    href: "#",
-  },
-  {
-    title: "GaNDLF-Synth: Synthetic Data Generation for Medical Imaging",
-    venue: "arXiv",
-    year: "2024",
-    href: "https://arxiv.org/abs/2410.00173",
-  },
-  {
-    title: "Federated Learning Enables Big Data for Rare Cancer Boundary Detection",
-    venue: "Nature Communications",
-    year: "2022",
-    note: "Top 25 Health Sciences Articles, Nature (2022)",
-    href: "https://doi.org/10.1038/s41467-022-33407-5",
-  },
-  {
-    title: "GaNDLF: Do-It-Yourself Deep Learning Framework",
-    venue: "Communications Engineering (Nature)",
-    year: "2023",
-    note: "Editor's Choice",
-    href: "#",
-  },
-  {
-    title: "Federated Tumor Segmentation (FeTS): A Multi-Institutional Benchmarking Challenge",
-    venue: "Scientific Data",
-    year: "2022",
-    href: "#",
-  },
-  {
-    title: "ANHIR Challenge: Naked H&E Image Analysis Winner",
-    venue: "IEEE ISBI",
-    year: "2020",
-    note: "1st Place",
-    href: "#",
-  },
-  {
-    title: "BRATS Challenge: Brain Tumor Segmentation Winner",
-    venue: "MICCAI",
-    year: "2015",
-    note: "1st Place",
-    href: "#",
-  },
-];
-
-/* ── Stats are computed at build time in index.astro by reading papers.bib ── */
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-export const _STATS_PLACEHOLDER = true;

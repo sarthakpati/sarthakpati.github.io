@@ -42,12 +42,12 @@ const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
             <li class="flex gap-3 items-start text-ink-soft pb-4 border-b border-ink/10 last:border-b-0">
               <span class="text-saffron mt-1 font-bold">→</span>
               <div>
-                {t.conference ? (
-                  <a href={t.link || '#'} target="_blank" rel="noopener" class="font-medium text-ink hover:text-saffron transition-colors link-ink block">{t.title}</a>
+                {t.url ? (
+                  <a href={t.url} target="_blank" rel="noopener" class="font-medium text-ink hover:text-saffron transition-colors link-ink block">{t.title}</a>
                 ) : (
                   <span class="font-medium text-ink block">{t.title}</span>
                 )}
-                {t.conference && <span class="text-sm text-slate mt-0.5">{t.conference}</span>}
+                {t.conference && <span class="text-sm text-slate mt-0.5 block">{t.conference}</span>}
               </div>
             </li>
           ))}
@@ -56,5 +56,8 @@ const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
     </section>
   ))}
 
-  <CTABand />
+  <CTABand
+    heading="Want this taught to your team?"
+    sub="I have run the federated learning tutorial at MICCAI, AAAI, ISBI, and RSNA. It adapts to the room."
+  />
 </Base>
