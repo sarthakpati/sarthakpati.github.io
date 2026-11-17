@@ -35,11 +35,11 @@ const STATS = [
           <div class="lg:flex lg:flex-col">
             <Eyebrow num="01" label="Sarthak Pati" class="mb-5 reveal reveal-1" />
             <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
-            <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-4 reveal reveal-2">
+            <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-4 lg:mb-6 reveal reveal-2">
               {PROFILE.title}
             </h1>
-            <p class="font-mono text-sm md:text-base text-slate mb-8 reveal reveal-2">{PROFILE.subtitle}</p>
-            <div class="space-y-4 lg:space-y-6 text-ink-soft leading-relaxed max-w-2xl reveal reveal-3">
+            <p class="font-mono text-sm md:text-base text-slate mb-8 lg:mb-10 reveal reveal-2">{PROFILE.subtitle}</p>
+            <div class="space-y-4 lg:space-y-8 text-ink-soft leading-relaxed max-w-2xl reveal reveal-3">
               {PROFILE.bio.split('\n\n').map((para) => (
                 <p set:html={para} />
               ))}
@@ -51,17 +51,19 @@ const STATS = [
             </div>
           </div>
           <!-- Portrait + proof bar (sidebar on desktop) -->
-          <aside class="reveal reveal-4 lg:sticky lg:top-20 lg:flex lg:flex-col space-y-6">
-            <Image
-              src={portrait}
-              alt="Sarthak Pati"
-              width={560}
-              height={560}
-              loading="eager"
-              class="w-40 lg:w-full lg:aspect-[7/5] rounded-sm object-cover object-top"
-            />
-            <div class="bg-cream rounded-sm p-6 lg:flex-1">
-              <p class="label-mono text-slate mb-5">At a glance</p>
+          <aside class="reveal reveal-4 lg:sticky lg:top-20 lg:flex lg:flex-col space-y-6 lg:space-y-4">
+            <div class="w-40 lg:w-full aspect-square overflow-hidden rounded-sm">
+              <Image
+                src={portrait}
+                alt="Sarthak Pati"
+                width={672}
+                height={672}
+                loading="eager"
+                class="w-full h-full object-cover scale-[1.2] translate-y-[3.6%]"
+              />
+            </div>
+            <div class="bg-cream rounded-sm p-6 lg:py-5 lg:flex-1">
+              <p class="label-mono text-slate mb-5 lg:mb-4">At a glance</p>
               <ul class="space-y-3">
                 {STATS.map((stat) => (
                   <li class="border-t border-ink/10 pt-3 first:border-t-0 first:pt-0">
