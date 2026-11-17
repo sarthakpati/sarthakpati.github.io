@@ -6,7 +6,7 @@ export const PROFILE = {
   subtitle: "AI Safety Researcher & Engineer · Vice Chair, MLCommons Medical Working Group",
   bio: `I build AI for organizations where a wrong answer costs more than a headline: hospitals, regulated industries, anywhere the output has to be trusted before anyone can act on it. I hold a Ph.D. in Computer Science from the Technical University of Munich (summa cum laude) and have spent the last 15+ years taking AI from prototype to production.
 
-Most of that work now happens at <a href="https://verysafe.ai/" class="link-ink">VerySafe.ai</a>, where I'm building SafeCompute, a policy-aware compute platform that attaches cryptographic proof to every AI model run, using remote attestation, supply-chain provenance, and signed audit lineage. The point is that you can run frontier and open-source models in the places where someone will eventually ask you to prove what happened.
+Most of that work now happens at <a href="https://verysafe.ai/" class="link-ink">VerySafe.ai</a>, where I'm Founder & CEO. We help regulated companies prove to their auditors that their controls work, AI included, starting with financial services.
 
 I also run <a href="https://vaiyu.solutions" class="link-ink">Vaiyu Solutions</a>, where the work is other people's AI: architecture through to production, usually on a pilot that has stalled somewhere short of launch.
 

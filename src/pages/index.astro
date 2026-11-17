@@ -31,42 +31,42 @@ const STATS = [
     <section class="relative min-h-[75vh] flex items-center border-b border-ink/10">
       <WindField class="text-saffron" />
       <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 relative z-10 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12 items-start">
-          <div>
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12 items-start lg:items-stretch">
+          <div class="lg:flex lg:flex-col">
             <Eyebrow num="01" label="Sarthak Pati" class="mb-5 reveal reveal-1" />
             <span class="ghost-num text-[9rem] right-0 top-[-2rem]" aria-hidden="true">01</span>
             <h1 class="h-display text-4xl md:text-5xl lg:text-6xl text-ink mb-4 reveal reveal-2">
               {PROFILE.title}
             </h1>
             <p class="font-mono text-sm md:text-base text-slate mb-8 reveal reveal-2">{PROFILE.subtitle}</p>
-            <div class="space-y-4 text-ink-soft leading-relaxed max-w-2xl reveal reveal-3">
+            <div class="space-y-4 lg:space-y-6 text-ink-soft leading-relaxed max-w-2xl reveal reveal-3">
               {PROFILE.bio.split('\n\n').map((para) => (
                 <p set:html={para} />
               ))}
             </div>
-            <div class="flex flex-wrap items-center gap-5 mt-8 reveal reveal-4">
+            <div class="flex flex-wrap items-center gap-5 pt-8 lg:mt-auto reveal reveal-4">
               <a href="/resume_sarthak.pdf" target="_blank" rel="noopener" class="inline-block bg-saffron text-paper font-medium px-6 py-2.5 rounded-sm hover:bg-saffron-bright transition-colors duration-200">Résumé (PDF)</a>
               <a href="/publications/" class="link-ink text-ink font-medium">View publications</a>
               <a href="/cv/" class="link-ink text-ink font-medium">Full CV</a>
             </div>
           </div>
           <!-- Portrait + proof bar (sidebar on desktop) -->
-          <aside class="reveal reveal-4 lg:sticky lg:top-20 space-y-6">
+          <aside class="reveal reveal-4 lg:sticky lg:top-20 lg:flex lg:flex-col space-y-6">
             <Image
               src={portrait}
               alt="Sarthak Pati"
               width={560}
               height={560}
               loading="eager"
-              class="w-40 lg:w-full rounded-sm object-cover"
+              class="w-40 lg:w-full lg:aspect-[7/5] rounded-sm object-cover object-top"
             />
-            <div class="bg-cream rounded-sm p-6">
+            <div class="bg-cream rounded-sm p-6 lg:flex-1">
               <p class="label-mono text-slate mb-5">At a glance</p>
-              <ul class="space-y-5">
+              <ul class="space-y-3">
                 {STATS.map((stat) => (
-                  <li class="border-t border-ink/10 pt-4 first:border-t-0 first:pt-0">
+                  <li class="border-t border-ink/10 pt-3 first:border-t-0 first:pt-0">
                     <p class="font-display text-3xl font-bold text-ink">{stat.value}</p>
-                    <p class="text-xs text-slate mt-1">{stat.label}</p>
+                    <p class="text-xs text-slate mt-1 text-pretty">{stat.label}</p>
                   </li>
                 ))}
               </ul>

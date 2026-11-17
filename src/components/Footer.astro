@@ -28,7 +28,7 @@ import { SITE } from '../data/site';
       <div>
         <h4 class="label-mono text-slate mb-4">Connect</h4>
         <a href={`mailto:${SITE.email}`} class="link-ink text-ink-soft hover:text-saffron transition-colors text-sm block mb-4">
-          {SITE.email}
+          {SITE.email.replace('@', '[at]')}
         </a>
         <div class="flex gap-5 text-sm">
           <a href={SITE.social.github} class="text-slate hover:text-saffron transition-colors" target="_blank" rel="noopener">GitHub</a>
